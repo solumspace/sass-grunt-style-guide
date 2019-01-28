@@ -17,7 +17,7 @@ variations:
 
 usage:
 - title: When to use
-  description: Usage description.
+  description: Click to navigate somewhere, sometimes.
 - title: When to consider an alternative
   description: Alternative usage.
 
