@@ -1,0 +1,39 @@
+﻿.sw-menu-page-content {
+	padding: 20px;
+	border: 1px solid gray;
+}
+
+.ucs-settings {
+	.padded-row > div {
+		padding-bottom: 5px;
+	}
+
+	.sw-div-table div div span,
+	.sw-div-table div div label,
+	.sw-div-table div div input {
+		vertical-align: middle;
+		margin-bottom: 0;
+	}
+
+	.sw-div-table-row .vertical-spacer {
+		padding-top: 1em;
+	}
+
+	.table-label {
+		padding-right: 1em;
+		text-align: right;
+		vertical-align: middle;
+	}
+}
+
+.e-sign-terms-of-use{
+	max-width: 40em;
+
+	.button-row {
+		text-align: center;
+
+		button:not(:first-child) {
+			margin-left: 2em;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.sagenav, .scroll-active#sticky {
+  border-bottom: 3px dotted #333333 !important;
+}
+
+.sw-app-footer {
+  border-top: 3px dotted #333333 !important;
+}
+
+.follow-logo-section:before {
+  border-width: 3px;
+  border-style: dotted;
+  border-color: #000;
+}
+
+.main-section-b .section-content, .col-md-8, .section-content {
+  border-right: 2px dotted #000;
+}
+
+// Specific page variations
+.partners-industry-page {
+  height: 450px;
+}
+
+// Border fixes
+
+.double-border-top, .double-border-before, .sw-list-row.thick, footer.white-footer, .sub-section-b, .follow-logo-section, section[role=main] {
+  border-top: 2px solid #000;
+}
+
+.double-border-after, section[role=banner], .main-sub-section .main-body-content .executives-analysts-default-page .content-block, .blog-list.featured-post, .dis-da-single-post-view {
+  border-bottom: 2px solid #000;
+}
+
+div[role=banner] {
+  border-bottom: 2px dotted #000;
+}
+
+article[role=banner]:after {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: #000;
+}

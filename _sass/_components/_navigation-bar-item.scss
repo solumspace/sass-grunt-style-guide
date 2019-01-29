@@ -1,0 +1,10 @@
+﻿navigation-bar-item {
+	.contents {
+		white-space: pre-wrap;
+
+		&.selected {
+			color: inherit;
+			cursor: default;
+		}
+	}
+}

@@ -1,0 +1,416 @@
+@media only screen and (min-width: 320px) {
+  .main-title {
+    h3 {
+      font-size: $font-size-large;
+      line-height: $line-height-computed;
+      margin-top: 1em;
+    }
+  }
+
+  #survey_container {
+    margin-bottom: -160px;
+    top: -14em;
+  }
+
+  .info-container {
+    top: -18em;
+  }
+
+  #top-nav ul {
+    float: none;
+    padding: 20px 0 10px 0;
+    margin: 0;
+  }
+
+  ul#footer-nav li {
+    display: block;
+    margin-right: 0;
+  }
+
+  ul#footer-nav li:first-child {
+    margin-right: 0;
+  }
+
+  #complete h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #complete {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .main-title {
+    h3 {
+      font-size: $font-size-h5;
+    }
+  }
+
+  .main-title p {
+    font-size: 14px;
+    ine-height: 16px;
+  }
+
+  #top-nav ul {
+    float: none;
+    padding: 20px 0 40px 0;
+    margin: 0;
+  }
+
+  .qty-buttons span {
+    top: 10px;
+    display: block;
+    width: 100px;
+    left: 120px;
+    font-weight: bold;
+    line-height: 12px;
+  }
+
+  #complete {
+    padding: 0 25px 15px 25px;
+  }
+
+  #complete h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #complete i {
+    font-size: 80px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .main-title {
+    h3 {
+      font-size: $font-size-h3;
+    }
+  }
+
+  .loan-col-custom {
+    width: 20%;
+
+    .box-header {
+      min-height: 40px;
+    }
+  }
+
+  .secondary-hero {
+    p {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+
+  .marketing-hero {
+    padding-right: 1em;
+
+    h2 {
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: $font-size-medium;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .loan-col-custom {
+    ul {
+      min-height: 145px;
+    }
+  }
+
+  .market-secondary {
+    h2 {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #top-nav {
+    width: 100%;
+    float: left;
+    display: none;
+
+    ul {
+      float: none;
+      padding: 20px 0 20px 0;
+      margin: 0;
+
+      li {
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          display: block;
+          padding: 5px;
+
+          &#active {
+            color: #323232;
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+  }
+
+  .marketing-hero {
+    h2 {
+      font-size: $font-size-h6;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .button-large {
+      font-size: $font-size-small;
+    }
+  }
+
+  .marketing-btn-group {
+    right: 20px;
+  }
+
+  .compare-box {
+    p {
+      margin: -30px 10px 20px !important;
+    }
+
+    .title-block {
+      font-size: $font-size-medium !important;
+    }
+  }
+
+  .bs-wizard {
+    margin: 0 auto;
+
+    .bs-wizard-step {
+      margin-top: 75px;
+
+      .progress {
+        margin: 25px 0;
+      }
+    }
+  }
+
+  .bs-wizard-stepnum {
+    font-size: ($font-size-large / 2) !important;
+  }
+
+  #middle-wizard {
+    p {
+      margin: 0 0 20px;
+    }
+  }
+
+  .lender-list {
+    .img-responsive {
+      margin: 0 auto;
+    }
+  }
+
+  .mobile-limit {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .btn-responsive-menu {
+    display: block;
+  }
+
+  .main-title h1 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  .main-title p {
+    font-size: 16px;
+  }
+
+  h2, h3 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  h2 span, h3 span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  ul.floated li#age {
+    margin-bottom: -10px;
+  }
+
+  ul.floated li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+
+  #footer_2 {
+    text-align: center;
+  }
+
+  #contact {
+    background: none;
+  }
+
+  ul.social-bookmarks {
+    padding: 0;
+    list-style-type: none;
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    &.navbar-default {
+      ul {
+        li {
+          a {
+            padding: 10px 5px;
+            font-size: $font-size-small;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    margin-bottom: 80px;
+  }
+
+  .nav-sidebar {
+    padding-bottom: 30px;
+    min-height: 350px;
+  }
+
+  .marketing-btn-group {
+    top: 240px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #middle-wizard {
+    .loan-col-custom {
+      width: 50%;
+
+      &:last-child {
+        margin-left: 25%;
+      }
+    }
+  }
+
+  .title-block {
+    margin-left: -25px !important;
+    margin-right: -25px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #middle-wizard {
+    &.compare-box {
+      .home-box {
+        min-height: 240px;
+
+        ul {
+          min-height: 88px;
+        }
+      }
+    }
+  }
+
+  .secondary-hero {
+    p {
+      font-size: $font-size-base;
+    }
+  }
+
+  .box {
+    a {
+      font-size: $font-size-small;
+    }
+  }
+
+  .marketing-hero {
+    h2 {
+      font-size: $font-size-h5;
+    }
+
+    p {
+      font-size: $font-size-base;
+    }
+
+    .button-large {
+      font-size: $font-size-base;
+      padding-left: 0.8em;
+      padding-right: 0.8em;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .secondary-hero {
+    p {
+      min-height: 85px;
+    }
+  }
+
+  #contact {
+    background: none;
+  }
+
+  #footer_2 {
+    text-align: center;
+  }
+
+  #contact {
+    background: none;
+  }
+
+  ul.social-bookmarks {
+    padding: 0;
+    list-style-type: none;
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1140px) {}
+
+@media only screen and (min-width: 1200px) {
+  .secondary-hero {
+    p {
+      padding-left: 3.6em;
+      padding-right: 3.6em;
+    }
+  }
+}
+
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {}

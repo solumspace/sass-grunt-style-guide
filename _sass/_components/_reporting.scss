@@ -1,0 +1,43 @@
+﻿.report-component-setup {
+	report-component-definition {
+		.control-label {
+			display: block;
+			text-align: left;
+		}
+	}
+}
+
+
+.edit-chart-definition, .edit-period-over-period-change {
+	.control-label {
+		text-align: right;
+		width: 125px;
+		margin: 5px;
+	}
+
+	.form-control {
+		width: 275px;
+		display: inline-block;
+	}
+}
+
+.add-new-component {
+	label {
+		width: 150px;
+		text-align: right;
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	input, select {
+		width: 200px;
+		display: inline-block;
+	}
+}
+
+.report-edit-standard-component {
+	select {
+		width: 400px;
+		display: inline-block;
+	}
+}

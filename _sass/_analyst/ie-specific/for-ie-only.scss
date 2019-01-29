@@ -1,0 +1,13 @@
+.double-border-top, .double-border-before::before, footer.white-footer::before, .thick.sw-list-row::before, .main-sub-section .main-body-content .sub-section-b::before, .double-border-after::after, section[role=main]::before, .main-sub-section .main-body-content .executives-analysts-default-page .content-block::after, .featured-post::after {
+  border-style: dotted !important;
+  border-width: 0 3px 0 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section-b .section-content, .contact-page .section-content {
+    border-style: dotted !important;
+
+    // Make sure widths have all sides covered
+    border-width: 0 3px 0 0 !important;
+  }
+}

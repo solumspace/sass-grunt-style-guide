@@ -1,0 +1,259 @@
+/* Styling for the swProgress*/
+#swProgress {
+    margin: 0;
+    padding: 0;
+    z-index: 99998;
+    background-color: green;
+    color: green;
+    box-shadow: 0 0 10px 0; /* Inherits the font color */
+    height: 2px;
+    opacity: 0;
+
+    /* Add CSS3 styles for transition smoothing */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Styling for the swProgress-container */
+#swProgress-container {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+// Progress Tabs
+.progress-tabs {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	border-top: 4px solid $brand-dark-blue;
+	margin-top: 20px;
+
+	li, td {
+		line-height: 2em;
+		font-size: $font-size-small;
+		position: relative;
+		text-align: center;
+		vertical-align: text-bottom;
+		box-sizing: border-box;
+
+		&:last-child {
+			label {
+				right: 0;
+				border-right: 0;
+			}
+
+			a {
+				right: 0;
+				border-right: 0;
+			}
+		}
+
+		a {
+			display: block;
+			background: $brand-dark-blue;
+			color: white;
+
+			@include transition(all 0 ease);
+			border-right: 2px solid white;
+			padding: 0 5px;
+			cursor: pointer;
+		}
+
+		&.active a, &.SelectedNavigationLink a {
+			background: white;
+			color: $brand-dark-blue;
+			font-family: $font-sbold;
+			z-index: 100;
+		}
+
+		&.disabled a {
+			color: #c7c7c7;
+			cursor: default;
+			pointer-events: none;
+		}
+
+		input[type=radio] {
+			display: none;
+		}
+
+		label {
+			display: block;
+			background: #295e8e;
+			color: white;
+			font-weight: normal;
+			-webkit-transition: all 0 ease;
+			transition: all 0 ease;
+			border-right: 2px solid white;
+			padding: 0 15px;
+			cursor: pointer;
+		}
+
+		&.active label {
+			background: white;
+			color: #295e8e;
+			font-family: $font-sbold;
+			z-index: 100;
+		}
+	}
+
+	&.personal {
+		li, td {
+			a {
+				padding: 0 10.5px;
+			}
+		}
+	}
+
+	&.progress-tabs-double {
+		.DefaultNavigationLink, .SelectedNavigationLink {
+			line-height: 1.35em;
+			font-size: 12px;
+			white-space: nowrap;
+			vertical-align: middle;
+		}
+	}
+
+	.subsection {
+		font-size: 11px;
+	}
+
+	&.progress-tabs-double {
+		.navigationlink {
+			height: 2.7em;
+			padding: 0 10px;
+		}
+
+		.navigation-link-group {
+			display: block;
+		}
+	}
+
+	.navigation-link-group {
+		padding: 0px 2px;
+	}
+}
+
+// Progress Title Tabs
+.progress-title-tabs {
+	min-width: 960px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+
+	td {
+		text-align: center;
+		padding-bottom: 2px;
+		padding-top: 5px;
+		border-right: 2px solid white;
+		border-top: 6px solid $brand-blue;
+		text-decoration: underline;
+		-moz-text-decoration-color: #0066CC;
+		background-color: #eee;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		&:hover {
+			border-top: 6px solid $brand-dark-blue;
+		}
+
+		&.active {
+			background-color: white;
+			text-decoration: none;
+
+			&:hover {
+				border-top: 6px solid $brand-blue;
+
+				a {
+					color: $brand-blue;
+				}
+			}
+		}
+
+		&.incomplete {
+			border-top: 6px solid $brand-orange;
+
+			&:hover {
+				border-top: 6px solid $brand-orange;
+			}
+		}
+	}
+}
+
+// Progress Arrows
+.progress-arrows {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+
+    li, td {
+        display: inline-block;
+        line-height: 2em;
+        font-size: $font-size-small;
+        position: relative;
+        border: 1px solid $gray;
+        margin-right: -4px;
+        text-align: center;
+        vertical-align: text-bottom;
+        padding-right: 5px;
+        padding-left: 20px;
+
+        &:last-child {
+            a {
+                &:after, &:before {
+                    right: 0;
+                    border-width: 0 0 0 0;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            background: lighten($gray-lighter, 10%);
+            color: $gray-dark;
+
+            @include transition(all 0 ease);
+
+            &:after {
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                right: -0.95em;
+                border-style: solid;
+                border-width: 1em 0 1em 1em;
+                border-color: transparent transparent transparent lighten($gray-lighter, 10%);
+                z-index: 10;
+            }
+
+            &:before {
+                @extend :after;
+                right: -1em;
+                border-width: 1.03em 0 1.03em 1.03em;
+                border-color: transparent transparent transparent $gray;
+            }
+        }
+
+        &.active a, .SelectedNavigationLink a {
+            background: $brand-blue;
+            color: white;
+            font-family: $font-sbold;
+            z-index: 100;
+
+            &:after {
+                border-left-color: $brand-blue;
+            }
+        }
+    }
+}

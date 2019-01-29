@@ -1,0 +1,662 @@
+$font-path: "https://resources.sageworks.com/fonts/webfonts";
+$font-serif: "aleo";
+$brand-blue: #5091cd;
+$font-xbold: 800;
+@import "../../fonts/swfonts";
+
+.ola {
+	.mod-page-break {
+		margin-left: 30px;
+	}
+
+	li {
+		font-family: proxima-nova,Helvetica,Arial,sans-serif;
+	}
+
+	.inline-list-input {
+		width: 92%;
+	}
+
+	.sw-spinner-wrapper {
+		text-align: center;
+	}
+
+	.industry-list-link {
+		position: absolute;
+		left: 100%;
+		top: 2px;
+		margin-left: 10px;
+		z-index: 100;
+	}
+
+	div[role=row] {
+		position: relative;
+		height: 100%;
+		margin-bottom: 4em;
+
+		&.divider:after {
+			content: '';
+			position: absolute;
+			width: 94%;
+			height: 1px;
+			margin: 2em;
+			overflow: hidden;
+			background-color: #e5e5e5;
+		}
+	}
+
+	.terms-form-container {
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-bottom: 30px;
+
+		label.control-label {
+			text-align: center !important;
+			vertical-align: text-top;
+		}
+	}
+
+	.additional-info {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.loan-officer-dropdown {
+		right: 0;
+		left: auto;
+	}
+
+	.sw-custom-form-container .chosen-container[id^=industryCode] .chosen-single span {
+		max-width: 253px;
+	}
+
+	[ng\:cloak],
+	[ng-cloak],
+	[data-ng-cloak],
+	[x-ng-cloak],
+	.ng-cloak,
+	.x-ng-cloak,
+	.ng-hide {
+		display: none !important;
+	}
+
+	a {
+		cursor: pointer;
+
+		&.deleteCell {
+			position: absolute;
+			right: 5px;
+			top: 10px;
+		}
+	}
+
+	.zero {
+		text-indent: -7px;
+	}
+
+	.head-gray {
+		background-color: #e4e4e4;
+	}
+
+	table.borderless > tbody {
+		border-top: 0 !important;
+	}
+
+	.icon-alignment {
+		vertical-align: text-bottom;
+
+		&.block {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+	}
+
+	.inline-block {
+		display: inline-block;
+	}
+
+	.block {
+		display: block;
+	}
+
+	.vertical-align-top {
+		vertical-align: top;
+	}
+
+	.save-button {
+		position: absolute;
+		top: 105px;
+		right: 40px;
+		z-index: 3;
+
+		&.active {
+			position: fixed;
+		}
+	}
+
+	.loan-info-well {
+		padding-top: 20px;
+		padding-right: 0;
+		padding-bottom: 20px;
+		padding-left: 0;
+		background-color: white;
+		border: 1px solid #d5d5d5;
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.address-heading {
+		text-align: center;
+		margin-top: 20px;
+		margin-right: auto;
+		margin-bottom: 10px;
+		margin-left: auto;
+		max-width: 270px;
+		min-height: 40px;
+	}
+
+
+	.upload-etr-btn {
+		margin-top: 17px;
+	}
+
+	.submit-container {
+		display: inline-block;
+
+		.submitted-message {
+			margin: 12px;
+		}
+	}
+
+	.withdraw-application-button {
+		vertical-align: top;
+	}
+
+	.documents-tab {
+		.grey-heading {
+			padding: 0.5em;
+		}
+
+		.add-a-document-row {
+			padding: 0.2em;
+		}
+	}
+
+
+	.ola-app {
+		.ola-menu-container {
+			.top-info-menu {
+				position: absolute;
+				top: -80px;
+				right: 0;
+
+				.sub-menu-top {
+					margin-top: 10px;
+
+					li {
+						display: inline;
+						color: gray;
+					}
+				}
+			}
+		}
+
+		.left-layout {
+			text-align: left;
+			width: 100%;
+			margin-top: 30px;
+
+			.header {
+				background-color: #e4e4e4;
+				position: relative;
+				width: calc(100% + 40px);
+				height: 60px;
+				left: -20px;
+				padding-top: 10px;
+				top: -20px;
+				padding-left: 20px;
+				text-align: left;
+			}
+
+			label, .header h4 {
+				text-align: left;
+			}
+		}
+
+		h4 {
+			font-weight: $font-xbold;
+			letter-spacing: 4px;
+		}
+
+		a {
+			font-weight: bold;
+		}
+
+		.ola-footer {
+			a {
+				font-weight: normal;
+			}
+		}
+	}
+
+	.datepicker-with-icon {
+		left: 0;
+
+		input.datepicker-input[type] {
+			text-align: left;
+		}
+	}
+
+	.container {
+		margin-bottom: 30px;
+	}
+
+	.ola-menu {
+		height: 90px;
+		position: inherit;
+		z-index: 3;
+
+		&:after {
+			height: 90px;
+			background-color: #295e8e;
+			font-weight: bolder;
+			content: '';
+			position: absolute;
+			top: 71px;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	.ola-brand {
+		margin: 10px auto;
+
+		img {
+			position: relative;
+			left: 6px;
+		}
+	}
+
+	.sw-power-logo {
+		position: absolute;
+		right: 15px;
+		top: initial;
+		margin-top: 20px;
+
+		span {
+			display: block;
+			font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+			color: white;
+			font-size: 11px;
+			line-height: 20px;
+			font-weight: normal;
+		}
+	}
+
+	.ola-menu ul {
+		padding-top: 44px;
+		padding-left: 30px !important;
+		width: 80%;
+		height: 90px;
+
+		li {
+			display: inline-block;
+			background-color: #5091cd;
+			cursor: pointer;
+			padding: 0px;
+			margin: 0px;
+			height: 46px;
+
+			a {
+				font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+				color: white;
+				padding: 10px 15px 15px;
+				display: inline-block;
+			}
+
+			&.active {
+				background-color: white;
+
+				a {
+					color: #295e8e;
+				}
+			}
+		}
+	}
+
+	.button-container {
+		margin-top: 15px;
+	}
+
+	.sw-expanding-text-container {
+		width: 100%;
+	}
+
+	.sw-expanding-text-container textarea.sw-expanding-text {
+		height: 50px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	// Answer form related styling
+	.answers-left-part {
+		display: inline-block;
+		width: 20%;
+		text-align: right;
+		padding-right: 20px;
+		vertical-align: middle;
+
+		label.answer-label {
+			width: 100%;
+			vertical-align: middle;
+			white-space: normal;
+		}
+
+		input[type='radio']:nth-child(2) {
+			margin-left: 20px;
+		}
+	}
+
+	.answers-right-part {
+		display: inline-block;
+		width: 70%;
+		padding-right: 23px;
+		vertical-align: middle;
+
+		label {
+			width: 100%;
+			text-align: left !important;
+			padding: 8px 0;
+			white-space: normal;
+			vertical-align: middle;
+		}
+	}
+	// Form group elements styling
+	.form-inline {
+		.control-label {
+			vertical-align: initial;
+		}
+	}
+
+	.control-label {
+		color: #3c3d3d;
+
+		&:not(.answers-left-part):not(.question-label) {
+			width: 100%;
+		}
+	}
+
+	.form-group {
+		&:not(.full) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		&.full {
+			width: 100%;
+		}
+
+		&.half {
+			width: 50%;
+
+			&.right {
+				float: right;
+				margin-right: 10%;
+			}
+		}
+
+		&.offset {
+			margin-left: 49.2%;
+		}
+	}
+
+	.form-control {
+		padding-right: 10px !important;
+		width: 100%;
+		margin-bottom: 10px !important;
+	}
+	// Form with error
+	.has-error .control-label, .has-error .question-label, .has-error .answers-left-part {
+		color: #ed7d31;
+	}
+
+	.question-label {
+		width: auto;
+		padding-left: 15px;
+
+		.show {
+			display: inline-block !important;
+		}
+	}
+
+	.has-error {
+		.form-control {
+			border-color: #ed7d31 !important;
+		}
+	}
+	//List inline styling
+	.list-inline {
+		margin-left: 5%;
+
+		label, input {
+			text-align: left;
+			line-height: normal;
+		}
+
+		input {
+			width: 2.5%;
+
+			&:nth-child(1n+2) {
+				margin-left: 15px;
+			}
+		}
+
+		label {
+			vertical-align: baseline;
+			width: 60%;
+			white-space: pre-line;
+			margin-left: 15px;
+		}
+	}
+	// Validation message styling/layout
+	.validation-message {
+		display: block;
+		position: absolute;
+		background: #ed7d31;
+		border: 1px solid #ed7d31;
+		font-size: 14px;
+		color: #fff;
+		font-family: $font-serif;
+		padding: 5px;
+		min-width: 150px;
+		max-width: 400px;
+		border-radius: 3px;
+		z-index: 992;
+		left: 85%;
+		width: 250px;
+		top: 0;
+
+		[ng-class~=personEmail] & {
+			top: 15px;
+		}
+
+		&:after {
+			content: '';
+			border-right: 9px solid #ed7d31;
+			border-top: 9px solid transparent;
+			border-left: 9px solid transparent;
+			border-bottom: 9px solid transparent;
+			display: block;
+			position: absolute;
+			left: -18px;
+			width: 0;
+			height: 0;
+			z-index: 991;
+			top: 38%;
+
+			[ng-class~=personEmail] & {
+				top: 25%;
+			}
+		}
+
+		&.middle-child-error {
+			left: 55%;
+			top: -7px;
+
+			&:after {
+				left: -17px;
+				top: 25%;
+			}
+		}
+
+		&.sw-industrycode-message {
+			left: 35%;
+			top: -30px;
+			/* this is different so the List link does not get covered up */
+			&:after {
+				border-top: 9px solid #ed7d31;
+				border-right: 9px solid transparent;
+				right: 115px;
+				top: 31px;
+				left: initial;
+				left: auto;
+			}
+		}
+	}
+	// Media Query driven responsive/adaptive layout changes
+	@media (min-width: 768px) {
+		.no-left-column-margin {
+			margin-left: 49.8% !important;
+		}
+
+		.form-group {
+			width: 46.1%;
+
+			&:not(.full) {
+				margin-right: 0;
+			}
+		}
+
+		.no-wrap {
+			white-space: nowrap;
+		}
+
+		select.form-control, button.ui-multiselect {
+			width: 100% !important;
+		}
+
+		.loan-info-well {
+			.form-group.datepicker-with-icon {
+				display: inline-block;
+
+				.datepicker-with-icon {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		label.min {
+			max-width: 35%;
+		}
+
+		.loan-info-well {
+			.form-group.datepicker-with-icon {
+				.datepicker-with-icon {
+					display: inline-block;
+				}
+			}
+		}
+
+		input.form-control, select.form-control, button.ui-multiselect {
+			min-width: 296px;
+			width: 50% !important;
+
+			&.extend {
+				min-width: 296px;
+			}
+
+			&.part-extend {
+				min-width: 250px;
+			}
+
+			&.min-extend {
+				min-width: 225px;
+			}
+		}
+
+		label {
+			&:not(.question-label):not(.ui-corner-all):not(.answers-left-part) {
+				width: 50%;
+			}
+
+			margin-right: 10px;
+			margin-bottom: 10px;
+
+			&:not(.text-left):not(.ui-corner-all) {
+				text-align: right;
+			}
+
+			input:first-child {
+				margin-left: 20px;
+			}
+		}
+
+		.inline-list-input {
+			display: inline;
+		}
+
+		.industry-list-link {
+			bottom: 0;
+			top: inherit;
+		}
+	}
+
+	.grey-table-heading {
+		&.stretch {
+			td {
+				width: 247px;
+
+				&:first-child {
+					width: 120px;
+				}
+			}
+		}
+	}
+
+	.ola-output-logo {
+		position: relative;
+		z-index: 3;
+		left: 15px;
+		top: 15px;
+	}
+}
+
+// OLA Ready for print
+.print-ready-ola {
+}
+
+.tooltipDefault {
+	background: #FFFFFF;
+	border: solid 1px #CCCCCC;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0 7px #000000;
+}
+
+.loan-application-management {
+	.new-application {
+		height: 80px;
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.new-application-label {
+		display: block;
+		line-height: initial;
+		margin-bottom: 5px;
+	}
+}

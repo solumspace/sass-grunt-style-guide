@@ -1,0 +1,80 @@
+/* Error message styling */
+
+@mixin error {
+  @include font-defined($font-serif, $font);
+
+  font-size: $font-size-small;
+  font-style: italic;
+  color: $brand-orange;
+}
+
+p.error {
+  color: $brand-orange;
+}
+
+.error-bullets {
+    margin: 1em 0 2em 20px;
+
+    li {
+        margin-bottom: 1em;
+        @include icon-placement("before", "left", $brand-orange, 0, -15px, "\f069");
+        &:before {
+            font-style: normal;
+            font-size: 0.8em;
+        }
+    }
+}
+
+form[action="login.aspx"] {
+  .error {
+    @include error;
+
+    line-height: 2em;
+  }
+}
+
+.password-recovery-error-container {
+  margin-top: 30px;
+
+  @include error;
+
+  span {
+    font-weight: $font-bold;
+  }
+
+  ul {
+    li {
+      color: $brand-orange;
+    }
+  }
+}
+
+#forgot-password {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  a {
+    @include error;
+
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    a {
+      font-size: 65%;
+      padding-right: 5px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.exception-debug-info {
+  background: #fffdf0;
+  position: relative;
+  font-size: 15px;
+  z-index: 10000;
+  padding: 8px 15px 12px;
+  border-bottom: solid 3px #ff0000;
+  border-top: solid 2px #ff0000;
+}

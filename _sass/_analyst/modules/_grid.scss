@@ -1,0 +1,243 @@
+// Sageworks site grid
+
+.sw-container {
+  @extend .container;
+
+  &:not(footer) {
+    margin-top: -20px;
+    min-height: 100%;
+    margin-bottom: -420px;
+
+    &:after {
+      height: 420px;
+    }
+  }
+
+  &.blog-container {
+    margin-bottom: 60px;
+  }
+
+  &.pardot-container {
+    margin-bottom: 30px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+  }
+
+  &.lift {
+    &:after {
+      height: 450px;
+    }
+  }
+
+  &.nav-old {
+    margin-top: 40px;
+  }
+}
+
+.sw-row {
+  @include make-row;
+
+  height: auto;
+
+  &.dummy {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.sw-one {
+  @include make-xs-column(1);
+}
+
+.sw-two {
+  @include make-xs-column(2);
+}
+
+.sw-three {
+  @include make-xs-column(3);
+}
+
+.sw-four {
+  @include make-xs-column(4);
+}
+
+.sw-five {
+  @include make-xs-column(5);
+}
+
+.sw-six {
+  @include make-xs-column(6);
+}
+
+.sw-seven {
+  @include make-xs-column(7);
+}
+
+.sw-eight {
+  @include make-xs-column(8);
+}
+
+.sw-nine {
+  @include make-xs-column(9);
+}
+
+.sw-ten {
+  @include make-xs-column(10);
+}
+
+.sw-eleven {
+  @include make-xs-column(11);
+}
+
+.sw-twelve {
+  @include make-xs-column(12);
+}
+
+/* Default rows and columns */
+
+.sw-list-row {
+  @include make-row;
+
+  &.thick {
+    @extend .double-border-before;
+
+    @media (max-width: 991px) {
+      margin-bottom: -80px;
+    }
+  }
+}
+
+.sw-list-column {
+  @include make-xs-column(12);
+  @include make-md-column(4);
+
+  font-family: $font-serif;
+
+  &.middle {
+    @include make-xs-column(12);
+    @include make-md-column(4, 14px);
+  }
+
+  .article-details {
+    margin-top: 7px;
+  }
+}
+
+.sw-list-item {
+  margin-bottom: 15px;
+  font-family: $font-serif;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: block;
+  }
+
+  h6 {
+    margin: 0px;
+  }
+}
+
+.sw-resource-column {
+  @include make-sm-column(6);
+  @include make-md-column(3);
+
+  font-family: $font-serif;
+
+  &.middle {
+    @include make-md-column(3, 14px);
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .resource-video {
+    a {
+      img {
+        max-width: 150px;
+      }
+
+      &:nth-child(2) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.sw-thumb-row {
+  @include make-row;
+
+  max-width: 570px;
+}
+
+.sw-thumb-column {
+  @include make-sm-column(4);
+
+  &.middle {
+    @include make-sm-column(4, 14px);
+  }
+}
+
+// Defined column types
+
+.product-preview {
+  @include make-sm-column(10);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+
+  &.middle {
+    @include border-content(before, border-dot-top);
+    @include border-content(after, border-dot-bottom);
+  }
+}
+
+.product-form {
+  @include make-sm-column(4);
+
+  @media (max-width: 767px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.chart-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 350px;
+}
+
+// Analyst Product
+
+.sw-app-container {
+  @extend .sw-container;
+
+  width: 980px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+
+  &:after {
+    height: 0 !important;
+  }
+}
+
+.sw-app-wrapper, .sw-app-wrapper-inner {
+  @extend .sw-app-container;
+}
+
+.sw-app-row {
+  @extend .sw-row;
+}
+
+.sw-app-workflow, .sw-app-stress-test {
+  @extend .sw-app-row;
+}

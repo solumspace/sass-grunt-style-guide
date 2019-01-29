@@ -1,0 +1,172 @@
+/* Pardot page styling */
+
+#pardot-form {
+  p.form-field {
+    @extend .form-group;
+  }
+
+  label {
+    @extend .control-label;
+  }
+
+  input.text {
+    @extend .form-control;
+
+    border: 2px solid #D5D5D5 !important;
+    border-radius: 0px !important;
+  }
+
+  select.select {
+    @extend .form-control;
+  }
+}
+
+@media (min-width: 992px) {
+  .risk-management-registration-page {
+    h1 {
+      margin-top: 20%;
+    }
+  }
+}
+
+// Form within popup
+
+.popup-form {
+  padding: 15px;
+
+  a[role="button"] {
+    margin-bottom: 30px;
+  }
+}
+
+// Pardot form styles
+
+#pardot-form {
+  padding: 0px;
+  font-family: $font-serif;
+  font-size: 16px;
+  color: #3C3D3D;
+  width: 80%;
+
+  p {
+    margin: 3px 0px;
+    padding: 3px 0px;
+
+    span.description {
+      margin-left: 0;
+    }
+
+    label {
+      font-family: $font-serif;
+      font-weight: normal;
+      color: #555555;
+      text-align: left;
+      line-height: 14px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      display: inline;
+      width: 100%;
+    }
+
+    input {
+      font-family: $font-serif;
+      font-size: 14px;
+      height: 28px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+      vertical-align: middle;
+    }
+
+    &.error.no-label {
+      margin-left: 0;
+      margin-top: -4px;
+      margin-bottom: -4px;
+      color: #ed7d31;
+      font-style: italic;
+    }
+
+    &.errors {
+      background: none;
+      margin-top: -4px;
+      margin-bottom: -4px;
+      color: #ed7d31;
+      font-style: italic;
+      padding-left: 0;
+    }
+
+    &.submit {
+      width: 100;
+      margin: 25px .5em 25px 0px;
+
+      input {
+        font-family: $font-sc-osf;
+        font-weight: $font-sbold;
+        text-transform: lowercase;
+        border: 2px solid #5091cd;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        background: #5091cd;
+        color: white;
+        letter-spacing: 3px;
+        padding: 0.5em 1em;
+        font-size: 18px;
+        line-height: 20px;
+        border-radius: 0;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        height: 42px;
+
+        &:active {
+          top: 1px;
+        }
+
+        &:visited {
+          color: #fff;
+        }
+
+        &:hover {
+          font-family: $font-sc-osf;
+          font-weight: $font-sbold;
+          text-transform: lowercase;
+          border: 2px solid #2C6793;
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+          outline: none;
+          background: #2C6793;
+          color: white;
+          letter-spacing: 3px;
+          padding: 0.5em 1em;
+          font-size: 18px;
+          line-height: 20px;
+          border-radius: 0;
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+
+  span.error {
+    clear: left;
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    color: #ed7d31;
+    Font-size: 14px;
+    font-family: $font-serif;
+    margin-top: -8px;
+    margin-bottom: -8px;
+  }
+}
+
+.required label {
+  background: none;
+  font-weight: normal;
+}

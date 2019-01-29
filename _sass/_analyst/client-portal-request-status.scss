@@ -1,0 +1,173 @@
+﻿.white-popup {
+	max-width: 1000px;
+}
+
+th.sortable-column.sortable-column {
+	overflow: hidden;
+	outline: none;
+
+	&:after {
+		background-color: #ddd;
+		width: 100%;
+		display: block;
+		height: 16px;
+		margin-top: -5px;
+	}
+}
+
+.view-request-status-page {
+	.filters-header {
+		text-align: left;
+	}
+
+	.toggle-show-button {
+		text-align: right;
+	}
+
+	.css-table {
+		display: table;
+
+		> div {
+			display: table-row;
+
+			> div {
+				display: table-cell;
+				white-space: nowrap;
+
+				&.grow {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.cp-request-filter {
+
+		.header {
+			text-align: left;
+		}
+
+		.filter-table-wrapper {
+			border-top: solid 1px #d5d5d5;
+		}
+
+		.filter-table {
+			padding-top: 0.5em;
+
+			> div > div {
+				padding: 8px;
+			}
+
+			label {
+			}
+
+			input,
+			select,
+			sw-multiselect {
+				width: 100%;
+			}
+		}
+
+		.button-row {
+			text-align: center;
+			padding: 8px;
+
+			button {
+				margin: 0.375em 2px;
+			}
+		}
+	}
+
+	.cp-request-status .copy-link-panel-wrapper {
+
+		.copy-link-panel p {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		h4 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		input[type=text].link-text {
+			width: 40%;
+			vertical-align: middle;
+		}
+	}
+
+	.cp-request-table.cp-request-table {
+
+		th.expand-header {
+			width: 7em;
+		}
+
+		tbody td {
+			white-space: nowrap;
+			text-align: center;
+
+			&.full-row {
+				padding: 0;
+			}
+
+			img {
+				margin: 0;
+			}
+		}
+	}
+
+	.cp-request-status {
+		background-color: #eee;
+		overflow: hidden;
+
+		.tabs-container {
+			.progress-tabs {
+				display: inline-block;
+				width: auto;
+
+				li {
+					float: left;
+					margin-right: 2px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					label {
+						border-right: none;
+						outline: none;
+					}
+				}
+			}
+		}
+
+		.credit-report-request {
+			width: 26em;
+			max-width: 80%;
+			margin: auto;
+		}
+
+		.asset-account-group {
+			width: 26em;
+			max-width: 80%;
+			margin: auto;
+
+			table.swtable {
+				margin-left: 0;
+			}
+
+			.asset-account-row td {
+				width: 10em;
+
+				&.dollar-cell {
+					width: 8em;
+				}
+			}
+		}
+
+		.delete-request-button {
+			margin: 0.5em 0;
+			display: inline-block;
+		}
+	}
+}

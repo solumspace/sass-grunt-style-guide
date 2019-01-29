@@ -1,0 +1,291 @@
+﻿
+$brand-dark-blue: #295e8e;
+$brand-blue: #5091cd;
+$brand-orange: #ed7d31;
+$gray-head: #d5d5d5;
+$gray-dark: #3c3d3d;
+$gray: #555555;
+$gray-light: #a2a3a3;
+$gray-lighter: #efefef;
+$font: "proxima-nova", helvetica, arial, sans-serif;
+$font-sbold: 600;
+$font-bold: 700;
+
+html {
+    background-color: #fff !important;
+}
+
+.validation-message {
+    color: $brand-orange;
+    position: relative;
+    top: -30px;
+    .password-recovery-error-container {
+        padding-top: 15px;
+        p {
+            margin-bottom: 0rem;
+        }
+    }
+}
+
+.divider-or-and {
+    position: relative;
+    height: 70px;
+    padding-top: 15px;
+
+    &:before, &:after {
+        content: '';
+        height: 1px;
+        width: 35%;
+        top: 23px;
+        position: absolute;
+        background: $gray-light;
+    }
+
+    &:before {
+        left: 20px;
+    }
+
+    &:after {
+        right: 20px;
+    }
+
+    h4 {
+        color: $gray-light;
+    }
+}
+
+// change background image here
+main {
+	background-color: #005984;
+	min-height: 650px;
+
+	section {
+		height: 650px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.shape-backdrop {
+		background-color: rgba(0, 0, 0, .1);
+		width: 900px;
+		height: 550px;
+		-ms-transform: rotateZ(47deg);
+		-webkit-transform: rotateZ(47deg);
+		transform: rotateZ(47deg);
+		position: absolute;
+		z-index: 1;
+		margin-left: 614px;
+		margin-top: 686px;
+		overflow: hidden;
+	}
+}
+
+footer {
+	position: relative;
+	z-index: 2;
+}
+
+// light background overwrite to #fff
+.bg-light {
+    background-color: #fff !important;
+}
+
+// navigation styles
+.nav-right {
+    position: absolute;
+	bottom: 15px;
+    right: 0;
+    padding-right: 2%;
+}
+
+// Styling for Login pages
+.login md-card {
+    width: 400px;
+    margin: 30px auto 0;
+    display: block;
+    background: #fff;
+    padding: 10px 20px 50px;
+    position: relative;
+	z-index: 2;
+    &.no-btm-pd {
+        padding-bottom: 0;
+    }
+}
+
+.sso-validation md-card {
+    width: 800px;
+    margin: 80px auto 0;
+    display: block;
+    background: #fff;
+    padding: 10px 20px 20px;
+    position: relative;
+
+    .validation-message {
+        top: 0px;
+        font-size: 16px;
+    }
+}
+
+// form starting stylings
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray;
+    &:focus {
+        outline: none;
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+    }
+}
+
+
+// active state
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: $brand-blue;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+// active state highlight
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+// password recovery question text
+
+.p-label {
+    color: $brand-blue;
+    margin-bottom: 0.3rem;
+}
+
+// label
+label {
+    color: $gray;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+// bottom bars
+.bar {
+    position: relative;
+    display: block;
+    width: auto;
+
+    &:before, &:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        position: absolute;
+        background: $brand-blue;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    &:before {
+        left: 50%;
+    }
+
+    &:after {
+        right: 50%;
+    }
+}
+
+.forgot-lingo {
+    position: absolute;
+    text-align: center;
+    left: 21%;
+    bottom: 0;
+}
+
+// footer(ft) styling
+.center-content-ft {
+    display: inline;
+
+    .footer-nav {
+        float: none;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .copy-right {
+        width: 100%;
+    }
+}
+
+.copy-right {
+    margin-right: 0px;
+    margin-top: 0px;
+    float: initial !important;
+    text-align: center;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+// animations
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: $brand-blue;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: $brand-blue;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: $brand-blue;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}

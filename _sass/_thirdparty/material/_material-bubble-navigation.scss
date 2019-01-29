@@ -1,0 +1,251 @@
+﻿.material-bubble-navigation-overrides {
+	// Angular Material specific styling
+	// Overwrite the html gray background color
+	html {
+		background-color: transparent;
+	}
+
+	// Styling for responsive flyout in OLA
+	.control-panel-flyout {
+		position: fixed;
+		top: 100px;
+		right: 0;
+		z-index: 2;
+		background-color: transparent;
+	}
+
+	// Default Material button color TODO replace with Themes when necessary
+	.md-button.md-primary.md-raised, .md-button.md-primary {
+		background-color: #5091cd;
+	}
+
+	.md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary:not([disabled]):hover {
+		background-color: #295e8e;
+		color: white;
+	}
+
+	md-checkbox:not([disabled]).md-primary.md-checked .md-icon {
+		background-color: #5091cd;
+	}
+
+	md-radio-button:not([disabled]).md-primary.md-checked .md-off {
+		border-color: #5091cd;
+	}
+
+	md-radio-group:not([disabled]) .md-primary .md-on {
+		background-color: #5091cd;
+	}
+
+	// Spacing of canvas and button container
+	md-tab-canvas {
+		bottom: 15px;
+	}
+
+	.md-button-container {
+		margin-top: 30px;
+		height: 60px;
+	}
+
+	// Responsive styling for the md-button
+	.md-button {
+		&.md-primary, &md-primary.md-raised, &.md-default-theme.md-primary.md-raised {
+			background-color: $brand-blue;
+			color: white;
+			font-family: $font;
+
+			&:not([disabled]):hover {
+				background-color: $brand-dark-blue;
+			}
+		}
+	}
+
+	// Tabs <md-tabs> specific styling
+
+	md-tabs-canvas {
+		min-height: 100px;
+	}
+
+	md-tab-item {
+		min-width: 120px;
+	}
+
+	md-icon {
+		// circle content parameters padding
+		@include circle-content(22px, 30px, 22px, 18px);
+		background: #fff;
+		border: 2px solid $gray-head;
+		color: $gray-head;
+		position: relative;
+		z-index: 1;
+
+		md-tab-item.md-active & {
+			border-color: $gray;
+			color: $gray;
+		}
+
+		&.invalid, &.incomplete {
+			&:after {
+				@include circle-content(0,0,0,0);
+				@include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.5));
+				content: '';
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #FF0000;
+				top: 0;
+				right: 0;
+			}
+		}
+
+		&.complete {
+			&:before {
+				content: '';
+				display: block;
+				background-color: #fff;
+				@include circle-content(0,0,0,0);
+				height: 44px;
+				width: 48px;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				width: 8px;
+				height: 18px;
+				border: solid;
+				border-width: 0 3px 3px 0;
+				position: absolute;
+				left: 42%;
+				bottom: 31%;
+				@include rotate(45deg);
+			}
+		}
+	}
+
+
+	// md-content specific styling
+	md-content {
+		background-color: transparent !important;
+
+		h1:first-child {
+			margin-top: 0;
+		}
+
+		md-tabs {
+			border: none;
+
+			md-tabs-canvas {
+				border: none;
+			}
+		}
+	}
+
+	md-tabs-content-wrapper {
+		background-color: white;
+	}
+
+	md-tab-content {
+		border: 1px solid #d5d5d5;
+	}
+
+	// Responsive side menu styling
+	.side-md md-pagination-wrapper {
+		min-height: 445px;
+		top: 92px;
+	}
+
+	.side-md md-pagination-wrapper {
+		visibility: hidden;
+		list-style: none;
+		position: relative;
+		background-color: white;
+		padding-top: 15px;
+		@include box-shadow(0 0 7px -0.2px rgba(0,0,0,.1));
+
+		.md-tab {
+			float: inherit;
+			text-align: left;
+			line-height: 3em;
+			text-transform: none;
+			display: -webkit-inline-flex;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+
+			.material-icons {
+				margin-bottom: 25px;
+			}
+		}
+
+		li {
+			line-height: 3em;
+		}
+
+		span {
+			font-size: $font-size-medium;
+
+			&:after {
+				width: 175px;
+				position: absolute;
+			}
+		}
+
+		.side-menu-show & {
+			visibility: hidden;
+		}
+	}
+
+	.side-md md-pagination-wrapper {
+		width: 300px !important;
+		background-color: white;
+		@include translate3d(0, 0, 0);
+
+		.md-tab {
+			margin-left: 30px;
+
+			.ola-tab-label {
+				margin-left: 10px;
+
+				span {
+					font-size: 1.4em;
+				}
+			}
+
+			&:not(:last-of-type):after {
+				@include middle-earth(left, 27px, 25px, top, 47px, 3px);
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	// Responsive Material md-tab(s) styling
+	@media screen and (min-width : 1024px) {
+		md-pagination-wrapper {
+			min-width: 975px;
+		}
+
+		md-tab-item {
+			min-width: 160px;
+
+			&:not([aria-controls='tab-content-5']):not(.last-tab):before {
+				@include middle-earth(bottom, auto, 106px, top, 25px);
+				border-color: #a2a3a3;
+			}
+
+			&:not([aria-controls='tab-content-0']):after {
+				@include middle-earth(bottom, auto, -106px, top, 25px);
+				border-color: #a2a3a3;
+			}
+		}
+
+		// IE was not using :last-of-type for some reason in this situation. Used a less elegant for-loop instead.
+		// creates multiple selectors like this: md-tabs[tab-count='5'] md-tab-item:nth-child(5)::before {}
+		@for $i from 3 through 10 {
+			md-tabs[tab-count='#{$i}'] md-tab-item:nth-child(#{$i})::before {
+				border-bottom: 0px none !important;
+			}
+		}
+	}
+}

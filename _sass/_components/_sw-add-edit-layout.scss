@@ -1,0 +1,28 @@
+﻿.sw-add-edit-layout {
+	.sw-add-edit-layout-option {
+		display: table-row;
+		width: 100%;
+
+		.sw-add-edit-layout-edit {
+			vertical-align: middle;
+			display: table-cell;
+			width: 40px;
+			text-align: right;
+		}
+
+		.sw-add-edit-layout-label {
+			vertical-align: middle;
+			display: table-cell;
+			width: 100%;
+		}
+
+		&.active {
+			background-color: #CFE1F2;
+		}
+	}
+
+	.sw-add-edit-layout-add-new-link {
+		display: block;
+		padding: 5px 15px;
+	}
+}

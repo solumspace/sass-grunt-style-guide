@@ -1,0 +1,40 @@
+﻿.sw-radio-buttons {
+	@include display-flex();
+	@include flex-justify-content(center);
+	@include flex-direction(row);
+
+	&.vertical {
+		@include flex-direction(column);
+	}
+
+	&.buttons {
+		input[type=radio] {
+			display: none;
+		}
+
+		input[type=radio]:checked + label {
+			@extend button.button-small:hover;
+		}
+
+		label {
+			@extend .button-small;
+		}
+	}
+
+	.sw-radio-option {
+		padding: 0.25em 1em;
+	}
+
+	input[type=radio] {
+		display: inline;
+		margin: 0;
+		vertical-align: middle;
+	}
+
+	label {
+		font-weight: 400;
+		cursor: pointer;
+		vertical-align: -0.08em;
+		margin: 0;
+	}
+}

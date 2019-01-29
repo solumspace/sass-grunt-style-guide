@@ -1,0 +1,21 @@
+﻿/*
+	Sageworks Global Navigation
+	
+	Leaks - rules which override leaky shared styles from other stylesheets,
+	so that sensible rules can be maintained within global navigation.
+
+	These items may be thought of as "todo" for future fixes (fixing the leaks).
+
+	root context: "body.globalnav-enabled #globalnav"
+*/
+
+a {
+	text-decoration: none;
+}
+
+li {
+	/* from analyst */
+	font-family: inherit;
+	line-height: inherit;
+	color: inherit;
+}

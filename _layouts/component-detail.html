@@ -105,6 +105,10 @@ layout: default
 						<a href="#react-{{ forloop.index }}" class="c-tabs__link js-tab">React</a>
 					</li><!-- end c-tabs__item -->
 
+					<li class="c-tabs__item">
+						<a href="#vue-{{ forloop.index }}" class="c-tabs__link js-tab">Vue</a>
+					</li><!-- end c-tabs__item -->
+
 				</ul><!-- end c-tabs__list -->
 
 				<div class="c-tabs__body ">
@@ -135,6 +139,15 @@ layout: default
 						<div class="pattern-code">
 							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
 							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS REACT CODE</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+					<div class="c-tabs__panel js-tabs-panel" id="vue-{{ forloop.index }}">
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS VUE CODE</code></pre>
 						</div>
 
 					</div><!--end c-tabs__panel-->

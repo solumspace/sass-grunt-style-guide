@@ -1,0 +1,126 @@
+// No wrap for white space
+.nobr,
+.nowrap {
+    white-space: nowrap;
+}
+// break all words
+.break-all {
+    word-break: break-all;
+}
+// Left align
+.AlignLeft, .left {
+    text-align: left;
+}
+// Left cell type
+.leftCell {
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+// Right cell
+.rightCell, .right {
+  text-align: right;
+}
+
+// Align buttons center
+.ButtonContainer, .center {
+    text-align: center;
+}
+// Center block
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+// Warning type
+.Warning {
+    color: $brand-orange;
+    font-weight: $font-bold;
+}
+// Responsive video
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// input help continuation from http://getbootstrap.com/css/#forms-control-validation
+
+.has-search {
+    margin: 5px;
+
+    &:after {
+        position: absolute;
+        right: 4px;
+        bottom: -3px;
+        content: url("//resources.sageworks.com/images/analyst/icons/1x/search.png");
+    }
+}
+
+/// Spacing helps
+@for $i from 0 through 10 {
+    $base: 5;
+    $margin: $base * $i;
+    // Pull from right
+    .pull-#{$margin} {
+        margin-right: $margin + 0px;
+    }
+    // Push from left
+    .push-#{$margin} {
+        margin-left: $margin + 0px;
+    }
+    // Spacing on top
+    .spacing-#{$margin} {
+        margin-top: $margin + 0px;
+    }
+    // Spacing on bottom
+    .drop-#{$margin} {
+        margin-bottom: $margin + 0px !important;
+    }
+}
+/* Does not follow .drop class pattern */
+.drop-100 {
+  margin-top: 100px;
+}
+
+@for $i from 1 through 5 {
+    $base: 10;
+    $margin: $base * $i;
+    // Spacing on bottom
+    .bottom-spacing-#{$margin} {
+        margin-bottom: $margin + 0px;
+    }
+}
+
+// Remove padding/margin
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+}
+
+.no-padding-left {
+  padding-left: 0px !important;
+}
+
+.no-padding-right {
+  padding-right: 0px !important;
+}
+
+.no-padding-top {
+  padding-top: 0px !important;
+}
+
+// SW specific helps
+// Initial width
+.sw-initial-width {
+    width: initial !important;
+}
+// Auto width
+.sw-auto-width {
+    width: auto !important;
+}
+
+.no-select {
+    @include user-select(none);
+}

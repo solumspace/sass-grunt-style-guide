@@ -1,0 +1,46 @@
+// Basic blank popup
+
+.white-popup {
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: auto;
+    margin: 20px auto;
+    &:not(&.popup-full) { 
+        max-width: 800px;
+    }
+}
+
+.sw-flyout {
+	display: none;
+	min-height: 80px;
+    max-height: 260px;
+}
+
+.sw-flyout-container {
+	.flyout-close {
+		background-image: url(//resources.sageworks.com/images/analyst/icons/1x/x.png);
+		width: 12px;
+		height: 12px;
+		right: 12px;
+		top: 5px;
+	}
+
+	.flyout-title {
+		color: $gray-dark;
+	}
+
+	ul.select-list {
+		li {
+			padding: 2px 4px;
+			border: solid 1px transparent;
+			cursor: pointer;
+
+			&:hover {
+				border-style: solid;
+				border-color: #d5d5d5;
+				color: $brand-dark-blue;
+			}
+		}
+	}
+}

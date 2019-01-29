@@ -1,0 +1,156 @@
+﻿/* Magnific Animations
+================= */
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.sw-app .mfp-wrap {
+    overflow-x: auto !important;
+}
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+.white-popup {
+    background-color: white;
+    padding: 15px;
+    p {
+        font-size: $font-size-medium;
+        text-align: center;
+    }
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+.mfp-close {
+    overflow: visible;
+    cursor: pointer !important;
+}
+/*size of various popups*/
+.mfp-content {
+	width: 100% !important;
+}
+
+.mfp-customize-user-fields {
+    .mfp-content {
+        height: 300px;
+        max-width: 400px;
+    }
+}
+
+.mfp-add-tax-entity,
+.mfp-add-business-entity {
+    .mfp-content {
+        height: 300px;
+        max-width: 200px;
+    }
+}
+
+.browse-support-economicdata {
+    .mfp-content {
+        height: 500px;
+        max-width: 500px;
+    }
+}
+
+.mfp-agsettings-measurementlayover {
+    .mfp-content {
+        height: 150px;
+        max-width: 100px;
+    }
+}
+
+.mfp-attach-document {
+    .mfp-content {
+        height: 400px;
+        max-width: 150px;
+    }
+}
+
+.mfp-cashflow-uploader {
+    .mfp-content {
+        height: 600px;
+        max-width: 500px;
+    }
+}
+
+.mfp-sethistoricalperiods {
+    .mfp-content {
+        height: 300px;
+        max-width: 400px;
+    }
+}
+
+.mfp-OpenNotUpdatedPoolsFancyBox {
+    .mfp-content {
+        height: 400px;
+        max-width: 500px;
+    }
+}
+
+.mfp-reportinformationterms {
+    .mfp-content {
+        height: 300px;
+        max-width: 500px;
+    }
+}
+
+.mfp-itemize-livestock {
+    .mfp-content {
+        height: 450px;
+    }
+}
+
+.mfp-BrowseSupporting-EconomicData {
+    .mfp-content {
+        height: 200px;
+        max-width: 500px;
+    }
+}
+
+.mfp-electonic-tax-reader {
+    .mfp-content {
+        height: 400px;
+        max-width: 400px;
+    }
+}
+
+.sw-app {
+    .mfp-container-overflow {
+        width: auto;
+
+        .mfp-close {
+            right: 0px;
+            position: fixed;
+            width: auto;
+            top: initial;
+            color: black;
+        }
+
+        .mfp-content {
+            left: -20px;
+            padding-right: 20px;
+        }
+    }
+}

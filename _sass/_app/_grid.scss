@@ -1,0 +1,76 @@
+// Sageworks application grid
+
+.sw-container {
+    @include make-container();
+    max-width: 98.5%;
+}
+
+.sw-row {
+    @include make-row();
+    height: auto;
+
+    &.dummy {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@mixin sw-column($lg, $sm: $grid-main-container) {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(xs) {
+        @include make-col($sm);
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col($lg);
+    }
+}
+
+.sw-one {
+    @include sw-column(1)
+}
+
+.sw-two {
+    @include sw-column(2)
+}
+
+.sw-three {
+    @include sw-column(3)
+}
+
+.sw-four {
+    @include sw-column(4)
+}
+
+.sw-five {
+    @include sw-column(5)
+}
+
+.sw-six {
+    @include sw-column(6)
+}
+
+.sw-seven {
+    @include sw-column(7)
+}
+
+.sw-eight {
+    @include sw-column(8)
+}
+
+.sw-nine {
+    @include sw-column(9)
+}
+
+.sw-ten {
+    @include sw-column(10);
+}
+
+.sw-eleven {
+    @include sw-column(11)
+}
+
+.sw-twelve {
+    @include sw-column(12)
+}

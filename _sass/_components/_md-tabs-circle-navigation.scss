@@ -1,0 +1,121 @@
+﻿.circle-navigation {
+	&.tight {
+		.md-tab {
+			padding: 12px 5px;
+		}
+	}
+
+	.fixed-navigation-label {
+		display: block;
+		width: 100px;
+		word-break: break-word;
+		white-space: normal;
+		padding-top: 4px;
+		line-height: 16px;
+	}
+
+	md-tab-content {
+		min-height: 400px;
+		padding-bottom: 1em;
+	}
+
+	md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary, .md-button.md-primary.md-raised {
+		background-color: $brand-blue !important;
+		border-color: $brand-blue !important;
+		color: #fff !important;
+	}
+
+	md-tabs .md-tab.md-active {
+		color: $brand-blue !important;
+	}
+
+	md-icon {
+		background-color: #fff;
+		border-color: $brand-blue;
+		color: $brand-blue;
+		border-radius: 50%;
+		padding: 22px 30px 22px 18px;
+		line-height: 0;
+		font: proxima-nova,helvetica,arial,sans-serif;
+		font-size: 20px;
+		background: #fff;
+		border: 2px solid;
+		position: relative;
+		z-index: 1;
+	}
+
+	md-tab {
+		padding: 0;
+	}
+
+	.md-tab span {
+		text-transform: none;
+	}
+
+	md-tabs-canvas, md-pagination-wrapper {
+		height: auto;
+	}
+
+	md-tabs-canvas.md-center-tabs .md-tab {
+		vertical-align: top;
+	}
+
+	md-tab-content {
+		min-height: 400px;
+		padding-bottom: 1em;
+	}
+
+	md-tab-item.md-active md-icon, md-tab-item.md-active md-icon.complete:before {
+		background-color: $brand-blue;
+		border-color: $brand-blue;
+		color: #fff !important;
+	}
+
+	md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary, .md-button.md-primary.md-raised {
+		background-color: $brand-blue !important;
+		border-color: $brand-blue !important;
+		color: #fff !important;
+	}
+
+	md-tabs .md-tab.md-active {
+		color: $brand-blue !important;
+	}
+
+	.md-button.md-default-theme.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-fab:not([disabled]):hover {
+		background-color: $gray-light !important;
+		border-color: none !important;
+	}
+
+	md-pagination-wrapper {
+		min-width: 975px;
+	}
+
+	md-tab-item {
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			border-bottom: 3px solid;
+			height: auto;
+			width: 100%;
+			transform: translateY(-50%);
+			top: 35px;
+			border-color: #a2a3a3;
+		}
+
+		&:before {
+			left: 50%;
+		}
+
+		&:after {
+			left: -50%;
+		}
+
+		&:first-of-type:after {
+			display: none;
+		}
+
+		&:last-of-type:before {
+			display: none;
+		}
+	}
+}

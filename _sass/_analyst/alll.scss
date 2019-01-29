@@ -1,0 +1,1878 @@
+$brand-blue: #5091cd;
+$gray-light: #a2a3a3;
+$gray-head-background: #eee;
+
+.alll-workflows-in-progress {
+	.workflows-in-progress-table {
+		th {
+			padding: 2px 10px;
+		}
+		td {
+			text-align: center;
+			padding: 2px;
+		}
+	}
+}
+
+.forecasting {
+	.forecasting-controls {
+		label, input, select {
+			width: 200px;
+			margin-bottom: 10px;
+		}
+
+		$refresh-forecast-tooltip-width: 25px;
+
+		.refresh-forecast-button {
+			margin-left: $refresh-forecast-tooltip-width;
+		}
+
+		.refresh-forecast-tooltip {
+			display: inline-block;
+			width: $refresh-forecast-tooltip-width;
+			position: relative;
+			top:-3px;
+		}
+	}
+
+	.optional-forecast-section {
+		label.control-label {
+			margin-left: 0px;
+		}
+	}
+}
+
+.segment-insights-output {
+	&.printer-friendly {
+		width: 730px !important;
+	}
+
+	.report-summary-table.swtable.sw-div-table {
+		td:first-child {
+			text-align: left;
+		}
+
+		td:not(:first-child) {
+			text-align: right;
+		}
+	}
+}
+
+.segment-insights-output {
+	.report-summary-table.swtable.datatableadapter {
+		.td:first-child, th:first-child {
+			text-align: left;
+		}
+		td:not(:first-child), th:not(:first-child) {
+			text-align: right;
+		}
+	}
+}
+
+.fas114-future-cash-flows-valuation {
+	.input-hint {
+		font-weight: bold;
+		padding: 2px;
+	}
+}
+
+body.alll-documentation {
+	line-height: normal;
+}
+
+.sw-app.alll-documentation {
+	font-size: 12px;
+
+	&.font-medium {
+		font-size: 14px;
+	}
+
+	&.font-large {
+		font-size: 16px;
+	}
+
+	table {
+		font-size: 100%;
+		border-spacing: 0;
+		margin: auto;
+		empty-cells: show;
+		border-collapse: collapse;
+
+		tr {
+			> td {
+				&[align=left] {
+					text-align: left !important;
+				}
+
+				&[align=center] {
+					text-align: center !important;
+				}
+
+				&[align=right] {
+					text-align: right !important;
+				}
+			}
+
+			&.doc-heading > th {
+				background-color: #D9D9D9;
+				border-bottom: none !important;
+				padding-left: 3px !important;
+				padding-right: 3px !important;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			&.doc-heading > td, &.formulatitle > td {
+				background-color: #D9D9D9;
+				border-bottom: none !important;
+				padding-left: 3px !important;
+				padding-right: 3px !important;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			&.CenterAlign > td {
+				text-align: center !important;
+			}
+
+			&.doc-totals > td {
+				background-color: #BFBFBF !important;
+				border-bottom: none !important;
+				font-weight: 700;
+			}
+		}
+
+		td {
+			vertical-align: top;
+			padding: 4px;
+
+			&.footnote {
+				border-width: 0px !important;
+				background-color: #FFF !important;
+			}
+		}
+
+		td.spacer {
+			border-width: 0px !important;
+			background-color: #FFF !important;
+		}
+
+		td.doc-totals {
+			background-color: #BFBFBF !important;
+			border-bottom: none !important;
+			font-weight: 700;
+		}
+
+		tr.even td {
+			background-color: $gray-head-background;
+		}
+
+		&.collateral-loans {
+			width: 84%;
+
+			td.RightAlign {
+				width: 16%;
+			}
+
+			&.more-than-eight {
+				td.RightAlign {
+					width: 12%;
+				}
+
+				width: 96%;
+			}
+
+			&.less-than-six {
+				td.RightAlign {
+					width: auto;
+				}
+
+				width: 72%;
+			}
+		}
+
+		&.comments-table td {
+			width: 50%;
+
+			> span {
+				max-width: 350px;
+				word-wrap: break-word;
+				display: block;
+			}
+		}
+
+		&.FAS114Summary {
+			width: 950px;
+			margin: 14px 0px;
+		}
+
+		&.separate {
+			border-collapse: separate;
+		}
+
+		&.spaced1 tr > * {
+			padding: 1px;
+		}
+
+		&.spaced2 tr > * {
+			padding: 2px;
+		}
+
+		&.spaced3 tr > * {
+			padding: 3px;
+		}
+
+		&.bordered {
+			border: solid 1px #AAA;
+		}
+
+		&.CalculationDetails {
+			width: 950px;
+		}
+
+		&.CashFlowDetails {
+			width: 30%;
+			float: left;
+			margin: 0px 2.5% 10px;
+			display: inline-block;
+		}
+	}
+
+	.select-small {
+		height: 26px;
+	}
+
+	.AccountLabel {
+		font-size: 84%;
+		color: #000;
+		font-weight: 700;
+	}
+
+	.AccountTitle {
+		font-size: 84%;
+		white-space: nowrap;
+		font-weight: 700;
+	}
+
+	.blankrow {
+		background-color: white !important;
+	}
+
+	.Bold {
+		font-weight: 700;
+	}
+
+	.border-left {
+		border-left: solid 1px #AAA;
+	}
+
+	.border-right {
+		border-right: solid 1px #AAA;
+	}
+
+	.box-header {
+		display: block;
+		margin: 10px 0px 7px;
+		padding: 4px 5px;
+		width: 270px;
+		font-weight: bold;
+		color: #777;
+		clear: both;
+	}
+
+	.CenterAlign {
+		text-align: center;
+	}
+
+	.CenterAlignBold {
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.collateral-name {
+		background-color: white !important;
+		vertical-align: middle;
+		font-weight: normal !important;
+		width: 16%;
+	}
+
+	.CollateralList {
+		width: 94%;
+
+		table {
+			width: 100%;
+			margin: 2px 0px;
+		}
+
+		td {
+			text-align: center;
+		}
+	}
+
+	.FutureCashFlowsLoansTable td {
+		text-align: center;
+	}
+
+	.CollateralRelationship > table {
+		margin: 10px 0px;
+	}
+
+	#SOPCalculationsSection {
+		.impaired-loan > table {
+			margin: 10px 0 20px;
+
+			tr {
+				&:nth-child(even) {
+					background: $gray-head-background;
+				}
+
+				&:nth-child(odd) {
+					background: #FFF;
+				}
+			}
+		}
+
+		margin-top: 20px;
+	}
+
+	.CollateralSectionTitle {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	.ColumnHeading {
+		font-weight: 700;
+	}
+
+	.currency {
+		text-align: right;
+	}
+
+	.detailed-analysis-header td {
+		font-weight: bold;
+		border: solid;
+		border-width: 1px 0px;
+	}
+
+	.divider {
+		height: 1px;
+		margin: 16px 24px 10px;
+	}
+
+	.doc-image {
+		clear: both;
+		padding: 1.25% 0px 2%;
+		text-align: center;
+		margin: 0px auto;
+		width: 800px;
+
+		> img {
+			max-width: 800px;
+
+			span {
+				display: block;
+				padding: 7px 0px;
+				text-align: center;
+				margin: 0px;
+			}
+		}
+	}
+
+	.DocumentationTable {
+		font-family: Arial, Verdana, Tahoma, Calibri, Helvetica, normal;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.ExecutiveSummary {
+		line-height: 150%;
+	}
+
+	.FAS114CalculationAccountLabelCell {
+		width: 300px;
+		font-size: 84%;
+		color: #000;
+		font-weight: 700;
+	}
+
+	.fas114comment, .fas5comment {
+		display: block;
+		font-size: 92%;
+		padding-left: 5px;
+		margin-bottom: 6px;
+		margin-top: -3px;
+	}
+
+	.FAS5LossRates {
+		white-space: nowrap;
+
+		.fas5comment {
+			white-space: normal;
+			display: table-cell;
+		}
+	}
+
+	.FAS5LossRatesComments {
+		margin-top: 5px;
+	}
+
+	.FAS5PoolTitle {
+		font-size: 109%;
+		font-weight: 700;
+		text-align: center;
+		display: block;
+		font-style: italic;
+	}
+
+	.FAS5DefaultModelPoolTableTitle {
+		font-size: 125%;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	#FAS91ReservesSummaryTable tr:first-child td:first-child {
+		min-width: 135px;
+	}
+
+	.footnote {
+		font-size: 80%;
+		text-align: left !important;
+	}
+
+	.FutureCashFlowsLoansTable {
+		margin: 14px 0px;
+	}
+
+	.GeneralReservesSummaryRowLarge {
+		width: 950px;
+		margin-bottom: 20px;
+		table-layout: fixed;
+	}
+
+	.GeneralReservesSummaryRowSmall {
+		width: 950px;
+		margin-bottom: 20px;
+		table-layout: fixed;
+		font-size: 75%;
+
+		tr.doc-heading > td {
+			padding: 2px 0px !important;
+		}
+
+		.tdLabel {
+			width: 120px;
+		}
+
+		.FAS5Pool table {
+			font-size: 92%;
+		}
+	}
+
+	.industry-analysis {
+		.summary-industry {
+			text-indent: -20px;
+		}
+
+		td {
+			text-align: center;
+		}
+	}
+
+	.industry-data-summary > table {
+		width: 75%;
+		margin: 8px 0px;
+	}
+
+	.industry-data-detail > table {
+		margin: 8px 0px;
+	}
+
+	.industry-data-summary {
+		.RightAlign, .CenterAlign {
+			text-align: center !important;
+			width: 25%;
+		}
+	}
+
+	.industry-data-detail {
+		.RightAlign, .CenterAlign {
+			text-align: center !important;
+			width: 16%;
+		}
+	}
+
+	.industry-name {
+		width: 40%;
+	}
+
+	.loan-number {
+		font-size: 92%;
+		font-style: italic;
+	}
+
+	.LoanInformation {
+		width: 100%;
+		text-align: center;
+	}
+
+	.LogoContainer {
+		padding-bottom: 12px;
+	}
+
+	.LossRateSectionTitle {
+		font-size: 117%;
+		font-weight: 700;
+		line-height: 150%;
+		text-align: center;
+		background-color: #ddd;
+	}
+
+	.ManualEntryNote {
+		font-weight: bold;
+	}
+
+	.metric {
+		font-weight: bold;
+		background-color: #F1F1F1;
+		border: solid;
+		border-width: 1px 0px;
+	}
+
+	.not-bold-section-title {
+		text-align: center;
+		display: block;
+		font-size: 92%;
+		margin: 2em auto 1em;
+	}
+
+	.not-link {
+		color: #000;
+		cursor: text;
+
+		&:hover {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+
+	.ReserveCalculationsTable {
+		margin: 10px 0px;
+	}
+
+	.RightAlign {
+		text-align: right;
+	}
+
+	.sc-table-title {
+		font-weight: bold;
+		font-size: 92%;
+		display: block;
+		margin: 6px 0px 2px;
+	}
+
+	.sc-table {
+		margin-bottom: 10px;
+	}
+
+	.sc-table-description {
+		width: 150px;
+	}
+
+	.sc-table-non-currency {
+		width: 125px;
+	}
+
+	.score {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.sectiontitle {
+		font-size: 109%;
+		font-weight: 700;
+		height: 10px;
+		text-decoration: none;
+		color: #000;
+		text-align: center;
+		border-top: dashed 1px #CCC;
+		display: block;
+		margin: 2em auto 1em;
+		padding: 0 !important;
+		position: relative;
+
+		> span {
+			position: absolute;
+			left: 50%;
+			top: -8px;
+
+			> span {
+				position: relative;
+				left: -50%;
+				background-color: white;
+				padding: 0 10px;
+			}
+		}
+	}
+
+	.selling-cost-calculation {
+		padding: 5px 2px;
+		margin-bottom: 10px;
+	}
+
+	.selling-cost-center {
+		text-align: center;
+	}
+
+	.selling-cost-explanation {
+		background-color: $gray-head-background;
+		padding: 2px;
+	}
+
+	.selling-cost-right {
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	.selling-cost-title {
+		font-style: italic;
+		border-bottom: solid 1px;
+		font-size: 109%;
+	}
+
+	.sub-section-column-headers {
+		font-weight: 700;
+		padding: 0 2px;
+	}
+
+	tr.sub-section-column-headers td {
+		font-weight: 700;
+		padding: 0 2px;
+	}
+
+	.sub-section-title {
+		text-decoration: underline;
+	}
+
+	.summary-industry {
+		text-align: left !important;
+		padding: 0px 20px !important;
+	}
+
+	.total-rows td {
+		font-weight: bold;
+	}
+
+	.valuation-method {
+		font-size: 117%;
+		font-style: italic;
+		display: block;
+		margin: 4px 0px;
+		color: #555;
+	}
+
+	#ALLLSummaryNarrativeContainer {
+		max-width: 950px;
+	}
+
+	#ALLLSummaryNarrative * {
+		text-align: start;
+	}
+
+	#ALLLSummaryNarrativeTable {
+		width: 950px;
+		margin: 0px auto;
+	}
+
+	.alll-summary-narrative, .ExecutiveSummarySection, #FAS114Section, #FAS5Section, #SOPSection, #FAS91Section, #ALLLSummaryTable, #FAS114ReclassifiedSection, #UnallocatedSection, #TransferRiskSection {
+		width: 950px;
+		margin: 0px auto;
+	}
+
+	#FAS91CalculationsSection {
+		margin-top: 15px;
+	}
+
+	#FAS114CalculationsSection table {
+		margin-left: 0;
+	}
+
+	#FAS5CalculationsSection table, #FAS114ReclassifiedSection table, #SOPCalculationsSection table, #FAS91CalculationsSection table, #UnallocatedSection table, #TransferRiskSection table {
+		margin-left: 0;
+	}
+
+	#FAS5CalculationsSection {
+		page-break-before: always;
+	}
+
+	#FAS91CalculationsSection {
+		.pool-summary-table tbody td {
+			white-space: normal;
+		}
+
+		.pool-summary-table-method, .pool-summary-table-percentage {
+			width: 100px;
+		}
+
+		.pool-summary-table-comments {
+			width: 400px;
+		}
+	}
+
+	#FAS114ReclassifiedSection .sectiontitle {
+		white-space: pre;
+	}
+
+	.CollateralRelationshipLoanSummary {
+		width: 950px;
+	}
+
+	.LossEmergenceTable {
+		margin: 15px;
+	}
+
+	.VintageAnalysisDocumentationTable td {
+		padding-right: 10px;
+	}
+
+	#FAS91CalculationsSection table.CashFlowDetails {
+		width: 100%;
+	}
+
+	.SOPCashFlowsContainer table.CashFlowDetails {
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.SOPCostRecoveryValuationContainer table.CashFlowDetails {
+		width: 85%;
+		margin-left: auto;
+	}
+
+	.ExpectedCashFlowTotalRecordedInvestment, .CostRecoveryTotalReserveAmount {
+		background-color: #BFBFBF !important;
+		border-bottom: none !important;
+		font-weight: 700;
+	}
+
+	.ExpectedCashFlowTRITable {
+		display: inline-block;
+	}
+
+	.section-break {
+		page-break-before: always;
+		height: 10px;
+		margin-top: 10px;
+	}
+
+	.divider {
+		page-break-after: always;
+	}
+
+	@media print {
+		.LossRateSectionTitle {
+			border: solid 1px #000;
+		}
+
+		#ExportButtonContainer {
+			display: none;
+		}
+	}
+}
+
+.alll-documentation.alll-documentation-printer-friendly {
+	
+	.printer-friendly-risk {
+		font-size: 75%;
+	}
+
+	table {
+		&.CashFlowDetails {
+			width: 45%;
+		}
+	}
+
+	&.font-large, &.font-medium {
+		.sectiontitle {
+			height: 50px;
+		}
+	}
+
+	.ExecutiveSummarySection, .FAS114Summary, .CalculationDetails {
+		width: 730px !important;
+	}
+
+	#FAS114Section, #FAS5Section, #SOPSection, #FAS91Section, #ALLLSummaryTable, #FAS114ReclassifiedSection, #UnallocatedSection, #TransferRiskSection {
+		width: 730px !important;
+	}
+
+	.GeneralReservesSummaryRowLarge, .GeneralReservesSummaryRowSmall, .CollateralRelationshipLoanSummary {
+		width: 730px !important;
+	}
+
+	#ALLLSummaryNarrativeTable {
+		width: 730px !important;
+	}
+
+	#ALLLSummaryNarrativeContainer, .alll-summary-narrative {
+		max-width: 730px !important;
+	}
+
+	.doc-image {
+		max-width: 680px;
+
+		> img {
+			max-width: 680px;
+		}
+	}
+
+	tr.doc-heading > th {
+		padding-left: 2px !important;
+		padding-right: 2px !important;
+	}
+
+	tr {
+		&.doc-heading > td, &.formulatitle > td {
+			padding-left: 2px !important;
+			padding-right: 2px !important;
+		}
+	}
+}
+
+.browse-exago-reports {
+    .center {
+        .category-dropdown {
+            height: 25.75px;
+            margin-top: 1px;
+        }
+
+        .search-bar {
+            .sw-table-search-container {
+                input {
+                    line-height: 20px;
+                    width: 350px;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+
+    .center-block {
+        .swtable {
+            .select-checkbox {
+                text-align: center;
+            }
+
+            .select-all {
+                width: 75px;
+            }
+
+            .delete-row {
+                width: 50px;
+                text-align: center;
+            }
+
+            .description {
+                width: 400px;
+            }
+
+            .preview-report {
+                width: 125px;
+                text-align: center;
+            }
+
+            .date-created {
+                width: 140px;
+            }
+        }
+    }
+}
+
+.watch-list-analysis {
+	#ArchiveDate {
+		width: 220px;
+		margin-left: 24px;
+	}
+
+	.set-watchlisttable-size {
+		min-width: 980px;
+	}
+}
+
+.model-building {
+	#ArchiveDate {
+		width: 220px;
+	}
+
+	.dependent-variable-specifications {
+		width: 200px;
+		height: 21px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.dependent-variable-labels {
+		padding-right: 3%;
+		width: 200px;
+		text-align: left;
+	}
+
+	.radio-button-right-margin {
+		margin-right: 0.5%;
+	}
+
+	.radio-button-left-margin {
+		margin-left: 2.75%;
+	}
+}
+
+.model-library-landing {
+	margin: 0 auto;
+	align-content: center;
+
+	.sw-four {
+		margin-left: 100px;
+		display: inline-block;
+	}
+
+	.well {
+		height: 150px;
+	}
+}
+
+.surety-settings {
+	.DataTable {
+		width: 980px;
+	}
+}
+
+.import-risk-factors {
+	.import-inputs {
+		input {
+			width: 400px;
+		}
+	}
+
+	.preview {
+		textarea {
+			width: 300px;
+			height: 60px;
+		}
+	}
+}
+
+.fas5-lossrates {
+	#LossRatesSection {
+		table.form-group {
+			max-width: 750px;
+			min-width: 294px;
+		}
+
+		.dataCell {
+			word-wrap: normal;
+		}
+	}
+
+	.form-group .display-table-cell {
+		padding: 2px;
+	}
+
+	.fas5-loss-rates-setup {
+		text-align: left;
+		display: inline-block;
+	}
+
+	.loss-rates-column-1, .loss-rates-column-2 {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 2px 0px;
+
+		.display-table-cell:first-of-type {
+			padding-left: 0px;
+		}
+	}
+
+	.loss-rates-column-1 {
+		width: 300px;
+	}
+
+	.loss-rates-column-2 {
+		width: 300px;
+	}
+
+	.fas5-lossrates-table-container {
+		max-height: 400px;
+		padding-right: 10px;
+
+		thead th {
+			z-index: 99;
+		}
+	}
+
+	.includeBox {
+		border: solid 1px #d5d5d5;
+		text-align: right;
+		font-family: Helvetica,Arial,sans-serif;
+		padding: .1em .3em;
+		color: #888;
+		background-color: $gray-head-background;
+	}
+
+	.mfp-content {
+		height: 525px;
+	}
+
+	.lossRatesTable {
+		border-color: #d3d3d3;
+		border-style: solid;
+		border-collapse: inherit;
+		border-width: 1px;
+		padding: 5px;
+
+		.DataTableAdapterLabelContainer.nowrap {
+			width: 300px;
+		}
+
+		&.probability-of-default-results {
+			padding: 5px 50px 15px;
+		}
+
+		tr td input[type="text"] {
+			width: 80px;
+			text-align: center;
+
+			&.percent {
+				text-align: right;
+			}
+		}
+	}
+
+	.pool-segmentation-setup-button {
+		width: 250px;
+	}
+
+	.loss-rates-summary-table {
+		width: 550px;
+		margin-bottom: 0;
+
+		td {
+			width: 130px;
+
+			&.DataTableAdapterLabelContainer {
+				width: 50%;
+			}
+		}
+	}
+
+	#LossEmergenceFactorCalcButton {
+		margin-bottom: 10px;
+	}
+
+	#OverallSelectedPoolsAdapter_holder {
+		display: inline-block;
+		height: 225px;
+		overflow: auto;
+	}
+
+	#IncludedPoolsMessage {
+		width: 80%;
+		text-align: left;
+		margin: 15px auto 0;
+		font-style: italic;
+		font-size: 90%;
+	}
+
+	#FAS5EconomicDataContainer {
+		margin: 0 auto 10px;
+	}
+
+	#RiskManagementFAS5RiskFactorsAdapter_Include_SelectAll {
+		margin-top: 0;
+	}
+
+	#highchart-container {
+		width: 980px;
+		margin: 40px auto 30px;
+
+		.adjusted-average {
+			path.highcharts-point {
+				cursor: ns-resize;
+			}
+		}
+	}
+
+	.default-trigger-row {
+		td {
+			padding: 0px;
+		}
+	}
+
+	.sw-collapsible-section .section-heading {
+		margin-top: 15px;
+	}
+
+	.highcharts-root {
+		.orange, .orange .highcharts-point {
+			fill: #ed7d31;
+			stroke: #ed7d31;
+		}
+	}
+
+	.remaining-life-method {
+		sw-spinner {
+			text-align: center;
+			font-size: 3em;
+			margin-top: 20px;
+			display:block;
+		}
+
+		.loss-rate-data-selections {
+			text-align: center;
+			margin: 20px 0 25px;
+
+			label {
+				display:inline-block;
+				margin: 0px 6px;
+			}
+		}
+
+		.remaining-life-run-out {
+			thead tr {
+				background-color: $gray-head-background;
+				color: #555;
+
+				th {
+					border: none;
+					font-weight: bold;
+					padding: 3px 5px;
+				}
+			}
+
+			td, th {
+				width: 110px;
+			}
+
+			.right {
+				text-align: right;
+			}
+		}
+	}
+
+	.dcf-settings-container {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.sw-collapsible-content {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+
+			td.add-forecast-period {
+				border: solid 1px #5091cd;
+				color: #5091cd;
+				text-align: center;
+				max-width: 90px;
+			}
+
+			.apply-pool-segmentation-cell {
+				padding-bottom: 5px;
+			}
+
+			input[data-sw-numeric-input] {
+				width: 120px;
+			}
+
+			.control-label {
+				margin-right: 10px;
+			}
+		}
+
+
+
+		.DataTableAdapterLabelContainer {
+			padding-right: 15px;
+		}
+	}
+
+
+	.vintage-analysis-results, .vintage-analysis-reserves {
+		th {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		td > div.percent {
+			text-align: right;
+			padding: 0px 5px;
+		}
+	}
+
+	.forecasted-probability-of-default-table.swtable {
+		input[type], select, textarea {
+			width: 130px;
+		}
+	}
+
+	.vintage-analysis-results {
+		input[type=text] {
+			width: 75px;
+		}
+
+		td {
+			position: static;
+		}
+	}
+}
+
+.insights-run-simulation {
+    .progress-tabs {
+        td {
+            width: 200px;
+        }
+    }
+
+    .forecasted-probability-of-default-table-container {
+        padding-top: 30px;
+
+        .forecasted-probability-of-default-table.swtable {
+            margin-top: 0;
+
+            input[type], select, textarea {
+                width: 115px;
+            }
+
+            .foreground {
+                z-index: 3;
+            }
+
+            .line-description-column {
+                width: 300px;
+            }
+
+            .call-report-item-column {
+                width: 200px;
+            }
+
+            input.money-value-input {
+                width: 130px;
+            }
+        }
+    }
+}
+
+.forecasted-probability-of-default-table.swtable {
+    margin: 0px !important;
+
+    td {
+        position: static;
+    }
+
+    input[type], select, textarea {
+        width: 87px;
+    }
+
+    textarea {
+        height: 60px;
+    }
+}
+
+.forecast-factor-label {
+    min-width: 250px;
+}
+
+.dcf-radio-container {
+	label {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+
+.fas5-summary {
+	.tooltip-blue {
+		display: inline-block;
+		width: 25px;
+		position: relative;
+		top: -3px;
+	}
+
+	.DataTable .LinkControlContainer {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: normal;
+	}
+
+	.indent {
+		text-align: left !important;
+		padding-left: 16px !important;
+	}
+
+	.half-indent {
+		padding-left: 8px !important;
+	}
+
+	.LeftAlign > table {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+}
+
+.loan-loss-report {
+	.tooltip-blue {
+		display: inline-block;
+		width: 25px;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.alll-summary {
+  #PeriodEndingDate.PrinterFriendly {
+    display: none;
+  }
+}
+
+
+.dcf-loan-details-container, .pd-results-container {
+  width: 800px;
+  .form-inline {
+    label, span {
+      display: inline-block;
+    }
+    label {
+      width: 50%;
+      text-align: left;
+    }
+    span {
+      width: 40%;
+      text-align: right;
+    }
+  }
+}
+
+.dcf-payment-schedule {
+    .sw-div-table-row {
+        div {
+            text-align: center;
+        }
+
+        &:not(.grey) {
+            div {
+                font-family: Helvetica,Arial,sans-serif;
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+.forecast-comparison-piechart {
+	.highcharts-color-0 {
+		fill: #005984;
+		stroke: #005984;
+	}
+
+	.highcharts-color-1 {
+		fill: #e9e9e9;
+		stroke: #e9e9e9;
+	}
+}
+
+.dcf-results-chart {
+	.highcharts-color-0 {
+		fill: #005984;
+		stroke: #005984;
+	}
+
+	.highcharts-color-1 {
+		fill: #ff4713;
+		stroke: #ff4713;
+	}
+
+	.highcharts-color-2 {
+		fill: #e9e9e9;
+		stroke: #e9e9e9;
+	}
+}
+
+
+
+.single-series-color-0 .highcharts-color-0 {
+	fill: #82c2df;
+	stroke: #82c2df;
+}
+
+.single-series-color-1 .highcharts-color-0 {
+	fill: #ff4713;
+	stroke: #ff4713;
+}
+
+.single-series-color-2 .highcharts-color-0 {
+	fill: #005984;
+	stroke: #005984;
+}
+
+.alll-pooledreserves-chart {
+	.highcharts-color-0 {
+		fill: #82c2df;
+		stroke: #82c2df;
+	}
+
+	.highcharts-color-1 {
+		fill: #ff4713;
+		stroke: #ff4713;
+	}
+
+	.highcharts-color-2 {
+		fill: #005984;
+		stroke: #005984;
+	}
+
+	.highcharts-color-3 {
+		fill: #e4f3f8;
+		stroke: #e4f3f8;
+	}
+
+	.highcharts-color-4 {
+		fill: #fdeeb6;
+		stroke: #fdeeb6;
+	}
+
+	.highcharts-color-5 {
+		fill: #383943;
+		stroke: #383943;
+	}
+
+	.highcharts-color-6 {
+		fill: #e9e9e9;
+		stroke: #e9e9e9;
+	}
+
+	.highcharts-color-7 {
+		fill: #f9d032;
+		stroke: #f9d032;
+	}
+
+	.highcharts-color-8 {
+		fill: #e1f0f7;
+		stroke: #e1f0f7;
+	}
+}
+
+.dcf-poolloanresults-chart {
+	.highcharts-color-0 {
+		fill: #82c2df;
+		stroke: #82c2df;
+	}
+
+	.highcharts-color-1 {
+		fill: #005984;
+		stroke: #005984;
+	}
+
+	.highcharts-color-2 {
+		fill: #ff4713;
+		stroke: #ff4713;
+	}
+}
+
+.dcf-poolloanresults-carousel {
+	.carousel-control {
+		width: 10%;
+	}
+
+	.carousel-control:link {
+		background-image: none;
+	}
+
+	.highcharts-tooltip {
+		filter: none !important;
+	}
+
+	.carousel-indicators {
+		opacity: 0;
+	}
+}
+
+.alll-lossratetable-chart {
+	.highcharts-color-0 {
+		fill: #005984;
+		stroke: #005984;
+	}
+
+	.highcharts-color-1 {
+		fill: #ff4713;
+		stroke: #ff4713;
+	}
+}
+
+.highcharts-orange-plotline {
+	.highcharts-plot-line {
+		fill: none;
+		stroke: #ed7d31;
+		stroke-width: 2px;
+	}
+}
+
+.highcharts-thick-plotline {
+	.highcharts-plot-line {
+		stroke-width: 2px;
+	}
+}
+
+.highcharts-orange-serieslines {
+	.highcharts-color-1 {
+		fill: none;
+		stroke: #ed7d31;
+		stroke-width: 2px;
+	}
+
+	.highcharts-color-2 {
+		fill: none;
+		stroke: #ed7d31;
+		stroke-width: 2px;
+	}
+}
+
+.ceclsetup-output-chart {
+	.highcharts-plot-line {
+		fill: none;
+		stroke: #ed7d31;
+		stroke-width: 2px;
+	}
+
+	.highcharts-plot-line .label {
+		fill: none;
+		stroke: #ed7d31;
+	}
+
+	.highcharts-yaxis .highcharts-axis-line {
+		stroke-width: 0;
+		fill: none;
+		stroke: none;
+	}
+}
+
+.table-export-to-excel {
+    position: relative;
+    top: -24px;
+    margin-bottom: -24px;
+    text-align: right;
+
+    img {
+        height: 24px;
+    }
+}
+
+.alll-option {
+	display: table-row;
+	width: 100%;
+
+	.alll-option-edit {
+		vertical-align: middle;
+		display: table-cell;
+		width: 40px;
+		text-align: right;
+	}
+
+	.alll-option-label {
+		vertical-align: middle;
+		display: table-cell;
+		width: 100%;
+	}
+
+	&.active {
+		background-color: #CFE1F2 !important;
+	}
+}
+
+
+.column-sort-shading::after {
+	background-color: #ddd;
+	padding: 3px 40% 0 40% !important;
+	margin: 0 2px;
+	width: 95% !important;
+}
+
+.first-column-sort-shading::after {
+	background-color: #ddd;
+	padding: 3px 8px 0 8px !important;
+	margin: 0 -10px 0 0 !important;
+	width: 80px !important;
+}
+
+.add-alll-link {
+	display: block;
+	padding: 5px 15px;
+}
+
+.orange-border {
+	border-color: orange;
+	border-style: solid;
+}
+
+.add-moody-analytics-data-series {
+	.title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.item-list {
+		text-align: left;
+		padding: 0px 12px;
+	}
+
+	.empty-list-warning {
+		font-style: italic;
+	}
+}
+
+.add-fred-series, .add-moody-analytics-data-series {
+	.gray-border-box {
+		border: 3px solid lightgray;
+	}
+
+	.search-input {
+		width: 100%;
+		padding: 5px;
+		line-height: 1em;
+		height: 2em;
+	}
+
+	.search-text-container, .search-all-container {
+		float: left
+	}
+
+	.search-text-container {
+		width: 70%;
+		padding: 0 0 0 15px;
+	}
+
+	.search-all-container {
+		width: 30%;
+		padding: 0 15px 0 5px;
+	}
+
+	.search-button,
+	.search-button:focus {
+		width: 100%;
+		margin: 0;
+	}
+
+	.search-container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.searching-all-results-nodes {
+		margin-bottom: 10px;
+	}
+
+	a {
+		vertical-align: middle;
+	}
+
+	a.deleteCell, a.deleteCell:hover {
+		margin-right: 5px;
+		display: inline-block;
+	}
+
+	a.expand-node {
+		padding-top: 0;
+		padding-bottom: 0;
+		border-top: 0;
+		border-bottom: 0;
+	}
+
+	.rootTreeNodes {
+		padding-left: 0;
+	}
+
+	#tree-root {
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 3px solid lightgray;
+		margin-top: 5px;
+		overflow: auto;
+		height: 290px;
+	}
+
+	.tree-node {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	#selected-economic-data-container {
+		overflow: auto;
+	}
+
+	.economic-data-container-border {
+		border: 3px solid lightgray;
+	}
+
+	#selected-economic-data-container ol {
+		padding-left: 0;
+	}
+
+	#selected-economic-data-container li {
+		padding: 5px 0 5px 10px;
+	}
+
+	.tree-breadcrumb {
+		font-size: x-small;
+		margin-bottom: 2px;
+		margin-top: 3px;
+	}
+
+	.node-label {
+		vertical-align: middle;
+	}
+
+	ol {
+		list-style: none;
+		margin: 0;
+	}
+
+	ol:nth-child(n+2) {
+		padding-left: 15px;
+	}
+
+	li {
+		list-style-type: none;
+	}
+}
+
+.highcharts-plot-band.historical-range-band {
+    fill: #ff7c00;
+    fill-opacity: 0.15;
+}
+
+.forecast-policy {
+	text-align: center;
+	margin-top: 10px;
+
+	.form-group {
+		display: inline-block;
+		text-align: left;
+		position: relative;
+	}
+
+	input[type=text] {
+		width: 65px;
+
+		&.date-field {
+			width: 100px;
+		}
+	}
+
+	.radio {
+		margin-left: 35px;
+
+		+.radio {
+			margin-top:10px;
+		}
+
+		.or {
+			left: -20px;
+			position: absolute;
+		}
+	}
+}
+
+.alll-dcf-progress-tab {
+    border: solid;
+    border-color: #5091cd;
+    border-width: 1px;
+    position: fixed;
+    bottom: 0;
+    right: 230px;
+    z-index: 4;
+
+}
+
+.alll-dcf-progress-tab ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.alll-dcf-progress-tab .mat-progress-spinner circle, .blue-progress-spinner .mat-progress-spinner circle {
+    stroke: $brand-blue !important;
+}
+
+.grey-link a {
+    color: #d5d5d5 !important;
+}
+.grey-link a:hover {
+    color: $brand-blue !important;
+}
+
+.simulation-progress-spinner {
+    .mat-progress-spinner {
+        right: 4px;
+        position: relative;
+    }
+
+    .mat-progress-spinner-label {
+        position: relative;
+        top: -21px;
+        left: 5px;
+        font-size: 12px;
+    }
+}
+
+.mat-progress-spinner-label {
+    position: relative;
+    top: -25px;
+    left: 9px;
+    font-size: 12px;
+}
+
+.insights-calculation-context {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    height: 27px;
+    line-height: 22px;
+    width: 300px;
+    padding-left: 8px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.tooltip-grey a{
+    color: #555 !important;
+}
+
+.segment-insights-output, .report-component-setup {
+	.highcharts-data-table table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		background: white;
+		min-width: 100%;
+		margin-top: 10px;
+		font-family: sans-serif;
+		font-size: 0.9em;
+	}
+
+	.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+		border: 1px solid silver;
+		padding: 0.5em;
+	}
+
+	.highcharts-data-table tr:nth-child(even), .highcharts-data-table thead tr {
+		background: #f8f8f8;
+	}
+
+	.highcharts-data-table tr:hover {
+		background: #eff;
+	}
+
+	.highcharts-data-table caption {
+		border-bottom: none;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+}

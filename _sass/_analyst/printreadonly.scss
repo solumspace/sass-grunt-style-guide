@@ -1,0 +1,205 @@
+@import "modules/vars";
+
+// Print Styling //
+
+.risk-rating-overview-container {
+    text-align: center;
+
+	select.loan {
+		width: 200px;
+	}
+    
+	.settings {
+        page-break-inside: avoid;
+
+        .financial-statements-table {
+
+            tr {
+                height: 24px;
+            }
+
+            .label-cell {
+                padding: 0px 35px 0px 0px;
+                text-align: left;
+            }
+
+            .value-cell {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.truncate {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.show-print:not(.ng-hide) {
+  display: block !important;
+  text-align: center;
+
+  &.inline {
+    display: inline !important;
+  }
+}
+
+.hide-print {
+  display: none !important;
+}
+
+.progress-tabs {
+  border-top-color: $gray-light;
+
+  td > label {
+    background-color: $gray-light;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 485px;
+    height: 35px;
+    z-index: 3;
+  }
+}
+
+.middle-form-group-container {
+  max-width: 800px;
+  text-align: center;
+
+  .middle-form-group {
+    &.right {
+      text-align: center;
+    }
+  }
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.search-input {
+  .input-search-group {
+    border: none !important;
+
+    td:nth-child(2), td:nth-child(3) {
+      display: none;
+      visibility: hidden;
+    }
+
+    .input-search {
+      &:after {
+        content: none !important;
+      }
+
+      input {
+        margin-left: 480px;
+        font-size: $font-size-medium;
+      }
+
+      .form-control[disabled] {
+        background-color: transparent !important;
+        color: #3c3d3d  !important;
+      }
+    }
+  }
+}
+
+select, .select-small, .form-group .styled-select select.form-control {
+  background-image: none;
+}
+
+.form-control,
+input,
+input.form-control,
+select,
+select.form-control,
+textarea,
+.combobox,
+.chosen-single,
+.chzn-container-single .chzn-single,
+.customDropDownContainer,
+.form-control.combo-option-link,
+.form-group .styled-select select.form-control,
+.input-small,
+.chosen,
+.select-small,
+button.ui-multiselect,
+span.calculated-field,
+table.customcombobox,
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-multi .chosen-choices {
+    border: 0;
+    cursor: default;
+}
+
+.chosen-container-single {
+  .chosen-single {
+    background-image: none;
+  }
+
+  b, .chosen-drop {
+    display: none;
+  }
+}
+
+input.form-control[disabled], input.form-control[readonly], select[disabled], select[readonly] {
+  background-color: #fff !important;
+  color: $text-color !important;
+}
+
+a.sw-table-help-link {
+  border: none;
+  cursor: default;
+
+  &:after {
+    content: none;
+  }
+}
+
+.btn,
+.button,
+img[src$='x.png'],
+.accordian-trigger,
+.all-accordian-trigger,
+.add-document-row {
+  display: none !important;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  outline: none;
+  cursor: default;
+}
+
+.progress-tabs {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+}
+
+// hide for print and angular ngHide
+.hide-for-print, .ng-hide, .data-ng-hide, .do-not-print {
+  display: none !important;
+}
+
+.center {
+  text-align: center;
+}
+
+@media print {
+  /*Reset Style*/
+  * {
+    overflow: visible !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+  }
+}

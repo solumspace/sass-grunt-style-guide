@@ -1,0 +1,105 @@
+nav {
+  &.navbar-default {
+    background-color: white;
+    border: 0;
+
+    ul {
+      list-style: none;
+      margin-top: 1.5em;
+    }
+
+    .nav-container {
+      background-color: white;
+      position: relative;
+
+      @extend .border-dot-bottom;
+
+      min-height: 75px;
+    }
+
+    .navbar-collapse {
+      max-height: 100%;
+      overflow-x: hidden;
+      float: right;
+
+      @media (max-width: 768px) {
+        position: relative;
+        z-index: 1;
+        background: white;
+      }
+
+      &.collapse.in {
+        box-shadow: none;
+        border: none;
+
+        ul {
+          @include transition(all 0.3s ease);
+        }
+
+        .btn-group {
+          margin-bottom: 2em;
+          margin-right: 2em;
+        }
+      }
+
+      .header-btn {
+        position: relative;
+        display: inline-block;
+        padding-right: 20px;
+        margin-bottom: 5px;
+        margin-top: -5px;
+
+        @include button-size(0.2em, 0.5em, $font-size-medium, $line-height-computed, 0);
+
+        @media (min-width: 768px) {
+          border-right: 2px solid $gray-dark;
+        }
+      }
+    }
+
+    .navbar-nav {
+      li {
+        a {
+          color: $brand-blue;
+          padding-top: 5px;
+          padding-bottom: 7px;
+
+          &:hover {
+            color: $brand-dark-blue;
+          }
+        }
+
+        &:last-child {
+          a {
+            color: $gray-dark;
+            font-size: $font-size-medium;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      color: $brand-blue;
+
+      a {
+        @include font-defined($font-sc-osf, $font-bold);
+
+        font-size: $font-size-large;
+        letter-spacing: 1px;
+      }
+
+      ul {
+        li {
+          a {
+            @include font-defined($font-sc-osf, $font-sbold);
+
+            font-size: $font-size-large;
+          }
+        }
+      }
+    }
+  }
+}

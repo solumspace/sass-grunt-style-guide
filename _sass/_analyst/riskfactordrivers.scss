@@ -1,0 +1,87 @@
+#DriversTable {
+  .swtable td {
+    padding: 0;
+  }
+
+  .swtable-horizontal {
+    overflow-x: visible;
+  }
+}
+
+.add-driver-link {
+  display: block;
+  padding: 5px 15px;
+}
+
+.columnHeader {
+  height: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+#RiskFactorDrivers {
+  td.data-row-cell {
+    padding: 3px 5px 3px 12px;
+
+    > div {
+      display: table;
+      width: 100%;
+    }
+  }
+}
+
+.driver-option {
+  display: table-row;
+  width: 100%;
+
+  .driver-option-edit {
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  .driver-option-label {
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+  }
+
+  .driver-option-edit {
+    width: 40px;
+    text-align: right;
+  }
+}
+
+.risk-factor-option {
+  border-bottom: solid 1px #DDD;
+  padding: 5px 15px;
+}
+
+.driver-option, .risk-factor-option {
+  &.active {
+    background-color: #CFE1F2 !important;
+
+    .Button {
+      display: none !important;
+    }
+  }
+
+  .fa {
+    margin-left: -16px;
+    margin-right: 3px;
+  }
+}
+
+.heading-row {
+  height: 25px;
+}
+
+.external-link {
+  display: block;
+  border-bottom: solid 1px #CCC;
+
+  &:after {
+    content: "\f08e";
+    font-family: FontAwesome;
+    padding-left: 10px;
+  }
+}

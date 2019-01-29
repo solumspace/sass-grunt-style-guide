@@ -1,0 +1,2653 @@
+/* body.sw-app specific styling */
+
+// forces the scrollbar for IE10 and up
+html {
+	-ms-overflow-style: scrollbar;
+}
+
+// forces list type upper-roman on li elements
+.DocumentationContainer {
+	ol {
+		list-style: upper-roman inside none;
+	}
+}
+
+.sw-icon-btn-group {
+	position: relative;
+	top: -10px;
+	max-width: 15px;
+}
+
+.ExportToExcelTable {
+	float: right;
+}
+
+.add-new-layover {
+	width: 500px;
+	text-align: center;
+	padding: 30px;
+}
+
+.DateControlContainer {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+// Financial Statement Custom Fields
+.financial-statement-custom-fields {
+	text-align: center;
+}
+
+.display-block {
+	display: block;
+}
+
+// Workflow popup styling
+.select-step-dependancies-popup {
+	table.swtable {
+		width: 400px;
+	}
+}
+
+// sticky container
+.sw-sticky-container {
+	background: #fff;
+	position: fixed;
+	top: 50px;
+	z-index: 3;
+
+	.col-sm-8 & {
+		min-width: 643px;
+	}
+}
+
+// Columns
+.sw-columns {
+	&.two {
+		columns: 300px 2;
+		-webkit-columns: 300px 2;
+		-moz-columns: 300px 2;
+	}
+}
+
+// Analyst specific style parent class
+.sw-app {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    // containers|grids
+    [role=main] {
+        margin-bottom: 0;
+
+        &:after {
+            height: 0;
+        }
+    }
+    // DCF views
+    .dcf-view-results {
+        #head-anchor {
+            &.drop-50 {
+                height: 50px;
+            }
+
+            &.drop-95 {
+                height: 95px;
+            }
+        }
+
+        #sticky-container {
+            width: 100%;
+
+            div {
+                width: 1180px;
+                margin: 0 auto;
+            }
+        }
+
+        .sw-sticky-container {
+            top: 38px;
+            left: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .sw-div-table {
+            margin: 0 auto;
+            padding: 0;
+            width: 1180px;
+        }
+
+        .sw-div-table-row {
+            div {
+                max-width: 40px;
+            }
+
+            &.grey {
+                font-weight: $font-bold;
+
+                div {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // CECL forecast setup page
+    .cecl-forecast-setup-page {
+        .forecast-graph-section {
+            position: relative;
+
+            .section-delete {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        .overview-comments-container {
+            margin-bottom: 10px;
+            position: relative;
+            text-align: center;
+
+            &.comments-no-show-border {
+                border-bottom: 1px solid #d5d5d5;
+                padding-bottom: 15px;
+            }
+        }
+
+        .cecl-date-selection {
+            margin-bottom: 15px;
+
+            input[data-sw-datepicker] {
+                width: 80px;
+            }
+        }
+
+        .accordian-trigger {
+            position: absolute;
+            top: 0px;
+            right: 90px;
+
+            a {
+                font-family: "aleo";
+                font-style: italic;
+                font-size: $font-size;
+            }
+        }
+
+        textarea.form-control {
+            width: 80%;
+            height: 90px;
+            margin: 15px auto;
+        }
+
+        .cecl-value-selection {
+            input {
+                max-width: 80px;
+            }
+        }
+    }
+    // help in separating rows for different border colors and usage
+    &.popup {
+        table {
+            border-collapse: separate;
+        }
+
+        .form-group {
+            &.inline {
+                text-align: center;
+
+                .styled-select, .form-control:not(select) {
+                    width: 10%;
+                }
+
+                .control-label {
+                    width: 5%;
+                }
+            }
+        }
+    }
+    /* inlineMsg */
+    .inlineMsgArrow-bottom {
+        border-bottom: 9px solid $brand-orange;
+    }
+
+    .inlineMsgArrow-top {
+        border-top: 9px solid $brand-orange;
+    }
+
+    .inlineMsgArrow-right {
+        border-right: 9px solid $brand-orange;
+    }
+
+    .inlineMsgArrow-left {
+        border-left: 9px solid $brand-orange;
+    }
+
+    .inlineMsgContent {
+        background: $brand-orange;
+        border: 1px solid $brand-orange;
+        font-size: 14px;
+        color: white;
+        font-family: $font-serif;
+    }
+
+    .lingeringError {
+        ul {
+            margin: 5px auto;
+            border-radius: 3px;
+            background: $brand-orange;
+            border: 1px solid $brand-orange;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 500px;
+
+            li {
+                display: block;
+                font-size: 14px;
+                color: white;
+                font-family: aleo;
+                line-height: 1.5em;
+                margin-left: 1em;
+
+                &:not(:first-child) {
+                    text-indent: 1em;
+                }
+
+                &.errorHeading {
+                    font-weight: $font-bold;
+                }
+            }
+        }
+    }
+    // helper classes
+    .date {
+        font-style: none !important;
+    }
+
+    .paragraph-emphasis {
+        font-weight: $font-bold;
+    }
+
+    .sw-app .sw-icon-margin.sides,
+    div.help-icon-question {
+        margin-right: 15px;
+        margin-left: 4px;
+    }
+
+    .form-span {
+        padding-left: 10px;
+    }
+
+    .redtext {
+        color: $brand-orange;
+    }
+    // form helps
+    input, select {
+        outline: 0 !important;
+
+        @include border-radius(0);
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    .form-group {
+        &.inline {
+            .styled-select, .control-label, .form-control:not(select) {
+                display: inline-block;
+                width: 40%;
+            }
+        }
+    }
+    // disabled inputs
+    input {
+        &[type="text"] {
+            &:disabled {
+                background-color: $gray-lighter;
+            }
+        }
+    }
+
+    .DataTable input {
+        &[type="text"] {
+            &:disabled {
+                background-color: $gray-lighter;
+            }
+        }
+    }
+
+    .swtable input[type="text"]:disabled {
+        background-color: $gray-lighter;
+    }
+    // form-control in styled-select
+    .styled-select {
+        &.inherit {
+            .form-control {
+                background: url(images/down_arrow_hollow.png) no-repeat scroll right 10px (center / 14px) 6px;
+            }
+        }
+    }
+
+    .add-new-table {
+        margin: 15px auto;
+
+        &.inline {
+            text-align: center;
+
+            div {
+                display: inline-block;
+            }
+        }
+    }
+
+    .pull-well-header {
+        margin-top: -20px;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    // bootstrap goodies
+    .well {
+        &:not(.white) {
+            border: none;
+        }
+
+        &.white-well {
+            background-color: $body-bg;
+            color: $text-color;
+
+            h3, h4 {
+                background-color: $gray-lighter;
+            }
+
+            h3 {
+                @extend .pull-well-header;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .center-block {
+        //built on bootstraps .center-block class changing block for table
+        display: table;
+    }
+
+    .CenteredItem {
+        text-align: center;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    a, span {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .inputlabel {
+        background-color: $gray-lighter;
+        border-bottom: 2px solid $gray;
+
+        td {
+            &:first-child {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .ButtonContainer {
+        .button-medium {
+            padding: 0.6em 0.5em;
+            margin-right: 0.3em;
+        }
+    }
+
+    h4 {
+        font-family: $font-sc-osf;
+        text-transform: lowercase;
+        font-size: 17px;
+        font-weight: $font-bold;
+        letter-spacing: 2.5px;
+    }
+
+    ul {
+        .disabled {
+            opacity: 0.8;
+        }
+
+        .divider {
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    // Progress radial
+    .radial-progress {
+        position: relative;
+        right: 6px;
+        bottom: 80px;
+        padding: 0;
+        font-family: $font;
+        font-weight: $font-thin;
+        font-size: 50px;
+        color: $brand-blue;
+        line-height: 0;
+        letter-spacing: -0.1em;
+    }
+
+    .sw-spinner-wrapper {
+        text-align: center;
+    }
+
+    .sw-spinner {
+        color: $brand-blue;
+        padding: 20px;
+        /*color: rgb(80, 145, 205);*/
+    }
+    // datatableadapter
+    .headingRow {
+        background-color: $gray-lighter;
+
+        td {
+            text-align: center;
+            display: table-cell;
+
+            a {
+                font-family: $font;
+                font-weight: $font-bold;
+            }
+        }
+    }
+
+    .dataRow {
+        &.detailRow {
+            background-color: $gray-lighter;
+
+            .MultiRowTab {
+                border-right: 2px solid $gray-lighter;
+
+                a {
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    white-space: nowrap;
+                }
+
+                &.Selected {
+                    background-color: white;
+                }
+            }
+
+            .MultiRowTabContainer {
+                &.MinimalPadding {
+                    background-color: $gray-lighter;
+
+                    table {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    // DataTable styling
+    .DataTable, .repeater-table {
+        textarea[id*="PropertyName"] {
+            overflow-y: auto;
+        }
+
+        tr.cloned-property-row, tr.cloned-property-row.focused {
+            background-color: #eee !important;
+            background: white !important;
+
+            td {
+                &:not(.fix-left) {
+                    background-color: #eee !important;
+                    border-left: 2px solid white;
+                }
+
+                &.fix-left {
+                    background-color: white !important;
+                }
+            }
+        }
+        // Tax Property styling
+        textarea.cloned-property {
+            width: 100px;
+            height: auto;
+            background: #eee;
+            border: 0px solid #eee;
+
+            &:focus {
+                border-color: #eee;
+                outline: none;
+            }
+        }
+    }
+
+    .repeater-table {
+        textarea.cloned-property {
+            width: 100px;
+        }
+    }
+    // hover animations|colors
+    .reverse-hover {
+        color: $brand-dark-blue;
+
+        &:hover {
+            color: $brand-blue;
+        }
+    }
+
+    .heading-link-item, .status-title {
+        font-family: $font-sc-osf;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+
+        &.orange {
+            font-size: 22px;
+        }
+    }
+
+    #divUpload {
+        #StatusMessage {
+            position: relative;
+        }
+    }
+
+    .status-message {
+        position: absolute;
+        background-color: $brand-green;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 20px;
+        width: auto;
+        right: 25%;
+        left: 25%;
+        text-align: left;
+        top: 5px;
+    }
+    // SummaryTable
+    .SummaryTable {
+        tr {
+            td.block-center {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .nav.form-group {
+            margin: 0 auto;
+
+            .styled-select {
+                background: white;
+                top: 35px;
+            }
+        }
+    }
+    // dynamic search component
+    .search-table-container {
+        margin: 0 auto;
+    }
+
+    .search-spinner {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .search-combo-dropdown {
+        border: 2px solid #d5d5d5;
+        padding: 10px;
+        line-heigh: 2em;
+        background-color: #FBFBFB;
+    }
+
+    .search-input {
+        width: 610px;
+        margin: 0 auto;
+
+        .input-search-group {
+            border: 2px solid #d5d5d5;
+            height: 35px;
+
+            &:before {
+                font-size: 1.25em;
+            }
+
+            .input-search, .search-text-container {
+                float: left;
+                width: 485px !important;
+                height: 31px;
+                position: relative;
+
+                .form-control {
+                    height: 35px;
+                    width: 93%;
+                }
+
+                &:after {
+                    position: absolute;
+                    right: -10px;
+                    bottom: 10px;
+                    content: url("//resources.sageworks.com/images/analyst/icons/1x/search.png");
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+
+            .search-list-link {
+                float: left;
+                background-color: #FBFBFB;
+                height: 31px;
+                width: 120px;
+                text-align: center;
+                line-height: 2;
+                border-left: 2px solid $gray-lighter;
+            }
+        }
+    }
+
+    .loan-picker-container {
+        width: 600px;
+        margin: 20px auto;
+    }
+    // message box (temp)
+    .msgbox {
+        top: 85px;
+    }
+
+    #CustomerManagementDiv {
+        .add-new-table {
+            table {
+                margin-top: 20px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    #tblAccountInformation {
+        width: 760px;
+    }
+
+    .sw-app-wrapper-inner {
+        .sw-app-main-heading {
+            text-align: center;
+        }
+
+        table {
+            &.separate {
+                border-collapse: separate;
+            }
+        }
+
+        .sw-app-main-content:not(.responsive), .standard-width {
+            margin: 0 auto;
+            width: 980px;
+        }
+
+        .sw-app-main-content {
+            min-height: 480px;
+
+            &.center {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &.drop-120 {
+                margin-top: 55px;
+            }
+
+            &.drop-140 {
+                margin-top: 140px;
+            }
+
+            &.financial-info {
+                width: 1005px;
+            }
+
+            &.sw-nine {
+                // margin to compensate for .msgbox (temp)
+                margin-top: 100px;
+            }
+
+            .sw-app-welcome {
+                p {
+                    float: left;
+
+                    span {
+                        font-weight: $font-bold;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                }
+            }
+
+            .sw-app-workflow, .sw-app-stress-test, .sw-app-alll, .sw-app-insights {
+                margin-top: 50px;
+                margin-right: -30px;
+
+                .sw-four {
+                    margin-bottom: 20px;
+
+                    .well {
+                        margin: 0;
+                        border-top: 4px solid $brand-blue;
+                        box-sizing: border-box;
+                        border-radius: 0;
+                        cursor: pointer;
+
+                        &:nth-child(even) {
+                            margin-right: 20px;
+                            margin-left: 20px;
+                        }
+
+                        &:hover {
+                            border-top: 4px solid $brand-dark-blue;
+
+                            h4 {
+                                color: $brand-dark-blue;
+                            }
+                        }
+
+                        h4 {
+                            text-align: center;
+                            color: $brand-blue;
+                            margin-top: 0;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+                    }
+
+                    &.sw-disabled {
+                        .well {
+                            border-top: 4px solid $gray-light;
+
+                            h4 {
+                                color: $gray-light;
+                            }
+
+                            &:hover {
+                                border-top: 4px solid $gray;
+
+                                h4 {
+                                    color: $gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sw-app-stress-test {
+                margin-top: 30px;
+            }
+
+            .sw-app-workflow {
+                .sw-four {
+                    padding-right: 0;
+
+                    .well {
+                        height: 70px;
+                        border-left: 4px solid $brand-blue;
+                        border-top: 0;
+                        display: table;
+                        padding: 12px;
+                        width: 100%;
+
+                        &:hover {
+                            border-left: 4px solid $brand-dark-blue;
+                            border-top: 0;
+                        }
+
+                        h4 {
+                            text-align: left;
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &.sw-disabled {
+                        .well {
+                            border-left: 4px solid $gray-light;
+                            border-top: 0;
+
+                            &:hover {
+                                border-left: 4px solid $gray;
+                                border-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sw-app-alll {
+                margin-top: 25px;
+
+                .sw-four:first-child {
+                    margin-left: 160px;
+                }
+            }
+
+            .alll-key-menu {
+                display: inline-block;
+                margin-top: 25px;
+
+                .sw-two {
+                    margin-top: 10px;
+                    text-align: center;
+
+                    span {
+                        display: inline-block;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .stress-test-list {
+                padding-top: 30px;
+                width: 480px;
+                margin: 0 auto;
+            }
+
+            ul.add-data-menu {
+                position: relative;
+                background-color: transparent;
+                z-index: 1;
+                left: 42%;
+
+                li {
+                    font-family: $font-serif;
+                    text-decoration: none;
+                    outline: none;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    a {
+                        color: white;
+                        display: inline-block;
+
+                        &:hover, &:active {
+                            color: $gray-lighter;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-top: 20px;
+                        display: inline-block;
+                    }
+                }
+
+                &:hover > ul {
+                    visibility: visible;
+                    -webkit-transition: all 0.5s;
+                    transition: all 0.5s ease 0s;
+                }
+
+                ul {
+                    visibility: hidden;
+                    -webkit-transition: all 0.5s;
+                    transition: all 0.5s ease 0s;
+                    background-color: white;
+                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+                    position: absolute;
+                    top: 0;
+                    left: 18.5%;
+
+                    li {
+                        a {
+                            display: block;
+                            padding: 0.5em 1em;
+                            color: $brand-blue;
+
+                            &:hover, &:active {
+                                color: $brand-dark-blue;
+                            }
+                        }
+                    }
+
+                    ul {
+                        background-color: white;
+                        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+                        left: 100%;
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        .sw-app-side {
+            margin-top: 70px;
+
+            &.sw-three {
+                padding-left: 28px;
+                padding-right: 0;
+                width: calc(25% - 15px);
+                margin-top: 85px;
+                margin-left: 15px;
+            }
+
+            .sw-app-info-block {
+                margin-bottom: 30px;
+
+                h4 {
+                    color: $gray;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+
+                p {
+                    padding: 0;
+                    color: $gray;
+                    margin-bottom: 0;
+                    font-size: 15px;
+                }
+
+                a {
+                    font-size: 14px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    // Online Application styling specific to templates located in SageworksAnalystRoot\LoanApplications
+    form[action*=UploadDocumentPopup] {
+        .popup-button-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    .loan-application-file-upload-table {
+        .form-group {
+            margin-top: 10px;
+        }
+
+        input[type=file] {
+            padding: 0;
+        }
+
+        .textarea-label {
+            text-align: center;
+        }
+
+        .has-error {
+            .form-control {
+                border-color: $brand-orange !important;
+            }
+
+            label {
+                color: $brand-orange;
+            }
+        }
+    }
+    // Styling also located in class .creditanalysis-default-settings
+    .riskrating-default-settings {
+        .form-group {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 15px;
+            clear: both;
+
+            > div {
+                float: left;
+                width: 49%;
+            }
+
+            &.optional {
+                width: 45% !important;
+            }
+        }
+    }
+
+    .breakout-selector {
+        padding-left: 10px;
+    }
+
+    .calculation-view-container {
+        margin-bottom: 30px;
+
+        .view-table-heading {
+            font-family: $font-serif;
+            font-size: $font-size-base;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        &.fifty {
+            table {
+                width: 46%;
+                float: left;
+            }
+        }
+    }
+
+    .view-audit-trail-container {
+        clear: both;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    // typography filter specific
+    %filter-typo {
+        font-family: $font;
+        font-weight: $font-light;
+        font-size: $font-size-base;
+        line-height: 1.8em;
+        color: $text-color;
+    }
+
+    %flipped {
+        display: inline-block;
+        transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        /* IE 9 */
+        -webkit-transform: rotateX(180deg);
+        /* Safari and Chrome */
+    }
+    // Product Selection page styles productselection.aspx
+    .product-selection-page {
+        .product-alert-container {
+            background-color: $gray-lighter;
+            display: inline-block;
+            width: 100%;
+            border-top: 6px solid $brand-orange;
+            @include box-shadow(0px 1px 10px 1px rgba(85,85,85,.3));
+
+            p {
+                font-family: $font;
+                font-size: $font-size-h6;
+                margin-left: 15px;
+                padding: 8px 15px;
+                color: $gray-dark;
+
+                strong, b {
+                    color: $brand-orange;
+                }
+            }
+
+            &:after {
+                content: '\f071';
+                position: absolute;
+                color: $brand-orange;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-size: 2.2em;
+                right: -7px;
+                top: 27px;
+                text-shadow: 1px 1px 2px rgba(85,85,85,0.5);
+            }
+        }
+    }
+    // Risk Rating Report page UI for Toggle of Full Screen
+    .toggle-full-screen-button {
+        position: relative;
+        left: calc(100% - 120px);
+        bottom: -21px;
+        width: 100px;
+
+        &.reports-container-full-width {
+            left: calc(100% - 140px);
+        }
+    }
+
+    .risk-rating-report-table:not(.toggle-full-width-wrapper) {
+        .toggle-full-screen {
+            display: block;
+            width: 980px;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            &, .headingCell {
+                @extend %flipped;
+            }
+        }
+
+        .DataTableAdapterSearchRow {
+            width: 980px;
+        }
+    }
+
+    .toggle-full-width-wrapper {
+        margin-left: 60px;
+
+        #SelectFieldsToDisplayLink {
+            display: none;
+        }
+    }
+
+    .reports-container-full-width .results-container {
+        margin-left: 60px;
+    }
+
+    .risk-rating-reporting-container {
+        position: relative;
+
+        &:not(.reports-container-full-width) {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .risk-rating-report-filter-container {
+            position: relative;
+            width: 280px;
+            float: left;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-top: 65px;
+
+            .filter-due-date-picker {
+                position: absolute;
+                top: 55px;
+                z-index: 2;
+
+                .select-small {
+                    width: 142px;
+                }
+            }
+
+            .accordian-trigger {
+                position: relative;
+                padding-left: 5px;
+
+                &.filter {
+                    a {
+                        display: block;
+                    }
+                }
+
+                a {
+                    @extend %filter-typo;
+
+                    &:hover {
+                        color: $brand-blue;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                }
+
+                &:hover {
+                    color: $brand-blue;
+                }
+            }
+
+            .filter-value-container {
+                text-indent: 30px;
+            }
+
+            div[id^=reportFilter]:not(.no-out) {
+                width: 500px;
+                height: 300px;
+                position: absolute;
+                left: 100%;
+                background-color: white;
+                z-index: 2;
+                border: 1px solid $gray;
+                padding: 20px;
+            }
+
+            .report-filter-panel {
+                .filter-inline {
+                    div:not(.ButtonContainer):not(.DateControlContainer) {
+                        display: inline;
+                    }
+
+                    select {
+                        display: inline;
+                        max-width: 225px;
+                    }
+                }
+
+                input, .DateControlContainer, div > input {
+                    width: 130px !important;
+                    margin-left: 5px;
+                }
+
+                &.no-out {
+                    display: block !important;
+
+                    h5, p, .ButtonContainer {
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                    label {
+                        @extend %filter-typo;
+                    }
+                }
+
+                .ButtonContainer {
+                    margin-top: 30px;
+                }
+
+                .filter-button-container {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+
+            .filter-section-title-container {
+                background-color: $gray-lighter;
+                padding: 10px;
+                margin-bottom: 5px;
+                min-height: 40px;
+
+                .filter-section-title {
+                    float: left;
+                    color: $text-color;
+                    font-weight: $font-bold;
+                    font-size: $font-size-base;
+                }
+
+                button {
+                    float: right;
+                }
+            }
+        }
+
+        .risk-rating-reports-container {
+            float: left;
+            min-height: 680px;
+
+            &:not(.reports-container-full-width) {
+                width: 980px;
+            }
+        }
+    }
+    // request contact product selection requestcontact.aspx
+    .request-contact-info-entry {
+        td {
+            text-align: right;
+            padding: 2px 5px;
+        }
+
+        .details {
+            height: 150px !important;
+        }
+    }
+
+    .request-info-product-select {
+        width: 555px;
+        margin: 0 auto;
+
+        .panel-title {
+            font-family: $font;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .sw-six {
+            padding: 0 !important;
+
+            div {
+                position: relative;
+            }
+        }
+
+        .ButtonContainer {
+            margin-top: 20px;
+        }
+
+        input[type=checkbox] {
+            display: none;
+        }
+
+        input[type=checkbox] + label {
+            background-image: url("../../../images/analyst/icons/svg/square.svg");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-size: 18px 18px;
+            display: block;
+            padding: 0;
+        }
+
+        input[type=checkbox]:checked + label {
+            background-image: url("../../../images/analyst/icons/svg/check-square.svg");
+        }
+
+        label {
+            span {
+                position: relative;
+                left: 28px;
+            }
+        }
+
+        .form-group {
+            input, label {
+                display: inline-block;
+            }
+        }
+    }
+
+    .preview-risk-rating-container {
+        .preview-panel {
+            padding: 10px;
+            width: 320px;
+            overflow-y: auto;
+            margin: 30px auto;
+            border: 2px solid $brand-dark-blue;
+
+            &.dual-model {
+                width: 570px;
+            }
+
+            .form-group {
+                float: left;
+                width: 50%;
+                text-align: center;
+                font-weight: $font-bold !important;
+
+                span {
+                    color: $brand-dark-blue;
+                }
+            }
+        }
+
+        .item-changed {
+            color: $brand-dark-blue;
+            font-weight: $font-sbold;
+        }
+    }
+
+    .show-print {
+        display: none;
+    }
+    // Management reporting express view
+    .express-view {
+        .express-view-frame-container {
+            margin: 0 auto;
+            border: 1px solid $gray-lighter;
+
+            iframe, object, embed {
+                width: 100%;
+            }
+        }
+    }
+    // table components
+    .add-new-section {
+        background: #efefef;
+        height: 40px;
+        position: relative;
+        margin: 15px auto 0;
+
+        a {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+    }
+    // Risk Rating application styling
+    .risk, .policy {
+
+        .add-new-section {
+            width: 78%;
+        }
+        // Risk Rating styling classes
+        .reason-message {
+            font-weight: $font-sbold;
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid $gray-lighter;
+            display: inline-block;
+            width: 500px;
+        }
+
+        .overview-comments-container, .approval-filters-container, .approvals-results-container {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .overview-comments-container {
+            &.comments-no-show-border {
+                border-bottom: 1px solid #d5d5d5;
+                padding-bottom: 15px;
+            }
+        }
+
+        .approval-filters-container {
+            border-top: 1px solid #d5d5d5;
+
+            .sectiontitle {
+                position: absolute;
+                top: -35px;
+            }
+
+            .accordian-trigger {
+                top: -25px;
+            }
+
+            .filter-inputs {
+                select {
+                    width: 280px;
+                }
+            }
+        }
+
+        .additional-settings {
+            .form-container {
+                float: left;
+
+                &.izquierda {
+                    width: 30%;
+                }
+
+                &.direcha {
+                    width: 65%;
+                    margin-left: 25px;
+                }
+
+                .form-group {
+                    .select-small {
+                        min-width: inherit;
+                        width: 150px;
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .overview-table-wrap {
+            padding: 0 10px;
+        }
+
+        .overview-table {
+            text-align: center;
+        }
+
+        .textarea-label {
+            text-align: center;
+            display: block;
+        }
+
+        textarea.form-control {
+            width: 80%;
+            height: 90px;
+            margin: 15px auto;
+        }
+
+        .text-large {
+            width: 100%;
+            height: 100px;
+        }
+
+        .range-edit-link {
+            font-family: $font-serif;
+            font-size: $font-size-small;
+            font-style: italic;
+            cursor: pointer;
+            color: $brand-blue;
+        }
+
+        .select-small {
+            &.factor-name {
+                width: 262px;
+                margin-left: 5px;
+            }
+        }
+
+        .factor-numeric-col {
+            .form-control {
+                width: 67px;
+                text-align: right;
+                background-position-x: 95%;
+
+                &.non-percent-value {
+                    background-position-x: 0%;
+                }
+            }
+        }
+
+        .factor-benchmark-col {
+            width: 14%;
+        }
+
+        .factor-comment-col {
+            width: 28%;
+        }
+
+        .factor-column {
+            width: 60%;
+        }
+
+        .calculation-factor-column {
+            width: 35%;
+            text-align: left;
+
+            .chosen-container {
+                width: 93.5% !important;
+            }
+        }
+
+        .policy-exception-table {
+            width: 100%;
+
+            input, select, .customDropDownContainer {
+                min-width: 150px;
+                max-width: 150px;
+            }
+            // The custom dropdown spacing is slightly different
+            textarea {
+                min-width: 148px;
+                max-width: 148px;
+            }
+
+            .policy-exception-column, .policy-name {
+                min-width: 190px;
+                max-width: 190px;
+            }
+
+            textarea {
+                border: none;
+                line-height: 22px;
+                height: 22px;
+                padding: 0 16px 0 5px;
+            }
+
+            .custom-combo-box-options {
+                max-height: 182px
+            }
+
+            .icon-alignment {
+                float: left;
+            }
+
+            .customDropDownContainer, .right {
+                float: right;
+            }
+
+            .ng-disabled .customDropDownArrow {
+                background-color: #EBEBE4;
+            }
+        }
+
+        .policy-exception-column {
+            .chosen-container {
+                width: 84.5% !important;
+            }
+        }
+
+        .has-error {
+            .form-control {
+                border-color: $brand-orange !important;
+            }
+
+            label {
+                color: $brand-orange;
+            }
+        }
+
+        .template-formula-section {
+            width: 80%;
+            background-color: #fff;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0;
+
+            &:not([data-value="0"]) {
+                margin-top: 50px;
+            }
+
+            .template-head {
+                position: relative;
+
+                input, a {
+                    display: inline;
+                }
+
+                a {
+                    position: absolute;
+                    right: 0;
+                    bottom: 5px;
+                    font-family: $font-serif;
+                    font-style: italic;
+                }
+            }
+
+            .template-table-wrap {
+                border: 1px solid #d5d5d5;
+                padding: 15px 10px;
+            }
+        }
+
+        .select-small {
+            min-width: 200px;
+            max-width: 405px;
+        }
+
+        .template-title {
+            width: 30%;
+            font-size: $font-size-base;
+            margin-bottom: 10px;
+        }
+
+        .setup-container {
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        .additional-settings-control-container {
+            margin-top: 30px;
+            position: relative;
+
+            .inner-control {
+                border: 1px solid #d5d5d5;
+                padding: 15px 10px 0;
+
+                .form-group {
+                    position: relative;
+
+                    label {
+                        max-width: 250px;
+                    }
+
+                    select, input {
+                        position: absolute;
+                        right: 0;
+                        width: 340px;
+                    }
+                }
+            }
+
+            .settings-accordian-trigger {
+                position: absolute;
+                top: -25px;
+                right: 0;
+            }
+        }
+
+        .all-accordian-trigger {
+            text-align: right;
+            margin-bottom: 10px;
+
+            a {
+                font-family: "aleo";
+                font-style: italic;
+                font-size: $font-size;
+            }
+        }
+
+        .accordian-trigger {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+
+            a {
+                font-family: "aleo";
+                font-style: italic;
+                font-size: $font-size;
+            }
+
+            &.comments {
+                top: 0px;
+                right: 90px;
+            }
+        }
+
+        .inline div {
+            display: inline-block;
+        }
+
+        .template-section-wrap {
+            border: 1px solid $gray-lighter;
+            position: relative;
+        }
+
+        .overview-risk-rating-dashboard {
+            position: relative;
+            text-align: center;
+
+            .current-risk-rating-container {
+                position: absolute;
+                width: 120px;
+                right: 0;
+                top: 25px;
+            }
+
+            .wizard-container {
+                text-justify: auto;
+                -ms-text-justify: auto;
+            }
+
+            .wizard-item {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .settings {
+
+            .financial-statements-table {
+
+                tr {
+                    height: 24px;
+                }
+
+                .label-cell {
+                    padding: 0px 35px 0px 0px;
+                    text-align: left;
+                    max-width: 30%;
+                }
+
+                .value-cell {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+
+        .dual-model-range-controls {
+            width: 334px;
+            margin: 0 auto;
+        }
+    }
+
+    sw-table-custom-table {
+
+        .sw-table-custom-table-header {
+            & {
+                position: relative;
+            }
+
+            .export-to-excel-link {
+                width: 40px;
+                height: 24px;
+                display: block;
+                position: absolute;
+                top: -32px;
+                right: 0;
+                background: transparent url("/images/analyst/icons/2x/xcel2X.png") no-repeat 100% 50%;
+                background-size: contain;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    // This sets the max height for a jquery dropdown in Policy Exceptions.
+    // It can't go inside the policy exception section because the dropdown
+    // options are rendered by the component just inside the <body> tags.
+    .policy-exceptions-options {
+        max-height: 182px
+    }
+}
+
+// Chosen customizations
+
+.dropdowntall, .customdropdowntall {
+	.chosen-container-single {
+		.chosen-single {
+			height: 40px !important;
+			width: 120px;
+
+			span {
+				white-space: normal;
+				padding-left: 3px;
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+
+		.chosen-drop {
+			min-width: 200px;
+		}
+	}
+}
+
+.sw-app-footer {
+	border-style: solid;
+	border-color: white;
+	-moz-border-image: url(images/double-border.png) 9 repeat;
+	-ms-border-image: url(images/double-border.png) 9 repeat;
+	-o-border-image: url(images/double-border.png) 9 repeat;
+	border-image: url(images/double-border.png) 9 repeat;
+	border-width: 9px;
+	border-left: solid 0 transparent;
+	border-bottom: solid 0 transparent;
+	border-right: solid 0 transparent;
+	padding-top: 40px;
+	font-size: 14px;
+
+	.footer-nav {
+		li {
+			display: inline;
+			margin-right: 5px;
+
+			a {
+				color: $gray;
+
+				&:hover {
+					color: $brand-blue;
+				}
+			}
+		}
+	}
+
+	.copy-right {
+		font-style: italic;
+		color: $gray-light;
+	}
+}
+/* SWAppMenu styling */
+.sw-app-menu-trigger {
+	position: fixed;
+	top: 80px;
+	left: -60px;
+
+	@extend .heading-link-item;
+	background-color: $brand-dark-blue;
+
+	@include transform(rotate(-90deg));
+	z-index: 12;
+
+	&.notification-active {
+		top: 150px;
+	}
+
+	a {
+		color: white;
+		line-height: 2.5em;
+		padding: 10px;
+
+		&:hover {
+			color: rgba(255, 255, 255, 0.5);
+			cursor: pointer;
+		}
+	}
+
+	.maintenance-active & {
+		top: 140px;
+	}
+
+	&.drop {
+		margin-top: 80px;
+	}
+}
+
+.sw-app-menu {
+	position: fixed;
+	background-color: $brand-dark-blue;
+	visibility: hidden;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s ease 0s;
+	width: 370px;
+	height: 100%;
+
+	&.notification-active {
+		top: 80px;
+	}
+
+	.sw-app-menu-li {
+		margin-top: 15px;
+		margin-right: 30px;
+		margin-left: 30px;
+
+		li {
+			padding-bottom: 5px;
+
+			&.divider {
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+
+			a {
+				@extend .heading-link-item;
+				color: rgba(255, 255, 255, 1);
+				cursor: pointer;
+
+				&:hover {
+					opacity: 0.8;
+				}
+
+				&.sw-disabled {
+					opacity: 0.5;
+				}
+			}
+
+			&.sub-menu-li-item {
+				a {
+					font-family: $font-serif;
+					font-weight: $font-thin;
+					text-transform: none;
+				}
+			}
+		}
+	}
+
+	.closing-trigger {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		color: white;
+
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+
+	&.maintenance-active {
+		top: 70px;
+	}
+
+	&.drop {
+		margin-top: 80px;
+	}
+}
+// SidebarEffects
+.sw-effect-1.sw-app-menu {
+	visibility: hidden;
+	-ms-transform: translate(-370px, 0);
+	-webkit-transform: translate3d(-370px, 0, 0);
+	transform: translate3d(-370px, 0, 0);
+}
+
+.sw-effect-1.sw-app-menu-open .sw-effect-1.sw-app-menu {
+	visibility: visible;
+	-ms-transform: translate(0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.sw-effect-1.sw-app-menu::after {
+	display: none;
+}
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .sw-pusher, .no-js .sw-pusher {
+	padding-left: 300px;
+}
+/* Bootstrap dropdown menu */
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-menu {
+	min-width: 1px;
+	background-color: $almost-white;
+	border: 1px solid $gray-lighter;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: $gray-dark;
+
+	&.multi-level {
+		left: 50%;
+		top: 0px;
+	}
+
+	.dropdown-submenu {
+		position: relative;
+
+		&:hover {
+			a {
+				background-color: $gray-lighter !important;
+				color: $gray-dark;
+
+				&:after {
+					border-left-color: transparent;
+				}
+			}
+
+			ul {
+				li {
+					a {
+						background-color: $almost-white !important;
+
+						&:hover {
+							background-color: $header-background-color !important;
+
+							&:after {
+								border-left-color: transparent;
+							}
+						}
+
+						&:after {
+							border-left-color: transparent;
+						}
+					}
+
+					ul {
+						height: 150px !important;
+						overflow: hidden;
+						overflow-y: scroll;
+
+						li {
+							a {
+								background-color: $almost-white !important;
+
+								&:hover {
+									background-color: $gray-lighter !important;
+
+									&:after {
+										border-left-color: transparent;
+									}
+								}
+
+								&:after {
+									border-left-color: transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		a {
+			&:after {
+				display: block;
+				content: " ";
+				float: right;
+				width: 0;
+				height: 0;
+				border-color: transparent;
+				border-style: solid;
+				border-width: 5px 0 5px 5px;
+				margin-top: 5px;
+				margin-right: -10px;
+				border-left-color: transparent;
+			}
+		}
+
+		.dropdown-menu {
+			top: 0;
+			left: 100%;
+		}
+	}
+
+	li {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+		&:hover {
+			a {
+				background-color: $gray-lighter !important;
+				color: $gray-dark;
+			}
+		}
+	}
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+}
+
+.ca-customer-summary {
+	.OuterAdapterDiv {
+		.DataTableInterior {
+			height: 210px;
+		}
+	}
+}
+// Taxtables sorting styles
+.tablescroll {
+	margin: 0 auto;
+}
+
+.weighted {
+	color: white;
+
+	&:not(.head1):not(.head2) {
+		background-color: $brand-dark-blue;
+		font-size: 11px;
+		height: 15px;
+		border-right: 1px solid white;
+		text-align: center;
+
+		i.move-icon {
+			vertical-align: sub;
+			margin-left: 10px;
+
+			&:before {
+				content: url(https://resources.sageworks.com/images/analyst/icons/1x/move.png);
+				height: 15px;
+				width: 15px;
+			}
+
+			&:hover {
+				cursor: move;
+			}
+		}
+	}
+}
+
+#scrolly {
+	position: relative;
+
+	#HighlightModifiedTaxData_ButtonContainer.sevenhundred {
+		margin: 0 auto;
+		width: 700px;
+	}
+}
+
+.scroll-controls-container {
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+
+	&.scroll-e {
+		margin-bottom: -50px;
+	}
+
+	&.scroll-k {
+		margin-bottom: -50px;
+	}
+
+	&.scroll-re {
+		display: inline;
+	}
+
+	.scroll-button {
+		float: left;
+
+		img {
+			max-height: 30px;
+		}
+	}
+
+	.right-button {
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.scroll-tooltip {
+		float: left;
+		margin: 5px;
+	}
+}
+
+.fix-left:not([align*=left]) {
+	text-align: right;
+
+	&:first-child {
+		padding-right: 10px;
+	}
+}
+
+#taxtable-wrap {
+	overflow-x: scroll;
+	overflow-y: visible;
+	margin-left: 280px;
+	margin-bottom: 10px;
+
+	tr:last-child {
+		td.switch-hide {
+			display: none;
+		}
+	}
+
+	td.hideall, .repeater-table td.hideall, .DataTable td.hideall {
+		&:not(.fix-left) {
+			display: table-cell;
+		}
+	}
+
+	.fix-left {
+		position: absolute;
+		top: auto;
+		height: auto;
+		margin-left: -25px;
+
+		&:nth-child(1) {
+			width: 30px;
+			left: 0;
+		}
+
+		&:nth-child(2) {
+			left: 30px;
+
+			&:after {
+				content: '';
+				position: relative;
+				height: auto;
+				width: 100%;
+			}
+
+			b {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&.realestate-investment-table {
+		width: 560px;
+		margin-left: 378px;
+
+		.fix-left {
+			margin-left: 0;
+			text-align: right;
+
+			&:nth-child(1) {
+				left: 0px;
+				width: 340px;
+
+				input {
+					float: right;
+				}
+			}
+
+			&:nth-child(2) {
+				left: -25px;
+				width: 0px;
+			}
+
+			&:nth-child(3) {
+				left: 340px;
+				width: 20px;
+			}
+
+			&:nth-child(4) {
+				left: 360px;
+				width: 20px;
+			}
+		}
+	}
+}
+// PD Report styling
+.pdreport {
+	margin-top: 55px !important;
+
+	.normaltitle {
+		margin-top: 20px;
+	}
+
+	.cr-co-block {
+		.normaltitle {
+			margin-top: 0px;
+		}
+	}
+
+	.report-control-head {
+		margin-bottom: 35px;
+
+		p {
+			margin: 0;
+			font-weight: $font-sbold;
+
+			span {
+				font-weight: $font-thin;
+			}
+		}
+
+		.btn-grp {
+			margin-top: 15px;
+		}
+
+		.score-heading {
+			font-family: proxima-nova,arial,sans-serif;
+			font-weight: $font-xbold;
+			color: #000;
+			font-size: 60px;
+			margin-bottom: -5px;
+			text-align: right;
+		}
+	}
+
+	.report-control-foot {
+		text-align: center;
+		margin-bottom: 40px;
+
+		a:first-child, a:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	.button-small {
+		padding: 0.3em 0.7em;
+	}
+
+	.figure-overlay {
+		.sw-six {
+			li:first-child {
+				font-family: $font;
+				font-weight: $font-bold;
+			}
+		}
+	}
+
+	.pd-technologies {
+		h4 {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		h5 {
+			font-size: $font-size-small;
+			margin-bottom: 5px;
+			font-family: $font-serif;
+		}
+	}
+
+	.pd-content-box {
+		box-sizing: border-box;
+
+		h4 {
+			color: #555;
+		}
+
+		p {
+			margin-bottom: 30px;
+		}
+
+		.button-inline-right {
+			float: right;
+			position: relative;
+			top: -10px;
+		}
+	}
+}
+
+.pd-risk-rating {
+	&.risk-ratings {
+		input[type=text].rating {
+			font-weight: $font-bold;
+		}
+
+		.display-inline-block {
+			span {
+				font-weight: $font-bold;
+			}
+		}
+	}
+}
+
+.document-retrieval {
+	.sagenav-brand.logo {
+		img {
+			display: block;
+			max-height: 50px;
+		}
+	}
+}
+// Selection text
+@include selection {
+	background: $brand-blue;
+}
+
+
+.list-item-select-popup {
+	.items-container-wrapper {
+		width: 720px;
+		margin: auto;
+	}
+
+	.items-container {
+		margin: 20px 10px;
+		width: 340px;
+		height: 400px;
+		border: solid 1px #999999;
+		float: left;
+		overflow-y: auto;
+
+		h4 {
+			margin: 0 0 10px;
+			padding: 8px 0;
+			color: #666666;
+			background: #f5f5f5;
+		}
+
+		a {
+			display: block;
+			margin: 3px 10px;
+			line-height: 1.2em;
+		}
+	}
+
+	.available-items a:before {
+		content: " + ";
+	}
+
+	.selected-items a:before {
+		content: " - ";
+	}
+}
+
+.truncate {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.centeredInPage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	transform: translateY(-50%);
+}
+
+.vertical-divider-blue {
+	border-left: 3px solid #5091cd;
+}
+
+.sw-settings-checkbox-container {
+	&.sw-div-table {
+		padding: 0 !important;
+
+		.sw-div-table-row div {
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
+	}
+}
+
+.fancyCheck {
+	position: relative;
+	top: 6px;
+}
+
+.loanloss-report {
+	#IncludePurchasedLoansBox {
+		div.checkbox {
+			width: 180px;
+		}
+	}
+}
+
+
+.custom-table-page-layout-sortable-handle-sortable-handle {
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: 13px;
+	left: 45px;
+	font-size: 16px;
+	line-height: 19px;
+	background: transparent url("/images/analyst/icons/svg/drag-and-drop.svg") no-repeat 50% 50%;
+	background-size: cover;
+	cursor: move;
+}
+
+.custom-table-page-layout-listview-report table.swtable {
+	min-width: 100%;
+
+	.data-row-cell {
+		cursor: pointer;
+	}
+}
+
+.custom-table-page-layout-sortable-container {
+	position: relative;
+}
+
+.custom-table-page-layout-sortable-sections {
+
+	.configuration-card-hidden {
+		.configuration-card-heading {
+			background-color: transparent;
+		}
+
+		.custom-table-page-layout-sortable-toggle {
+			background-color: transparent;
+		}
+	}
+
+	.configuration-card-heading:hover {
+		background-color: #e1ecf7;
+	}
+
+	.custom-table-page-layout-sortable-toggle {
+		width: 19px;
+		height: 19px;
+		position: absolute;
+		top: 13px;
+		left: 13px;
+		font-size: 16px;
+		line-height: 19px;
+		background-color: #5091cd;
+		text-align: center;
+
+		input {
+			display: none;
+		}
+
+		label {
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			border: 1px solid #5091cd;
+			cursor: pointer;
+		}
+
+		input:checked + label::before {
+			content: "\002713";
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			font-size: 18px;
+			text-indent: 2px;
+		}
+
+		input:disabled + label {
+			background-color: #8d8d8d;
+			border: 1px solid #8d8d8d;
+		}
+	}
+
+	.custom-table-page-layout-sortable-handle {
+		width: 19px;
+		height: 19px;
+		position: absolute;
+		top: 13px;
+		left: 45px;
+		font-size: 16px;
+		line-height: 19px;
+		background: transparent url("/images/analyst/icons/svg/drag-and-drop.svg") no-repeat 50% 50%;
+		background-size: cover;
+		cursor: move;
+	}
+}
+
+.configuration-card {
+
+	& {
+		background-color: white;
+		border: 2px solid #eee;
+		border-radius: 0;
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.configuration-card-heading {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		font-size: 20px;
+		line-height: 45px;
+		font-weight: 400;
+		letter-spacing: 2.5px;
+		background-color: #eee;
+	}
+
+	.configuration-mode .configuration-container {
+		border: 0px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.table-tabs {
+		margin-top: 10px;
+	}
+}
+
+.sw-custom-form-container {
+	background-color: transparent;
+}
+
+.sw-custom-form-container table {
+	width: 100% !important;
+}
+
+.sw-custom-form-container ul {
+	width: 100% !important;
+}
+
+.sw-custom-form-container ul li {
+	width: 50% !important;
+}
+
+.sw-custom-form-setup td select {
+	max-width: 200px;
+}
+
+.sw-custom-form-setup td.full-row-field-cell select {
+	max-width: 500px;
+	text-align-last: center;
+	font-weight: bold;
+}
+
+.sw-sortable-placeholder {
+	min-height: 27px;
+	background-color: #eee;
+}
+
+.progress-tabs {
+	margin-top: 5px;
+}
+
+.grey-heading {
+	min-height: 34px;
+	background-color: #eee;
+	margin-top: 0px;
+	line-height: 2em;
+}
+
+i.relationships-icon {
+	color: $brand-blue;
+}

@@ -1,0 +1,480 @@
+﻿/*
+	Sageworks Global Navigation
+
+	Sidebar - rules for the insulated side nav.
+
+	root context: "body.globalnav-enabled #globalnav"
+*/
+
+.gn-sidebar {
+	position: fixed;
+	width: 0;
+	left: 0;
+	top: 48px;
+	bottom: 0;
+	z-index: 509;
+	overflow: hidden;
+	font-family: $font;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	background-color: rgba(255,255,255,0.0);
+	color: #fff;
+}
+
+.gn-sidebar-liner {
+	display: block;
+	width: $globalnav-sidebar-width-open;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	overflow: visible;
+	background-color: $brand-dark-blue;
+}
+
+.gn-sidebar-trigger {
+	& {
+		display: none;
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		z-index: 5;
+		background-color: $brand-dark-blue;
+		cursor: pointer;
+	}
+
+	span {
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin: 16px auto 0 auto;
+		overflow: hidden;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.gn-sidetab-links {
+	display: table;
+	width: 100%;
+	padding: 0 8px 0 48px;
+	font-size: 14px;
+	line-height: 48px;
+}
+
+.gn-sidetab-link {
+	& {
+		display: table-cell;
+		padding: 0 16px 0 0;
+		color: #fff;
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 500;
+	}
+
+	span {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+	}
+
+	&.active {
+		span::after {
+			content: "\00020";
+			display: block;
+			height: 2px;
+			position: absolute;
+			top: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			background-color: #fff;
+		}
+	}
+}
+
+.gn-sidetabs {
+	position: relative;
+	padding: 0 0 16px 0;
+	background-color: $brand-dark-blue;
+	font-size: 14px;
+	line-height: 24px;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.gn-sidetab {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.gn-sidegroup {
+	& {
+		position: relative;
+		z-index: 4;
+	}
+
+	.gn-sidegroup-name {
+		& {
+			width: 100%;
+			overflow: hidden;
+			padding: 0 0 0 48px;
+			position: relative;
+			line-height: 40px;
+			font-weight: 400;
+			cursor: pointer;
+		}
+
+		&:hover {
+			color: rgba(255,255,255,0.5);
+		}
+
+		a {
+			/* if we place "A" tag here, we want its click-coverage to span the full width */
+			display: block;
+			color: inherit;
+		}
+	}
+
+	.gn-sidegroup-name-status {
+		display: block;
+		width: 11px;
+		height: 11px;
+		position: absolute;
+		top: 15px;
+		right: 18px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-size: 11px;
+		line-height: 0;
+		cursor: pointer;
+		opacity: 0.5;
+		transition: transform $globalnav-timing-expansion ease, opacity $globalnav-timing-expansion ease;
+	}
+
+	&.gn-group-noexpand .gn-sidegroup-name-status {
+		display: none;
+	}
+
+	& > ul {
+		display: none;
+		padding: 0 0 8px 0;
+		margin: 0;
+		list-style: none outside;
+		font-size: 14px;
+		line-height: 18px;
+
+		& > li {
+			display: block;
+			padding: 4px 8px 4px 72px;
+			margin: 0;
+			list-style: none outside;
+
+			&.gn-sidegroup-subhead {
+				padding-left: 48px;
+				font-weight: 400;
+			}
+
+			&.gn-sidegroup-listlabel {
+				display: none;
+			}
+
+			&.gn-link-current {
+				background-color: rgba(0,0,0,0.15);
+			}
+
+			&.gn-link-noaccess {
+				a {
+					color: rgba(255,255,255,0.4);
+				}
+			}
+
+			& > a {
+				color: #fff;
+
+				&:hover {
+					color: rgba(255,255,255,0.5);
+				}
+			}
+		}
+	}
+
+	&.active, &.gn-group-current {
+		& {
+			background-color: $globalnav-color-group-active;
+		}
+
+		.gn-sidegroup-name-status {
+			transform: scale(1,-1);
+		}
+
+		.gn-sideicon {
+			background-color: $globalnav-color-group-active;
+		}
+
+		& > ul {
+			display: block;
+		}
+	}
+
+	&.gn-group-noexpand {
+		/* for no-expand groups, don't show active status (only should show if they are "current") */
+		&, .gn-sideicon {
+			background-color: $brand-dark-blue;
+		}
+	}
+
+	&.gn-group-current {
+		&::before {
+			content: "\0020";
+			width: 4px;
+			height: 100%;
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 6;
+		}
+
+		&, .gn-sideicon {
+			/* override to ensure we show the "active" color when current */
+			background-color: $globalnav-color-group-active;
+		}
+
+		.gn-sidegroup-name-status {
+			display: none;
+		}
+
+		& + .gn-sidegroup {
+			border-top: 1px solid rgba(0,0,0,0.2);
+		}
+	}
+}
+
+.gn-sideicon {
+	& {
+		display: block;
+		width: 48px;
+		height: 40px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 5;
+		background-color: $brand-dark-blue;
+	}
+
+	span {
+		display: block;
+		width: 24px;
+		height: 24px;
+		margin: 8px auto 0 auto;
+		overflow: hidden;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.gn-sidetools {
+	padding: 16px 0;
+	position: relative;
+	z-index: 5;
+	border-top: 1px solid rgba(255,255,255,0.2);
+
+	a {
+		display: block;
+		width: 100%;
+		padding: 0 0 0 48px;
+		position: relative;
+		color: #fff;
+		line-height: 40px;
+		font-weight: 400;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+.gn-sidefooter {
+	display: block;
+	width: 56px;
+	position: absolute;
+	top: auto;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+}
+
+
+/* menu is expanded */
+&.gn-menu-active {
+	.gn-sidebar {
+		width: $globalnav-sidebar-width-open;
+	}
+
+	.gn-sidebar-liner {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.gn-sidebar-trigger span {
+		/* horz flip the expander element to make it a "close" arrow */
+		transform: scale(-1,1);
+	}
+}
+
+
+/* ### RESPONSIVE BREAKPOINT ## : At this size, we start showing the docked menu */
+@media only screen and (min-width:$globalnav-breakpoint-width-for-visible-docking) {
+	.gn-sidebar {
+		& {
+			width: $globalnav-sidebar-width-closed;
+		}
+
+		&:hover {
+			width: $globalnav-sidebar-width-open;
+		}
+	}
+
+	.gn-sidebar-liner {
+		width: $globalnav-sidebar-width-closed;
+	}
+
+	.gn-sidebar-trigger {
+		display: block;
+	}
+
+	.gn-sidetab-links {
+		visibility: hidden;
+	}
+
+	.gn-sidegroup {
+		.gn-sidegroup-name {
+			white-space: nowrap;
+		}
+
+		.gn-sidegroup-name-status {
+			opacity: 0.0;
+		}
+
+		&.active {
+			&, .gn-sideicon {
+				background-color: $brand-dark-blue;
+			}
+		}
+
+		&.gn-group-current {
+			&, .gn-sideicon {
+				background-color: $globalnav-color-group-active;
+			}
+		}
+
+		&.active, &.gn-group-current {
+			& > ul {
+				/* don't auto-show the submenus while we are collapsed */
+				display: none;
+			}
+		}
+
+		& > ul {
+			/* convert into the "flyout" look */
+			display: none;
+			width: $globalnav-flyout-width;
+			padding-top: 8px;
+			position: absolute;
+			top: 0;
+			left: $globalnav-sidebar-width-closed;
+			z-index: 2;
+			background-color: $globalnav-color-group-active;
+
+			li {
+				padding-left: 16px;
+				padding-right: 16px;
+
+				&.gn-sidegroup-listlabel {
+					display: block;
+					font-weight: 700;
+				}
+			}
+		}
+
+		&:hover .gn-sidegroup-name-status {
+			opacity: 0.5;
+		}
+
+		&:hover > ul {
+			/* display the flyout */
+			display: block;
+		}
+	}
+
+
+	/* menu is expanded */
+	&.gn-menu-active {
+		.gn-sidebar {
+			width: $globalnav-sidebar-width-open;
+		}
+
+		.gn-sidebar-liner {
+			width: $globalnav-sidebar-width-open;
+		}
+
+		.gn-sidetab-links {
+			visibility: visible;
+		}
+
+		.gn-sidegroup {
+			& > ul {
+				/* strip the "flyout" behavior */
+				display: none;
+				width: auto;
+				padding-top: 0px;
+				position: static;
+				left: auto;
+
+				li {
+					padding-left: 72px;
+					padding-right: 8px;
+
+					&.gn-sidegroup-listlabel {
+						display: none;
+					}
+				}
+			}
+
+			&:hover > ul {
+				/* don't let hover status control the display anymore */
+				display: none;
+			}
+
+			&.active, &.gn-group-current {
+				.gn-sidegroup-name-status {
+					opacity: 0.5;
+				}
+
+				&, .gn-sideicon {
+					background-color: $globalnav-color-group-active;
+				}
+
+				& > ul, &:hover > ul {
+					display: block;
+				}
+			}
+
+			&.gn-group-current {
+				.gn-sidegroup-name {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

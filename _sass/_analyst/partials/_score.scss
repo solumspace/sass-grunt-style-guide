@@ -1,0 +1,478 @@
+@media all and (min-width: 30em) {
+  .sageworks-score {
+    background-color: rgb(255, 255, 255);
+    clear: both;
+  }
+
+  .closer-look {
+    background-color: rgb(237, 237, 237);
+  }
+
+  .how-calculated {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .metrics-content-wrapper {
+    text-align: center;
+    padding: 2em 0px;
+  }
+
+  .score-table-wrapper {
+    margin: 1em 0;
+    padding: 1em 0;
+    background-color: lighten($gray-lighter, 10%);
+    text-align: center;
+  }
+
+  .score-table {
+    margin: 0 auto;
+  }
+
+  .score-section-header {
+    margin-bottom: 1em;
+    color: $brand-blue;
+    font-size: $font-size-medium;
+    font-family: $font-sbold;
+    text-align: left;
+  }
+
+  .score-block {
+    width: 8%;
+    height: 50px;
+    margin-right: 0.5em;
+    display: inline-block;
+  }
+
+  .score-block-inner {
+    height: 60%;
+    padding-top: 20%;
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+  }
+
+  .score-grade {
+    .range-block {
+      left: 30px;
+    }
+  }
+
+  .score-a-plus, .score-a, .score-a-minus, .score-b-plus, .score-b,
+  .score-b-minus, .score-c-plus, .score-c, .score-c-minus {
+    color: $gray-dark;
+  }
+
+  .score-a-plus {
+    background-color: $brand-blue;
+  }
+
+  .score-a {
+    background-color: lighten($brand-blue, 10%);
+  }
+
+  .score-a-minus {
+    background-color: lighten($brand-blue, 20%);
+  }
+
+  .score-b-plus {
+    background-color: lighten($brand-blue, 30%);
+  }
+
+  .score-b {
+    background-color: lighten($gray-dark, 40%);
+  }
+
+  .score-b-minus {
+    background-color: lighten($gray-dark, 30%);
+  }
+
+  .score-c-plus {
+    background-color: lighten($gray-dark, 20%);
+  }
+
+  .score-c {
+    background-color: lighten($gray-dark, 10%);
+  }
+
+  .score-c-minus {
+    background-color: $gray-dark;
+  }
+
+  .score-table span {
+    width: 2em;
+    height: 1em;
+  }
+
+  .current-score .score-block-inner {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  /*.ui-grid-a { margin-top: 1em; }*/
+  .rate-range-score-desc {
+    width: 100%;
+    margin: 2em 0 0px;
+    overflow: hidden;
+  }
+
+  .rate-range {
+    width: 30%;
+    float: left;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    padding-right: 1em;
+    border-right: 1px solid rgb(178, 178, 178);
+
+    p {
+      margin: 0 !important;
+      text-align: left;
+    }
+  }
+
+  .score-desc {
+    width: 60%;
+    float: left;
+    padding-left: 1em;
+
+    p {
+      margin: 0 !important;
+      text-align: left;
+    }
+  }
+
+  .score-distribution {
+    text-align: center;
+  }
+
+  .interest-rate-wrapper {
+    text-align: center;
+  }
+
+  .interest-rate-text {
+    width: 70%;
+    margin: 1em auto;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  .closer-look .metrics-content-wrapper {
+    margin-top: 1em;
+  }
+
+  .ratio {
+    width: 100%;
+    padding: 1em 0;
+    border-top: 1px solid rgb(178, 178, 178);
+    overflow: auto;
+  }
+
+  .ratio .left {
+    width: 34%;
+    float: left;
+    padding-right: 1em;
+  }
+
+  .ratio .right {
+    width: 52%;
+    float: left;
+    padding-left: 1em;
+  }
+
+  .ratio-title {
+    margin-bottom: 1em;
+    font-size: $font-size-large;
+    text-align: left;
+  }
+
+  .ratio p {
+    margin: 0 0 0.75em 0;
+  }
+
+  .ratio-desc {
+    margin-top: 1em;
+  }
+
+  .ratio-value {
+    position: relative;
+    width: 0px;
+    height: 10px;
+    margin: 2px 0;
+    background-color: $brand-blue;
+  }
+
+  .range-graph-wrapper {
+    padding-left: 15px;
+  }
+
+  .range-graph-header {
+    height: 15px;
+  }
+
+  .range-graph-header > div {
+    position: relative;
+    height: inherit;
+    float: left;
+    text-align: left;
+  }
+
+  .range-graph-header .excellent {
+    left: 106px;
+  }
+
+  .range-graph-header .poor {
+    left: -10px;
+  }
+
+  .range-graph {
+    width: 200px;
+    height: 15px;
+    margin-top: 0.25em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(130, 130, 130);
+    text-align: left;
+  }
+
+  .range-graph-unit {
+    width: 49px;
+    height: inherit;
+    float: left;
+    border-right: 1px solid rgb(130, 130, 130);
+  }
+
+  .net-income-to-sales .range-graph-unit {
+    width: 99px;
+  }
+
+  .range-graph-unit.last {
+    border-right: none;
+  }
+
+  .range-graph-footer {
+    width: 202px;
+    overflow: auto;
+  }
+
+  .range-graph-value {
+    width: 49px;
+    float: left;
+    font-size: 0.65em;
+    text-align: left;
+  }
+
+  .net-income-to-sales .range-graph-value {
+    width: 99px;
+  }
+
+  .range-graph-value.last {
+    width: 54px;
+  }
+
+  .net-income-to-sales .range-graph-value.last {
+    width: 102px;
+  }
+
+  .range-graph-value.last > span {
+    float: right;
+  }
+
+  .range-graph-value-desc {
+    font-size: 0.65em;
+  }
+
+  .range-graph-unit.first .range-graph-value, .range-graph-unit.first .range-graph-value-desc {
+    left: 0;
+  }
+
+  .triangle-small {
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+  }
+
+  .triangle-red {
+    border-color: rgb(221, 77, 62) transparent transparent transparent;
+  }
+
+  .triangle-green {
+    border-color: rgb(135, 188, 57) transparent transparent transparent;
+  }
+
+  .range-graph-unit .triangle-small {
+    position: relative;
+    top: -24px;
+    left: 46px;
+  }
+
+  .range-graph-unit.first .triangle-small {
+    left: 0;
+  }
+
+  .bar-graph-wrapper {
+    padding: 0.2em 1em;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .bar-graph-wrapper > div {
+    overflow: auto;
+  }
+
+  .bar-graph-wrapper .bar-graph-desc {
+    width: 20%;
+    padding-right: 1em;
+    float: left;
+    font-size: 0.65em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .bar-graph-wrapper .bar-graph {
+    float: left;
+    width: 100px;
+    height: 15px;
+    background-color: $brand-blue;
+  }
+
+  .bar-graph-wrapper .ratio-value {
+    float: left;
+    margin-left: 0.5em;
+    font-size: 0.65em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .your-business {
+    padding-bottom: 0.25em;
+  }
+
+  .your-business .bar-graph {
+    margin-top: 0.5em;
+  }
+
+  .your-business .ratio-value {
+    margin-top: $font-size-large;
+  }
+
+  .industry-average, .national-average {
+    padding-top: 0.25em;
+    border-top: 1px solid rgb(178, 178, 178);
+  }
+
+  .industry-average .bar-graph, .national-average .bar-graph {
+    margin-top: 0.25em;
+  }
+
+  .industry-average .ratio-value {
+    margin-top: 0.5em;
+  }
+
+  .credit-score-outer {
+    text-align: center;
+  }
+
+  .credit-score-graph-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .credit-score .ratio-desc {
+    margin: 0;
+  }
+
+  .credit-score ul {
+    padding: 0;
+  }
+
+  .credit-score li {
+    list-style-type: none;
+  }
+
+  .credit-score-block {
+    width: 25%;
+    height: 30px;
+    float: left;
+    font-size: 0.65em;
+    text-align: center;
+  }
+
+  .credit-score-block.red {
+    background-color: rgb(221, 77, 62);
+  }
+
+  .credit-score-block.orange {
+    background-color: rgb(233, 145, 39);
+  }
+
+  .credit-score-block.yellow {
+    background-color: rgb(244, 213, 16);
+  }
+
+  .credit-score-block.green {
+    background-color: rgb(99, 179, 70);
+  }
+
+  .credit-score-block-inner {
+    height: 15px;
+    padding-top: 5px;
+    background-color: rgb(237, 237, 237);
+  }
+
+  .credit-score-block.current-score .credit-score-block-inner {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .credit-score-footer {
+    margin-top: 3.25em;
+    overflow: auto;
+    clear: both;
+    font-size: 0.65em;
+  }
+
+  .credit-score-footer .worst {
+    float: left;
+  }
+
+  .credit-score-footer .best {
+    float: right;
+  }
+
+  /*.credit-score-triangle { width: 0px; height: 0px; margin: 0 auto; border-style: solid; border-width: 5px 4px 0 4px; }
+  .credit-score-triangle.red { border-color: rgb(221,77,62) transparent transparent transparent; }*/
+  .sales-growth .industry-average {
+    padding-bottom: 0.25em;
+  }
+
+  .how-calculated .metrics-content-wrapper {
+    margin: 1em 0 3em;
+  }
+
+  .how-calculated .metrics-content {
+    overflow: auto;
+  }
+
+  .how-calculated .left {
+    width: 54%;
+    float: left;
+    padding-right: 2em;
+  }
+
+  .how-calculated .right {
+    width: 36%;
+    float: left;
+    padding-left: 2em;
+  }
+
+  .how-calculated .right .image-container {
+    width: 10em;
+  }
+
+  .how-calculated .right .image-container img {
+    width: 10em;
+    height: auto;
+  }
+}

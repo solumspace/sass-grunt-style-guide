@@ -1,0 +1,215 @@
+ul,
+ol {
+  padding: 0 0 0 1.3em;
+
+  // margin: 0 0 30px 0;
+  list-style: none;
+
+  @include padding-start(0);
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  color: $gray;
+  line-height: 1.5em;
+  font-family: $font-serif;
+}
+
+ul {
+  &.ls-bullets {
+    list-style: disc;
+    margin: 1em 0 2em 20px;
+    padding-left: 0px;
+
+    li {
+      margin-bottom: 1em;
+      font-style: italic;
+    }
+
+    li.normal {
+      font-style: normal;
+    }
+  }
+}
+
+ul {
+  &.ls-check {
+    li {
+      display: block;
+      float: left;
+      margin-top: 1em;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 1.5em;
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+        background-image: url(/images/check.png);
+        background-repeat: no-repeat;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+.list-group-item {
+  border: 1px solid white !important;
+}
+
+.list-group {
+  margin-bottom: 0;
+  text-align: left;
+  padding: 10px;
+
+  .list-group-item-heading {
+    font-size: $font-size-base;
+    font-family: $font-sbold;
+    text-decoration: underline;
+  }
+
+  p {
+    line-height: 1;
+    font-size: $font-size-small;
+  }
+
+  li {
+    font-size: $font-size-small;
+  }
+}
+
+.results-wizard {
+  padding: 0 !important;
+}
+
+.data-list-header {
+  position: relative;
+  top: -20px;
+  background: $gray-light;
+  text-align: center;
+
+  h2 {
+    font-size: $font-size-h5;
+    font-family: $font-sbold;
+  }
+}
+
+.loan-results-header {
+  @extend .data-list-header;
+}
+
+.confirmation-header {
+  @extend .data-list-header;
+
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.list-header {
+  background: $gray-light;
+
+  h1 {
+    font-size: $font-size-h6;
+    font-family: $font;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  &.list-hints {
+    background: $gray;
+
+    h2 {
+      font-size: $font-size-h6;
+      font-family: $font;
+      margin-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Loansage could be using this still
+// a {
+//     &.list-group-item {
+//         height:auto;
+//         border: 5px solid white;
+//         &:hover, &:focus {
+//             color: $gray-dark;
+//             background-color: white;
+//             border: 5px solid $gray-lighter;
+//         }
+//         &:last-child {
+//             border-bottom-right-radius: 0;
+//             border-bottom-left-radius: 0;
+//         }
+//         &.active small {
+//             color:#fff;
+//         }
+//         @media screen and (min-width: 480px){
+//             min-height:105px;
+//         }
+//         @media screen and (min-width: 1200px) {
+//             min-height: 125px;
+//         }
+//     }
+// }
+.term-hints {
+  margin-left: -3.2em;
+  margin-right: -3.2em;
+
+  h3 {
+    font-size: $font-size-h5;
+    color: $gray-dark;
+    text-align: left;
+    font-family: $font-sbold;
+    margin-left: 0.5em;
+
+    @media screen and (max-width: 767px) {
+      font-size: $font-size-large;
+    }
+  }
+
+  h4 {
+    font-size: $font-size-large;
+    color: white;
+    font-family: $font-sbold;
+    background: $gray-lighter;
+    padding: 0.5em;
+  }
+
+  a {
+    color: $gray-dark;
+
+    &:hover {
+      color: $brand-blue;
+    }
+  }
+
+  ul {
+    margin-left: 1em;
+
+    li {
+      font-family: $font-sbold;
+      font-size: $font-size-medium;
+      line-height: 1.5em;
+
+      span {
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  i {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+  }
+}

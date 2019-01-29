@@ -1,0 +1,74 @@
+﻿
+$brand-dark-blue: #295e8e;
+$brand-blue: #5091cd;
+$brand-orange: #ed7d31;
+$gray-head: #d5d5d5;
+$gray-light: #a2a3a3;
+$gray-lighter: #efefef;
+$font: "proxima-nova", helvetica, arial, sans-serif;
+$font-sbold: 600;
+$font-bold: 700;
+
+//checkbox and button container
+.ctrl-container {
+    text-align: center;
+    i, span {
+        float: left;
+    }
+    span {
+        padding-left: 10px;
+    }
+}
+
+md-icon {
+    background-color: #fff;
+    border-color: $brand-blue;
+    color: $brand-blue;
+}
+
+[data-button-type="upload-button" ]{
+    margin-top: -8px;
+}
+
+md-tab-content {
+    min-height: 400px;
+	padding-bottom: 1em;
+}
+
+md-tab-item.md-active md-icon, md-tab-item.md-active md-icon.complete:before {
+    background-color: $brand-blue;
+    border-color: $brand-blue;
+    color: #fff !important;
+}
+
+md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary, .md-button.md-primary.md-raised {
+    background-color: $brand-blue !important;
+    border-color: $brand-blue !important;
+    color: #fff !important;
+}
+
+md-tabs .md-tab.md-active {
+    color: $brand-blue !important;
+}
+
+.md-button.md-default-theme.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-fab:not([disabled]):hover {
+    background-color: $gray-light !important;
+    border-color: none !important;
+}
+
+a {
+    color: $brand-blue !important;
+    &:hover {
+        color: $brand-blue !important;
+    }
+}
+
+.center-message {
+    max-width: 460px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.bank-logo.bank-logo {
+	position: absolute;
+}

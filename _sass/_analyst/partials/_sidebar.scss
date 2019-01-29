@@ -1,0 +1,116 @@
+.nav-sidebar-container {
+  @include make-sm-column(3);
+
+  position: absolute;
+
+  // min-height: 100%;
+  width: 300px;
+  z-index: 2;
+  margin-left: -700px;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @extend .border-dot-right;
+
+  @include transition(all 0.5s ease);
+}
+
+.nav-sidebar {
+  width: 100%;
+  bottom: 0;
+  text-align: left;
+
+  .nav {
+    top: -5px;
+
+    &.default {
+      top: 20px;
+      left: 0;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        @include font-defined($font, $font-bold);
+
+        font-size: $font-size-large;
+        letter-spacing: 0;
+        text-transform: none;
+        color: $brand-blue;
+        padding: 1px 0 3px;
+        margin: 12px 0;
+
+        &:hover, &.active, &:focus {
+          color: $brand-dark-blue;
+          background: none;
+        }
+      }
+
+      &.active {
+        a {
+          color: $brand-dark-blue;
+        }
+      }
+    }
+
+    h4 {
+      &.panel-title {
+        @extend li;
+      }
+    }
+
+    .panel-heading {
+      padding: 10px 0;
+    }
+
+    .panel {
+      @include box-shadow(none);
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    margin: 8px 0;
+  }
+
+  p {
+    font-size: $font-size-small;
+    font-family: $font-serif;
+    margin: 0 0 18px;
+  }
+
+  .text-overflow {
+    a, .media-body {
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+a {
+  &.list-group-item {
+    font-family: $font-serif;
+    padding: 5px 0;
+    color: $gray-dark !important;
+
+    &:hover, &.active, &.active:hover {
+      background-color: white !important;
+      color: $brand-blue;
+      border-color: white;
+    }
+
+    &.active {
+      &:hover {
+        color: $brand-dark-blue;
+      }
+    }
+  }
+}
+
+.sidenav-active {
+  background: $gray-lighter;
+  color: $gray-dark;
+}

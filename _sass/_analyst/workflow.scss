@@ -1,0 +1,1007 @@
+﻿
+$brand-blue: #5091cd;
+$brand-orange: #ed7d31;
+$gray-head: #d5d5d5;
+$gray-light: #a2a3a3;
+$gray-lighter: #efefef;
+$font: "proxima-nova", helvetica, arial, sans-serif;
+$font-sbold: 600;
+$font-bold: 700;
+
+.manage-workflow-templates {
+	.template-selection-table {
+		td {
+			padding: 5px;
+		}
+	}
+}
+
+// styling for phase step template
+.workflow-phase-step-template {
+	.step-type-input {
+		width: 55px;
+	}
+}
+
+// Workflow overview page styling
+.workflow-page {
+	.final-approval-rowhighlight td {
+		color: $brand-orange;
+	}
+
+	.alll-overview {
+		div.sw-four:first-child {
+			margin-left: 17%;
+		}
+
+		.DashboardLink {
+			span {
+				line-height: 2.35em;
+			}
+		}
+	}
+
+	.template-wrapper {
+		word-wrap: break-word;
+	}
+
+	.swtable {
+		&.swtable-container {
+			&.swtable-horizontal {
+				overflow-x: hidden;
+			}
+		}
+	}
+
+	.wf-wrap {
+		white-space: pre-wrap; /* CSS3 */
+		white-space: -moz-pre-wrap; /* Firefox */
+		white-space: -pre-wrap; /* Opera <7 */
+		white-space: -o-pre-wrap; /* Opera 7 */
+		word-wrap: break-word; /* IE */
+	}
+}
+
+// Workflow application styling
+.workflow {
+	.all-accordian-trigger {
+		text-align: right;
+		margin-bottom: 10px;
+
+		a {
+			font-family: "aleo";
+			font-style: italic;
+			font-size: 14px;
+		}
+	}
+
+	.accordian-trigger {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+
+		a {
+			font-family: "aleo";
+			font-style: italic;
+			font-size: 14px;
+		}
+
+		&.comments {
+			top: 0px;
+			right: 90px;
+		}
+	}
+
+	.form-group {
+		&.horizontal {
+			text-align: right;
+
+			div {
+				display: inline-block;
+			}
+		}
+	}
+
+	.wf-inline-form-group {
+		width: 64.4%;
+
+		input {
+			display: inline-block;
+			vertical-align: middle;
+
+			&.form-control {
+				max-width: 400px;
+			}
+		}
+	}
+
+	.wf-add-phase-dropdown {
+		.select-small {
+			width: 200px;
+		}
+	}
+
+	.wf-roles-list-container {
+		max-width: 980px;
+	}
+
+	.wf-list-item-container {
+		max-width: 1024px;
+		margin: 5px auto;
+		padding: 10px;
+
+		div:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		.wf-list-item {
+			label {
+				word-wrap: break-word;
+				line-height: 1.2em;
+				font-size: 14px;
+				padding-bottom: 5px;
+			}
+		}
+
+		.form-inline {
+			a {
+				margin-right: 5px;
+				vertical-align: super;
+				display: inline-block;
+			}
+
+			select {
+				&.three-forty {
+					width: 340px;
+				}
+			}
+
+			input, textarea, label {
+				&.two-twenty {
+					width: 220px;
+				}
+
+				&.three-forty {
+					width: 340px;
+
+					&:not(input) {
+						margin-left: 21px;
+					}
+
+					&:not(input, textarea) {
+						margin-top: 10px;
+					}
+				}
+
+				&.four {
+					width: 400px;
+				}
+			}
+		}
+	}
+
+	.swtable {
+		&.full {
+			width: 100%;
+		}
+
+		table.no-border {
+			border: none;
+		}
+
+		.editmodeIconWidth {
+			cursor: pointer;
+		}
+	}
+
+	.sw-div-table {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.wf-details {
+		margin-top: 10px;
+		padding: 10px;
+		border: 1px solid $gray-head;
+	}
+
+	.sw-div-table-row {
+		&:first-of-type {
+			div:not(.chosen-container) {
+				padding-top: 5px;
+			}
+		}
+
+		div:not(.chosen-container) {
+			padding-right: 5px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+		}
+	}
+
+	.inline div {
+		display: inline-block;
+	}
+
+	.template-section-wrap {
+		position: relative;
+		padding: 10px 25px;
+		margin-bottom: 30px;
+
+		&:not(.borderless) {
+			border: 1px solid $gray-lighter;
+		}
+
+		&:not(.full-width) {
+			max-width: 85%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.sw-six {
+			border: 1px solid $gray-lighter;
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+
+			&:first-of-type {
+				margin-left: -15px;
+				margin-right: 15px;
+			}
+		}
+
+		&.final-approval {
+			border: 1px solid $brand-orange;
+		}
+
+		td, .wf-arrow-container a {
+			img {
+				display: block;
+			}
+		}
+
+
+		&#LoansWithMyInstitutionContainer, &#DepositsWithMyInstitutionContainer {
+			.top-row-head {
+				background-color: #efefef;
+			}
+
+			.DataTable {
+				min-height: 220px;
+			}
+		}
+	}
+
+	td.no-padding {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+	.template-final-approval-header {
+		margin-bottom: 10px;
+		color: $brand-orange;
+		font-size: 18px;
+	}
+
+	.template-table-wrap {
+		padding: 0 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	thead {
+		tr:not(.no-padding) {
+			th, td {
+				padding: 10px 20px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.clear-both {
+		clear: both;
+	}
+
+	.overview-table-wrap {
+		padding: 0 10px;
+		margin-bottom: 20px;
+
+		table {
+			margin-bottom: 0;
+		}
+	}
+
+	.workflow-roles {
+		font-family: proxima-nova,helvetica,arial,sans-serif;
+		font-weight: 800;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 4px;
+	}
+
+	.workflow-selector {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+		.form-inline {
+			margin: 10px auto;
+			width: 50%;
+
+			select {
+				max-width: 300px;
+			}
+		}
+
+		select {
+			width: 200px;
+			margin-bottom: 5px;
+		}
+	}
+	// Workflow form styling
+	.workflowEditModeDetails {
+		.swtable tbody tr {
+			border-bottom: none !important;
+		}
+
+		.wf-edit-link {
+			font-family: aleo;
+			font-style: italic;
+			font-size: 13px;
+		}
+	}
+
+	.wf-custom-column-widths {
+		.step-name {
+			width: 275px;
+		}
+
+		.step-type {
+			width: 80px;
+		}
+
+		.link-type {
+			width: 75px;
+		}
+	}
+
+	.wf-step-name-column {
+		div:first-child {
+			width: 318px;
+		}
+
+		label {
+			max-width: 318px;
+			word-wrap: break-word;
+		}
+	}
+
+	.wf-expand-column {
+		width: 80px;
+		text-align: center;
+
+		img {
+			display: inline-block !important;
+
+			&.force-align {
+				float: right;
+				padding-top: 6px;
+				padding-left: 1px;
+			}
+		}
+	}
+
+	.wf-status-column {
+		width: 100px;
+
+		select {
+			width: 100px;
+		}
+	}
+
+	.wf-sw-chosen-column {
+		.chosen-container-multi .chosen-choices {
+			padding: 0 5px !important;
+		}
+
+		width: 200px;
+
+		select {
+			width: 200px;
+		}
+	}
+
+	.wf-role-column {
+		input:not([type='checkbox']), select {
+			width: 300px;
+		}
+	}
+
+	.wf-settings-column {
+		input:not([type='checkbox']), select {
+			width: 200px;
+		}
+	}
+
+	.wf-sw-multiselect-column {
+		button {
+			width: 155px !important;
+		}
+
+		&.third {
+			button {
+				width: 305px !important;
+			}
+		}
+
+		&.fourth {
+			button {
+				width: 367px !important;
+			}
+		}
+	}
+
+	.settings-page {
+		.wf-sw-multiselect-column {
+			button {
+				width: 180px !important;
+				height: 22px;
+			}
+
+			&.third {
+				button {
+					width: 305px !important;
+				}
+			}
+		}
+
+		table.table.table-condensed.borderless {
+			border: none;
+			margin-bottom: 0;
+		}
+	}
+
+	.wf-sw-multiselect-column-header {
+		button, .custom-multiselect {
+			width: 250px !important;
+		}
+
+		&.third {
+			button, .custom-multiselect {
+				width: 305px !important;
+			}
+		}
+	}
+
+	.workflowEditModeDetails {
+		tr > td:first-child:not(.wf-button-container) {
+			text-align: right;
+		}
+
+		.wf-header-input-box {
+			width: 305px;
+		}
+	}
+
+	.wf-header-input-box {
+		width: 250px;
+	}
+
+	.wf-date-picker-column {
+		width: 130px;
+	}
+
+	.wf-notes-column {
+		width: 240px;
+
+		.keep-linebreak {
+			white-space: pre-wrap;
+		}
+	}
+
+	.wf-phase-type-input {
+		width: 315px;
+	}
+
+	.dropdown-content {
+		a {
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.single-digit {
+		width: 20px;
+	}
+
+	.eqcol {
+		select, input, .chosen-single {
+			width: 177px;
+		}
+
+		.chosen-container {
+			vertical-align: middle;
+		}
+	}
+
+	.wf-option-column {
+		select, input, div {
+			width: 240px;
+		}
+	}
+
+	.wf-header-section {
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+
+	.wf-edit-phase-name {
+		margin: 15px;
+		width: 350px;
+	}
+
+	.wf-delete-icon-container {
+		display: table-cell;
+		padding: 0 10px;
+		vertical-align: middle;
+	}
+
+	.wf-approval-logo {
+		width: 25px;
+	}
+
+	.wf-step-starts-column {
+		select {
+			width: 140px;
+		}
+	}
+	// Workflow edit mode specific styles
+	.wf-edit-mode {
+		.wf-step-name-column {
+			label {
+				width: 220px;
+			}
+		}
+
+		.wf-sw-multiselect-column {
+			&:not(.third) {
+				button {
+					width: 110px !important;
+				}
+			}
+		}
+
+		.wf-step-name-column {
+			div:first-child {
+				width: 220px;
+			}
+		}
+
+		td, .wf-arrow-container a {
+			img {
+				display: block;
+			}
+		}
+	}
+
+	.wf-arrow-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.wf-phase-name-container {
+		display: table-row;
+		height: 38px;
+
+		.wf-edit-phase-name {
+			display: table-cell;
+			margin-left: 10px;
+			margin-top: 7px !important;
+		}
+	}
+
+	.workflow-tab-container {
+		background-color: $gray-lighter;
+
+		.workflow-progress-tabs {
+			width: 100%;
+			min-height: 30px;
+			background-color: #d5d5d5;
+			text-align: center;
+
+			li {
+				display: inline-block;
+				text-align: center;
+				background-color: #d5d5d5;
+				border-left: 2px solid $gray-lighter;
+
+				&:last-child {
+					border-right: 2px solid $gray-lighter;
+				}
+
+				a {
+					color: $brand-blue;
+					font-family: $font;
+					font-weight: $font-sbold;
+				}
+
+				&.active {
+					background-color: $gray-lighter;
+					margin-right: -3px;
+					padding-right: 3px;
+				}
+			}
+		}
+
+		.workflow-tab-content {
+			max-width: 80%;
+			margin: 0 auto;
+			min-height: 120px;
+			padding-top: 20px;
+
+			.form-inline {
+				margin-left: -15px;
+			}
+
+			.numbers {
+				width: 40px;
+			}
+		}
+	}
+
+	wf-dropbtn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.wf-button-dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.wf-add-phase-button {
+		a {
+			font-weight: $font-sbold;
+			position: relative;
+
+			&:before {
+				content: '+';
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				left: -10px;
+				font-weight: $font-bold;
+			}
+		}
+	}
+
+	.wf-dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+
+		a {
+			font-weight: $font;
+
+			&:before {
+				content: none;
+			}
+		}
+	}
+
+	.wf-controls {
+		display: inline-block;
+		position: relative;
+		width: 96.5%;
+	}
+
+	.wf-control {
+		display: inline;
+		position: relative;
+		left: -27%;
+
+		&.right {
+			left: 28%;
+		}
+
+		&.single {
+			margin-right: 110px;
+		}
+	}
+
+	.wf-row {
+		display: table-row;
+	}
+
+	.wf-cell {
+		display: table-cell;
+		padding-right: 5px;
+	}
+
+	.wf-dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.wf-dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
+
+	.wf-dropdown:hover .wf-dropdown-content {
+		display: block;
+	}
+}
+
+.wf-add-document-row {
+	padding: 5px;
+
+	a {
+		padding-left: 5px;
+	}
+
+	select {
+		width: 150px;
+	}
+}
+
+.workflow-customer-overview {
+	.OuterAdapterDiv {
+		min-height: calc(100% - 70px);
+	}
+
+	.swtable {
+		thead {
+			th {
+				background-color: #fff;
+				color: #333;
+				font-style: italic;
+			}
+		}
+	}
+
+	.access-restricted-container {
+		border: 5px;
+		background-color: #F2F2F2;
+	}
+
+	.access-restricted-block {
+		padding: 5px;
+		text-align: left;
+		width: 650px;
+		color: gray;
+		background-color: #F2F2F2;
+	}
+
+	access-restricted-title {
+		font-weight: $font-bold;
+	}
+
+	.positionbuttons, .DataTableAdapterContainer {
+		padding-top: 7px;
+	}
+
+	.SectionTitle {
+		font-weight: $font-bold;
+		text-align: center;
+	}
+
+	.DataTableAdapterLabelContainer {
+		font-style: italic;
+	}
+
+	.ButtonTable, .ButtonTable td {
+		font-size: 10px;
+	}
+
+	.WorkflowTabContentContainer {
+		padding: 10px;
+		text-align: center;
+		border: solid 1px #555 !important;
+		z-index: 4;
+		box-shadow: 0 2px 5px 0 #DDD;
+		-moz-box-shadow: 0 2px 5px 0 #DDD;
+		-webkit-box-shadow: 0 2px 5px 0 #DDD;
+	}
+
+	.progress-tabs {
+		border-bottom: solid 1px white;
+		margin-bottom: -2px;
+	}
+
+	.WorkflowTabMenuItem {
+		padding: 0;
+		border: solid 1px #555;
+		font-weight: $font-bold;
+		cursor: default;
+		padding: 4px 39px 6px 40px;
+		margin-bottom: -3px;
+		background-color: #F1F1F1;
+	}
+
+	.DataTableAdapterBorder, tr.DataTableAdapterHeaderRow > td {
+		border: none;
+	}
+
+	.headingRow {
+		padding-top: 15px;
+		background-color: #FFF;
+		border: none;
+	}
+
+	.Notes {
+		height: 100px;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.findoutmorelink {
+		font-weight: $font-bold;
+	}
+
+	.background {
+		background-color: #F2F2F2;
+	}
+
+	.EntityLabel {
+		font-weight: $font-bold;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.notes-container {
+		position: relative;
+		display: inline-block;
+	}
+
+	.characterlimit {
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+	}
+
+	#TDRMenuItem {
+		width: 75px;
+	}
+	/* Colin APR-2302 */
+	div.thumbnail div.background img {
+		height: 113px;
+		width: 187px;
+		z-index: 9;
+	}
+
+	div.thumbnail {
+		margin: 0;
+	}
+
+	div.thumbnail div.foreground img {
+		position: relative;
+		top: -77px;
+		z-index: 10;
+	}
+
+	div.foreground {
+		height: 0;
+	}
+}
+
+/* Manage Workflows page specific styling. */
+.workflow-management, .workflow-steps-directive {
+	button.ui-multiselect {
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.workflow-management-step {
+		margin-bottom: 15px;
+		text-align: center;
+		max-width: 400px;
+		word-wrap: break-word;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@import 'modules/vars';
+
+#UnassociatedEmailsTable {
+	width: 100%;
+}
+
+.unassociatedEmailsTable > .grey-table-foot {
+	width: auto;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+#UnassociatedEmailsTable .grey-table-foot > strong {
+	margin: 0 20px;
+}
+
+#UnassociatedEmailsTable th.sortable-column.sort-asc:before {
+	content: url(/images/analyst/icons/1x/sortarrow_asc.gif);
+	margin-top: -10px !important;
+	height: 20px !important;
+}
+
+#UnassociatedEmailsTable th.sortable-column:before {
+	content: url(/images/analyst/icons/1x/sortarrow_unsorted.gif);
+	margin-top: -5px;
+	height: 15px;
+	width: auto;
+	background-color: #ddd;
+	display: block;
+}
+
+.no-data-message {
+	text-align: center;
+	color: $brand-orange;
+}
+
+#UnassociatedEmailsTable th.sortable-column:after {
+	content: none;
+	height: 0px;
+	background-color: inherit;
+}
+
+#UnassociatedEmailsTable th.sortable-column.sort-asc:after {
+	content: none;
+	height: 0px;
+	background-color: inherit;
+}
+
+#UnassociatedEmailsTable th.sortable-column.sort-desc:after {
+	content: none;
+	height: 0px;
+	background-color: inherit;
+}
+
+.unassociatedEmailsTable-footer-spacing {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.commentsBox {
+	margin-left: 225px;
+	line-height: 1.4em;
+}
+
+
+.sw-sortable-placeholder {
+	min-height: 170px;
+}
+
+.sw-sortable-placeholder, .ui-sortable-helper {
+	background-color: #ffffff;
+	display: block;
+}
+
+.workflow-template-phase {
+	background-color: #ffffff;
+}
+
+.wf-date-picker-style-fix .datepicker-icon {
+	right: 10px;
+}
+
+.wf-date-picker-style-fix .datepicker-with-icon input.datepicker-input {
+	padding-right: 27px;
+}
+
+/* Fix for Save Button in IE */
+.control-panel-flyout {
+	overflow: visible;
+}

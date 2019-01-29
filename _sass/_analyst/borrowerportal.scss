@@ -1,0 +1,105 @@
+﻿@import "modules/vars";
+@import "mixins/mixins";
+@import "modules/progress";
+
+h4 {
+	text-transform: uppercase !important;
+}
+
+.borrower-portal-header {
+	.logo-container, .logout-container {
+		width: 25%;
+	}
+
+	.title-container {
+		width: 50%;
+		text-align: center;
+	}
+
+	.logout-container {
+		text-align: right;
+	}
+}
+
+
+main {
+	background: #FFFFFF;
+	margin-bottom: 0px;
+}
+
+.borrower-portal-content-nav-container {
+	display: flex
+}
+
+.borrower-portal-main-content-container {
+	flex-grow: 1;
+	min-height: 400px;
+
+	.borrower-portal-main-content {
+		width: 980px;
+	}
+}
+
+borrower-portal-navigation {
+	flex-basis: 225px;
+	vertical-align: top;
+	padding: 20px 10px;
+	background: #EFEFEF;
+
+	.navigation-items {
+		padding: 20px 0px;
+
+		.nav-item-link, .nav-item-link:hover, .nav-item-link:visited, .nav-item-link:active {
+			display: block;
+			padding: 6px 10px;
+			color: #333333;
+			font-weight: bold;
+
+			&.active {
+				background: #D5D5D5;
+			}
+		}
+	}
+}
+
+borrower-portal-contact-loan-officer {
+	text-align: center;
+	padding-top: 20px;
+	border-top: solid 1px $gray-head;
+	display: block;
+
+	.contact-loan-officer-title {
+		font-weight: bold;
+	}
+
+	input[type='text'] {
+		border: solid 1px $gray-lighter;
+		padding: 4px;
+		margin: 2px 0px;
+	}
+}
+
+.table-tabs {
+	margin: 0 auto;
+}
+
+.progress-tabs td {
+	padding: 0px;
+}
+
+
+.document-upload-history {
+	.uploaded-documents {
+		border: solid 1px $gray-head;
+		padding: 1em 2em;
+
+		table {
+			width: 100%;
+
+			.column-header {
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,132 @@
+footer {
+  width: 100%;
+  background: #fff;
+  padding: 60px 0;
+  color: white;
+
+  &.white-footer {
+    background: white;
+    color: $gray-dark;
+
+    @extend .double-border-before;
+
+    padding: 0 0 40px 0;
+    height: 420px;
+
+    &.short-stack {
+      height: 215px;
+    }
+
+    a {
+      color: $gray-dark;
+
+      &:hover {
+        color: $brand-blue;
+      }
+    }
+
+    .social-bookmarks {
+      ul {
+        float: right;
+      }
+    }
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $brand-blue-light;
+    }
+  }
+
+  ul.horizontal-links {
+    margin: 0 0 0.7em;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child):after {
+        content: '|';
+        font-family: $font;
+        font-weight: $font-thin;
+        font-size: 1.5em;
+        color: $gray-lighter;
+        margin: 0 17px 0 20px;
+        position: relative;
+        top: 2px;
+      }
+
+      a {
+        font-family: $font;
+        font-weight: $font-light;
+        font-size: $font-size-medium;
+      }
+    }
+  }
+
+  .footer-btm {
+    margin-top: 45px;
+  }
+
+  .footerPhone {
+    font-family: $font;
+    font-weight: $font-sbold;
+    font-size: $font-size-h3;
+    letter-spacing: 2px;
+    margin-top: -9px;
+  }
+
+  .footerEmail {
+    font-size: $font-size-small;
+    font-style: italic;
+  }
+
+  .copyright {
+    font-size: $font-size-small;
+    font-style: italic;
+    color: $gray-light;
+  }
+}
+
+@include footer-fixed(180);
+
+#footer_2 {
+  width: 100%;
+  background: #252525;
+}
+
+#footer_2 a {
+  color: #888;
+}
+
+#footer_2 a:hover {
+  color: #fff;
+}
+
+ul#footer-nav {
+  color: #fff;
+  margin: 25px 0 10px 0;
+}
+
+ul#footer-nav li:first-child {
+  margin-right: 30px;
+}
+
+ul#footer-nav li {
+  display: inline-block;
+  zoom: 1;
+  margin-right: 10px;
+}
+
+#copy {
+  padding: 15px 0;
+  background-color: #f8f8f8;
+  font-size: 11px;
+  text-align: center;
+}
+
+#contact {
+  background: url(../img/contact_map.png) no-repeat 90% 90px;
+}

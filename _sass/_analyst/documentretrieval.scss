@@ -1,0 +1,77 @@
+﻿.document-retrieval-wrapper {
+	.table-borderless {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.table > tbody > tr > td {
+		border-top: 0;
+	}
+
+	.table > tbody + tbody {
+		border-top: 0;
+	}
+
+	.table-row-description {
+		background-color: #efefef;
+	}
+
+	.add-action-wrap {
+		max-width: 800px;
+		margin: 0 auto;
+		background-color: #efefef;
+		padding: 10px;
+	}
+
+	.sagenav {
+		height: 110px;
+	}
+
+	.sagenav-brand.logo > img {
+		max-height: 75px !important;
+	}
+
+	.power-logo {
+		position: absolute;
+		right: 0;
+		top: -30px;
+	}
+
+	.power-logo > span {
+		display: block;
+		font-style: normal;
+		font-size: 13px;
+		color: #777;
+	}
+
+	.power-logo > img {
+		max-height: 30px;
+	}
+
+	.footer-row-2 {
+		position: relative;
+	}
+
+	.document-retrieval > p {
+		text-align: center;
+	}
+
+	.add-action-wrap > a, .table-row-description > td > span {
+		font-weight: 700;
+	}
+
+	.security-message-container p {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.security-message-container p:before {
+		content: url(https://resources.sageworks.com/images/analyst/icons/1x/lock.png);
+		position: relative;
+		width: 16px;
+		height: 20px;
+		top: 3px;
+		left: -3px;
+	}
+}

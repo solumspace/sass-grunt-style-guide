@@ -1,0 +1,446 @@
+
+body {
+  font-family: $font-serif;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+.tableTitle, .normaltitle, .pagetitle, .entity-name, .Title, .sectiontitle, .section-header {
+  line-height: $line-height-base;
+  text-align: left;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+h2 {
+  @include font-defined($font, $font-light);
+
+  font-size: $font-size-h2;
+  color: $gray-dark;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  @include font-defined($font, $font-light);
+
+  font-size: $font-size-h3;
+  color: $gray-dark;
+  letter-spacing: 0.05em;
+}
+
+// standardized onclick hover cursor
+
+a[onclick], .pointer {
+  cursor: pointer;
+}
+
+// Font and color help classes
+.serif-font {
+  font-family: $font-serif;
+  font-weight: $font-bold;
+  font-size: $font-size;
+}
+
+.sans-serif {
+  font-family: $font;
+  font-size: $font-size-base;
+}
+
+.publication, .date, .more-link {
+  font-style: italic;
+  display: block;
+
+  &.inline {
+    display: inline;
+  }
+}
+
+.date, .quote, .credits {
+  color: $gray-light;
+}
+
+.status {
+  color: $brand-dark-blue;
+  font-style: italic;
+}
+
+.no-transform {
+  text-transform: none !important;
+}
+
+.list-link {
+  font-weight: $font-sbold;
+  line-height: 2.3em;
+}
+
+.label {
+  font-family: $font-serif;
+  font-size: $font-size-base;
+}
+
+.vid-link-text {
+  font-family: $font-serif;
+  letter-spacing: .05em;
+}
+
+.mid-section-carousel {
+  h3 {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.9em;
+  }
+}
+
+.price {
+  text-align: center;
+
+  h2 {
+    text-align: center;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  h3 {
+    @include font-defined($font, $font-sbold);
+
+    text-align: center;
+    font-size: $font-size-max;
+    line-height: 0.5;
+    padding-top: 35px;
+  }
+}
+
+.price-1 {
+  h2 {
+    background: $brand-blue-light;
+  }
+
+  h3 {
+    color: $brand-blue-light;
+  }
+}
+
+.price-2 {
+  h2 {
+    background: $brand-green;
+  }
+
+  h3 {
+    color: $brand-green;
+  }
+}
+
+.price-3 {
+  h2 {
+    background: $brand-orange;
+  }
+
+  h3 {
+    color: $brand-orange;
+  }
+}
+
+footer h3 {
+  text-transform: none;
+  font-size: $font-size-h6;
+  margin-bottom: 10px;
+}
+
+.question_box h3 {
+  font-size: $font-size-medium;
+  line-height: $line-height-base * 1.1;
+  margin-bottom: 10px;
+}
+
+h1, h4, .tableTitle, .normaltitle, .pagetitle, .entity-name, .Title, .sectiontitle, .section-header, .sw-span-heading {
+  @include font-defined($font, $font-xbold);
+
+  font-size: $font-size-h4;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 4px;
+
+  strong {
+    @include font-defined($font, $font-sbold);
+  }
+}
+
+.normaltitle {
+  width: 100%;
+}
+
+.sw-app-wrapper-inner {
+  .sw-app-main-heading {
+    .sw-span-heading {
+      @extend h1;
+    }
+  }
+}
+
+h5, .sagenav-menu > li > .fullmenu > .nav-title {
+  @include font-defined($font, $font-xbold);
+
+  font-size: $font-size-h5;
+  line-height: $line-height-base;
+  letter-spacing: 1px;
+}
+
+footer h5 {
+  color: $gray-lighter;
+}
+
+h6 {
+  font-size: $font-size-base;
+}
+
+.italic {
+  font-style: italic;
+}
+
+p {
+  font-family: $font-serif;
+  color: $gray;
+  margin: 0 0 20px 0;
+  line-height: 1.5em;
+
+  &.large-body {
+    font-size: $font-size-large;
+  }
+}
+
+form {
+  &[action="/blog"] {
+    p {
+      font-size: $font-size-base !important;
+    }
+  }
+}
+
+label {
+  font-family: $font-serif;
+  font-weight: normal;
+  color: $gray;
+  Font-size: 14px;
+}
+
+.address {
+  text-align: right;
+}
+
+.body-text {
+  font-family: $font-serif;
+  color: $gray;
+}
+
+/** Links color **/
+a {
+  color: $brand-blue;
+  text-decoration: none;
+
+  @include transition(all 0.2s ease);
+
+  &:hover, &.active, &:focus {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.number-circle {
+  border-radius: 50%;
+
+  @include square(122px);
+
+  display: block;
+  background-color: $gray;
+  text-align: center;
+  font-weight: $font-thin;
+  font-size: 28px;
+  line-height: 40px;
+  font-family: $font;
+  text-decoration: none;
+  border-width: 3px;
+  border-style: solid;
+  margin: auto;
+  padding-top: 2%;
+  color: white;
+
+  &.hollow {
+    border-color: $gray-light;
+    background: transparent;
+    color: $gray-light;
+    margin: 15px auto;
+    padding-top: 36px;
+    border-width: 2px;
+
+    input {
+      max-width: 80px;
+      text-align: center;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-color: $brand-blue;
+      color: $brand-blue;
+      border-width: 1px;
+    }
+
+    .adjusted-score & {
+      border-color: $brand-dark-blue;
+      color: $brand-dark-blue;
+
+      input {
+        border-color: $brand-dark-blue;
+        color: $brand-dark-blue;
+      }
+    }
+  }
+}
+
+.number-circle-two {
+	border-radius: 50%;
+
+	@include square(122px);
+	display: block;
+	background-color: $gray;
+	text-align: center;
+	font-weight: $font-thin;
+	font-size: 28px;
+	line-height: 40px;
+	font-family: $font;
+	text-decoration: none;
+	border-width: 3px;
+	border-style: solid;
+	margin: auto;
+	padding-top: 2%;
+	color: white;
+
+	&.hollow {
+		border-color: $gray-light;
+		background: transparent;
+		color: $gray-light;
+		margin: 15px auto;
+		padding-top: 36px;
+		border-width: 2px;
+
+		input {
+			max-width: 22px;
+			text-align: center;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-color: $brand-blue;
+			color: $brand-blue;
+			border-width: 1px;
+			font-size: 28px;
+			font-weight: 500;
+		}
+
+		.adjusted-score & {
+			border-color: $brand-dark-blue;
+			color: $brand-dark-blue;
+
+			input {
+				max-width: 50px;
+				border-color: $brand-dark-blue;
+				color: $brand-dark-blue;
+				background-color: rgba(255,255,255,.01);
+				text-align: left;
+			}
+
+			input:first-child {
+				text-align:right;
+			}
+
+			input:first-child+span {
+				margin: 0 -6px;
+			}
+		}
+	}
+}
+
+.number-circle-small {
+	border-radius: 50%;
+
+	@include square(80px);
+	display: block;
+	background-color: $gray;
+	text-align: center;
+	font-weight: $font-thin;
+	font-size: 20px;
+	line-height:24px;
+	font-family: $font;
+	text-decoration: none;
+	border-width: 3px;
+	border-style: solid;
+	margin: auto;
+	padding-top: 2%;
+	color: white;
+
+	&.hollow {
+		border-color: $gray-light;
+		background: transparent;
+		color: $gray-light;
+		margin: 15px auto;
+		padding-top: 24px;
+		border-width: 2px;
+
+		input {
+			max-width: 40px;
+			text-align: center;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-color: $brand-blue;
+			color: $brand-blue;
+			background-color:rgba(255,255,255,0.01);
+			border-width: 1px;
+		}
+
+		.adjusted-score & {
+			border-color: $brand-dark-blue;
+			color: $brand-dark-blue;
+
+			input {
+				border-color: $brand-dark-blue;
+				color: $brand-dark-blue;
+			}
+		}
+	}
+}
+
+.adjusted-score {
+  a {
+    color: $brand-dark-blue !important;
+  }
+}
+
+// Long tist of a tags
+
+.sw-long-list {
+  a {
+    font-family: Helvetica, Arial, san-serif !important;
+  }
+}
+
+// Styling for the Risk Rating score calculations page
+
+.score-label {
+  font-family: $font;
+  margin-top: 15px;
+  color: $gray;
+  Font-size: $font-size-large;
+}
+
+.no-label-cush {
+  height: 43px;
+}

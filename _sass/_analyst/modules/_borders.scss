@@ -1,0 +1,73 @@
+
+.border-dot-top {
+  @include border-image-top($border-square-dot-img, $border-width);
+}
+
+.border-dot-right {
+  @include border-image-right($border-square-dot-img, $border-width);
+}
+
+.border-dot-bottom {
+  @include border-image-bottom($border-square-dot-img, $border-width);
+}
+
+.border-dot-left {
+  @include border-image-left($border-square-dot-img, $border-width);
+}
+
+.double-border-top {
+  @include border-image-top($border-double-img, $border-width);
+}
+
+.double-border-bottom {
+  @include border-image-bottom($border-double-img, $border-width);
+}
+
+.double-border-before {
+  @include border-content(before, double-border-top);
+}
+
+.double-border-after {
+  @include border-content(after, double-border-top);
+}
+
+.border-before {
+  @include border-content(before, border-dot-top);
+}
+
+section[role=main] {
+  @include border-content(before, double-border-top);
+
+  margin-top: 60px;
+}
+
+/* Content section and dividing borders */
+
+section[role=banner] {
+  @include border-content(after, double-border-top);
+}
+
+div[role=banner] {
+  @extend .border-dot-bottom;
+
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+div.bigmack[role=banner] {
+  @include border-content(before, double-border-top);
+
+  @extend .border-dot-bottom;
+
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+article[role=banner] {
+  @include border-content(after, border-dot-bottom);
+}
+
+// Analyst styling
+
+.sw-analyst {}

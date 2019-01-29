@@ -1,0 +1,297 @@
+@import '../vendor/chosen';
+
+.crm-app-content {
+
+	.recent-customers {
+		margin-top: 20px;
+	}
+
+	.recent-customers a,
+	.recent-customers b {
+		display: inline-block;
+		padding: 2px;
+	}
+
+	.recent-customers {
+		white-space: nowrap;
+	}
+
+	.COPCustomers {
+		margin-top: 20px;
+	}
+
+	.COPCustomers a,
+	.recent-customers b {
+		display: inline-block;
+		padding: 2px;
+	}
+
+	.COPCustomers {
+		white-space: nowrap;
+	}
+
+	.relationships-table td {
+		padding: 0 15px;
+		/*width:150px;*/
+	}
+
+	img.profile-icon {
+		height: auto;
+		width: 20px;
+		padding: 0 3px;
+	}
+
+	img.relationships-icon {
+		height: auto;
+		width: 28px;
+		padding: 0 3px;
+	}
+
+	.fullDocumentImage.relationships-icon span,
+	.emptyDocumentImage.relationships-icon span {
+		margin-left: 5px;
+	}
+
+	.add-new-table td {
+		padding: 0 8px;
+	}
+
+	.group-edit-table {
+		td {
+			padding: 0 8px;
+		}
+	}
+
+	.MultiRowTabbedButtonContainer {
+		display: none;
+	}
+
+	.portfolio-loans-section {
+		.MultiRowTabbedButtonContainer {
+			display: block;
+		}
+	}
+
+	#AttachedDocuments {
+		text-align: center;
+	}
+
+	.customer-contacts-section-spacing {
+		margin-top: -6px;
+	}
+
+	.padding-help-icons {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.groupNameBox {
+		width: 225px;
+		background-color: #FAFFBD;
+	}
+
+	.group-edit-table {
+		margin-top: 10px;
+	}
+
+	.add-to-calendar-section {
+		background-color: #efefef;
+		padding-bottom: 10px;
+	}
+
+	.crmTooltip a::after {
+		content: "\e64a";
+	}
+
+	.sw-custom-form-container {
+		background-color: transparent;
+	}
+
+	.sw-custom-form-container table {
+		width: 100% !important;
+	}
+
+	.sw-custom-form-container ul {
+		width: 100% !important;
+	}
+
+	.sw-custom-form-container ul li {
+		width: 50% !important;
+	}
+
+	.sw-custom-form-setup td select {
+		max-width: 200px;
+	}
+
+	.sw-custom-form-setup td.full-row-field-cell select {
+		max-width: 500px;
+		text-align-last: center;
+		font-weight: bold;
+	}
+
+	.sw-sortable-placeholder {
+		min-height: 27px;
+		background-color: #eee;
+	}
+
+	.crm-listview-report table.swtable {
+		min-width: 100%;
+		.data-row-cell {
+			cursor: pointer;
+		}
+	}
+
+	.crm-sortable-container {
+		position: relative;
+	}
+
+	.crm-sortable-sections {
+
+		.configuration-card-hidden {
+			.configuration-card-heading {
+				background-color: transparent;
+			}
+
+			.crm-sortable-toggle {
+				background-color: transparent;
+			}
+		}
+
+		.configuration-card-heading:hover {
+			background-color: #e1ecf7;
+		}
+
+		.crm-sortable-toggle {
+			width: 19px;
+			height: 19px;
+			position: absolute;
+			top: 13px;
+			left: 13px;
+			font-size: 16px;
+			line-height: 19px;
+			background-color: #5091cd;
+			text-align: center;
+
+			input {
+				display: none;
+			}
+
+			label {
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				border: 1px solid #5091cd;
+				cursor: pointer;
+			}
+
+			input:checked + label::before {
+				content: "\002713";
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				font-size: 18px;
+				text-indent: 2px;
+			}
+		}
+
+		.crm-sortable-handle {
+			width: 19px;
+			height: 19px;
+			position: absolute;
+			top: 13px;
+			left: 45px;
+			font-size: 16px;
+			line-height: 19px;
+			background: transparent url("/images/analyst/icons/svg/drag-and-drop.svg") no-repeat 50% 50%;
+			background-size: cover;
+			cursor: move;
+		}
+	}
+
+	.configuration-card {
+
+		& {
+			background-color: white;
+			border: 2px solid #eee;
+			border-radius: 0;
+			position: relative;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.configuration-card-heading {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			font-size: 20px;
+			line-height: 45px;
+			font-weight: 400;
+			letter-spacing: 2.5px;
+			background-color: #eee;
+		}
+
+		.configuration-mode .configuration-container {
+			border: 0px;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.table-tabs {
+			margin-top: 10px;
+		}
+	}
+
+	.progress-tabs {
+		margin-top: 5px;
+	}
+
+	.grey-heading {
+		min-height: 34px;
+		background-color: #eee;
+		margin-top: 0px;
+		line-height: 2em;
+	}
+
+	@media print {
+		a:link,
+		a:visited,
+		a:active {
+			background: none;
+			color: #333;
+			text-decoration: none;
+		}
+
+		#MultiRowTabContainer {
+			display: none;
+		}
+
+		a[href^="http:"] {
+			background: none;
+			color: #333;
+			text-decoration: none;
+		}
+	}
+
+	.user-template-access {
+		.chosen-choices {
+			margin: 0px;
+		}
+
+		.search-choice span, .result-selected, .active-result {
+			font-family: Helvetica,Arial,sans-serif;
+		}
+
+		.search-choice-close {
+			-webkit-transition: unset;
+			transition: unset;
+		}
+
+		.select-small {
+			height: 29px;
+			background-size: 15px 7px;
+		}
+	}
+}
