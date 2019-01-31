@@ -1,0 +1,52 @@
+﻿/*
+	Sageworks Global Navigation
+	Brian Babey
+
+	Embeddable style root for the global navigation components.
+	As safety compromise, we use body tag to mark when global navigation is enabled.
+*/
+
+/* configuration vars (needs careful review on any change) */
+$globalnav-sidebar-width-closed: 48px;
+$globalnav-sidebar-width-open: 264px;
+$globalnav-flyout-width: 216px;
+$globalnav-breakpoint-width-for-visible-docking: $screen-sm-min;
+$globalnav-breakpoint-width-for-body-compression: $screen-md-min + $globalnav-sidebar-width-open + 24;
+$globalnav-timing-expansion: .25s;
+$globalnav-color-group-active: #255480;
+
+
+#globalnav {
+	/* hidden by default */
+	display: none;
+}
+
+@media screen {
+	body.globalnav-enabled {
+		& {
+			/* un-insulated container rules */
+			@import "container";
+		}
+
+		#globalnav {
+			/* override the default hidden status*/
+			display: block;
+			/* internal element rules */
+			@import "leaks";
+			@import "header";
+			@import "sidebar";
+		}
+
+		&.globalnav-initializing #globalnav {
+			/* don't animate during init */
+			* {
+				transition: none!important;
+			}
+		}
+
+		&.pdf-download #globalnav, &.printer-friendly #globalnav {
+			/* special page modes which want to hide all navigation */
+			display: none;
+		}
+	}
+}

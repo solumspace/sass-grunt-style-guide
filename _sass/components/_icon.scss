@@ -6,6 +6,23 @@
  * 1) Small image that represents functionality
  */
 .c-icon {
-	height: 16px;
-	width: 16px;
+  width: 10px;
+  height: 10px;
+  &--fill {
+    @include icon-colors(grey);
+  }
+  &--color {
+    @include icon-colors(#ef5b49) {
+      --handle-color: #c13127;
+      --cup-color: #ef5b49;
+      --smoke-color: #cacaea;
+    }
+  }
+  &--color-alt {
+    @include icon-colors(#2f3fff) {
+      --handle-color: #1f2bac;
+      --cup-color: #2f3fff;
+      --smoke-color: #a5acbd;
+    }
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "abrigo-patterns",
+  "description": "Patterns library for Abrigo",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "serve": "grunt serve",
+    "clean": "grunt clean"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "^2.3.1",
+    "grunt-sass": "^3.0.2",
+    "grunt-svg-sprite": "^1.5.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-shell": "^3.0.1",
+    "load-grunt-tasks": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "time-grunt": "^2.0.0"
+  }
+}

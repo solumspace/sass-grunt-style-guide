@@ -1,0 +1,110 @@
+/**
+
+Aleo free font (aka 'aleo')
+
+**/
+
+@font-face {font-family: 'aleo';font-weight: 600;font-style: normal;src: url($font-path + '/Aleo/Bold/aleo-bold-webfont.eot');src: url($font-path + '/Aleo/Bold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Bold/aleo-bold-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Bold/aleo-bold-webfont.woff') format('woff'),url($font-path + '/Aleo/Bold/aleo-bold-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Bold/aleo-bold-webfont.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'aleo';font-weight: 600;font-style: italic;src: url($font-path + '/Aleo/Bold-Italic/aleo-bolditalic-webfont.eot');src: url($font-path + '/31C2D3_1_0.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Bold-Italic/aleo-bolditalic-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Bold-Italic/aleo-bolditalic-webfont.woff') format('woff'),url($font-path + '/Aleo/Bold-Italic/aleo-bolditalic-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Bold-Italic/aleo-bolditalic-webfont.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'aleo';font-weight: normal;font-style: italic;src: url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.eot');src: url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.woff') format('woff'),url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Regular-Italic/aleo-italic-webfont.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'aleo';font-weight: normal;font-style: normal;src: url($font-path + '/Aleo/Regular/aleo-regular-webfont.eot');src: url($font-path + '/Aleo/Regular/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Regular/aleo-regular-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Regular/aleo-regular-webfont.woff') format('woff'),url($font-path + '/Aleo/Regular/aleo-regular-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Regular/aleo-regular-webfont.svg#wf') format('svg');}
+
+@font-face {font-family: 'aleo';font-weight: 300;font-style: italic;src: url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.eot');src: url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.woff') format('woff'),url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Light-Italic/aleo-lightitalic-webfont.svg#wf') format('svg');}
+
+@font-face {font-family: 'aleo';font-weight: 300;font-style: normal;src: url($font-path + '/Aleo/Light/aleo-light-webfont.eot');src: url($font-path + '/Aleo/Light/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),url($font-path + '/Aleo/Light/aleo-light-webfont.woff2') format('woff2'),url($font-path + '/Aleo/Light/aleo-light-webfont.woff') format('woff'),url($font-path + '/Aleo/Light/aleo-light-webfont.ttf') format('truetype'),url($font-path + '/Aleo/Light/aleo-light-webfont.svg#wf') format('svg');}
+ 
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3261139, 2016-08-02T16:57:36-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * Webfont: ProximaNovaS-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Extrabld by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/extrabld/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Black by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/black/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNovaS-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-semibold/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * Webfont: ProximaNovaT-Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+ * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * Licensed pageviews: 10,000,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3261139
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+  
+@font-face {font-family: 'proxima-nova-sc-osf';font-weight: 700;font-style: normal;src: url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.eot');src: url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.woff') format('woff'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-sc-bold.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 800;font-style: normal;src: url('webfontsProxima-Nova//Extra-Bold/proxima-nova-x-bold.eot');src: url($font-path + '/Proxima-Nova/Extra-Bold/proxima-nova-x-bold.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Extra-Bold/proxima-nova-x-bold.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Extra-Bold/proxima-nova-x-bold.woff') format('woff'),url($font-path + '/Proxima-Nova/Extra-Bold/proxima-nova-x-bold.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Extra-Bold/proxima-nova-x-bold.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 700;font-style: normal;src: url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.eot');src: url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.woff') format('woff'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Bold/proxima-nova-bold.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 900;font-style: normal;src: url($font-path + '/Proxima-Nova/Black/proxima-nova-black.eot');src: url($font-path + '/Proxima-Nova/Black/proxima-nova-black.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Black/proxima-nova-black.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Black/proxima-nova-black.woff') format('woff'),url($font-path + '/Proxima-Nova/Black/proxima-nova-black.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Black/proxima-nova-black.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 300;font-style: normal;src: url($font-path + '/Proxima-Nova/Light/proxima-nova-light.eot');src: url($font-path + '/Proxima-Nova/Light/proxima-nova-light.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Light/proxima-nova-light.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Light/proxima-nova-light.woff') format('woff'),url($font-path + '/Proxima-Nova/Light/proxima-nova-light.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Light/proxima-nova-light.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: normal;font-style: normal;src: url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.eot');src: url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.woff') format('woff'),url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Regular/proxima-nova-regular.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova-sc-osf';font-weight: 600;font-style: normal;src: url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.eot');src: url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.woff') format('woff'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-sc-semi-bold.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 600;font-style: normal;src: url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.eot');src: url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.woff') format('woff'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Semi-Bold/proxima-nova-semi-bold.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'proxima-nova';font-weight: 100;font-style: normal;src: url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.eot');src: url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.eot?#iefix') format('embedded-opentype'),url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.woff2') format('woff2'),url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.woff') format('woff'),url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.ttf') format('truetype'),url($font-path + '/Proxima-Nova/Thin/proxima-nova-thin.svg#wf') format('svg');}
+ 
