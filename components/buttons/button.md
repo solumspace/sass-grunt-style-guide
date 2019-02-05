@@ -5,7 +5,7 @@ subgroup: buttons
 permalink: /components/buttons/button.html
 
 title: Button
-description: Button description
+description: _Button_ This is [a link](http://simpleprimate.com/blog/markdown-basics) to a page.
 
 variations:
 - title: Button

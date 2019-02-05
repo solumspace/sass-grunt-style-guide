@@ -13,15 +13,15 @@ layout: default
             		{% if componentPage.layout != "component-category" and componentPage.layout != "component-category2" and componentPage.status != "Planned" %}
 
 					<li class="c-card-list__item l-grid__item">
-						<a href="{{ componentPage.permalink | prepend: site.baseurl }}" class="c-card ">
+						<div class="c-card ">
 
-							<div class="c-card__header">
-								{{ componentPage.subgroup | replace: '-', ' ' | capitalize }}
-							</div>
+							<a a href="{{ componentPage.permalink | prepend: site.baseurl }}" class="c-card__header">
+								{{ componentPage.title }}
+							</a>
 
 							<div class="c-card__body">
 
-								<h2 class="c-card__title">
+								<!-- <h2 class="c-card__title">
 									<span class="c-card__title-text">{{ componentPage.title }}</span>
 									{% if componentPage.status %}
 									{% include badge.html %}
@@ -29,14 +29,33 @@ layout: default
 									<svg class="c-icon c-card__icon">
 										<use href="{{ "/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
 									</svg>
-								</h2><!-- end c-card__title -->
+								</h2><!-- end c-card__title --><!-- -->
 
-								<p class="c-card__desc">{{ componentPage.description }}</p>
+								<p class="c-card__desc" markdown="1">
+									This is [a link](http://simpleprimate.com/blog/markdown-basics) to a page.
+									<!-- {{ componentPage.description | markdownify }} -->
+									<!-- {% capture desc %}{{ componentPage.description }}{% endcapture %}
+									{% if componentPage.description %}{{ desc | markdownify }}{% endif %} -->
+									<!-- {{ componentPage.description }} -->
+								</p>
+
+								<div markdown="1">
+									This is [a link](http://simpleprimate.com/blog/markdown-basics) to a page.
+									<!-- {{ componentPage.description | markdownify }} -->
+									<!-- {% capture desc %}{{ componentPage.description }}{% endcapture %}
+									{% if componentPage.description %}{{ desc | markdownify }}{% endif %} -->
+									<!-- {{ componentPage.description }} -->
+									
+								</div>
+									{{ componentPage.description | markdownify }}
+								<div>
+
+								</div>
 
 							</div><!-- end c-card__body -->
 
 
-						</a><!-- end c-card -->
+						</div><!-- end c-card -->
 					</li>
 
 					{% endif %}
