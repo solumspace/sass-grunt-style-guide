@@ -14,7 +14,9 @@ html {
  */
 body {
 	background: $color-white;
-	font: 18px/1.75em $font;
+	font: 15px/1.75em $font;
+	font-weight: 200;
+	letter-spacing: .03em;
 	-webkit-text-size-adjust: 100%;
 	color: $color-gray-73;
 	display: flex;
