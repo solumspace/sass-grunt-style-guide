@@ -2,15 +2,15 @@
 layout: component-detail
 group: components
 subgroup: buttons
-permalink: /components/buttons/text-button.html
+permalink: /components/buttons/button.html
 
-title: Text button
-description: Text button description
+title: Button
+description: _Button_
 
 variations:
-- title: Text button
-  description: Text button description
-  styleModifier: c-text-btn
+- title: Button
+  description: Button description
+  styleModifier: c-btn
   includeClassification: molecules
   includeCategory: 02-blocks
   includeName: card
@@ -45,4 +45,5 @@ fine-print:
 - version: 0.3
   update: April 27, 2017
   owner: Jane Doe
+
 ---

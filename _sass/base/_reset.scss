@@ -12,9 +12,14 @@
 /**
  * 1) Zero out margins and padding for elements
  */
-html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+html, body, div, object, iframe, h1, h3, h4, h5, h6, p, blockquote, li, form, legend, label, table, header, footer, nav, section, figure {
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 5px 0px 5px 0px;
 }
 
 /**

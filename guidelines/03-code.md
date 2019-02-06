@@ -1,8 +1,8 @@
 ---
 layout: page
+title: Code conventions
 group: guidelines
 permalink: /guidelines/code.html
-title: Code conventions
 description: Guidelines for the design system's code base.
 ---
 
