@@ -19,39 +19,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        svg_sprite: {
-            complex: {
-
-                // Target basics
-                expand: true,
-                cwd: 'icons',
-                src: ['**/*.svg'],
-                dest: '_site/icons',
-
-                // Target options
-                options: {
-                    shape: {
-                        dimension: { // Set maximum dimensions
-                            maxWidth: 32,
-                            maxHeight: 32
-                        },
-                        spacing: { // Add padding
-                            padding: 10
-                        },
-                        dest: 'dist/intermediate-svg' // Keep the intermediate files
-                    },
-                    mode: {
-                        view: { // Activate the «view» mode
-                            bust: false,
-                            render: {
-                                scss: true // Activate Sass output (with default options)
-                            }
-                        },
-                        symbol: true // Activate the «symbol» mode
-                    }
-                }
-            }
-        },
         // shell commands for use in Grunt tasks
         shell: {
             jekyllClean: {
@@ -118,7 +85,6 @@ module.exports = function(grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
-                'svg_sprite',
                 'sass',
                 'watch',
                 'shell:jekyllServe'
@@ -138,8 +104,7 @@ module.exports = function(grunt) {
     // Register the grunt build task
     grunt.registerTask('build', [
         'shell:jekyllBuild',
-        'sass',
-        'svg_sprite'
+        'sass'
     ]);
 
     // Register the grunt clean task

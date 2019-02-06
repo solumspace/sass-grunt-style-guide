@@ -90,7 +90,6 @@
  * Active primary navigation link
  */
 .c-primary-nav__link.is-active {
-	font-weight: bold;
   color: #005984;
 }
 
@@ -108,7 +107,6 @@ a.c-primary-nav__sublink:hover {
  * Current primary navigation link
  */
 .c-primary-nav__link.is-current {
-	font-weight: bold;
   color: #005984;
   border-left: 2px solid #005984;
   margin-left: -2px;
@@ -259,7 +257,6 @@ a.c-primary-nav__sublink:hover {
  * Active primary navigation link
  */
 .c-primary-nav__sublink.is-active {
-	font-weight: bold;
   color: #005984;
 }
 
@@ -267,7 +264,6 @@ a.c-primary-nav__sublink:hover {
  * Current primary navigation link
  */
 .c-primary-nav__sublink.is-current {
-	font-weight: bold;
   background-color: #e7e7e7;
 }
 

@@ -15,8 +15,11 @@ url: "http://abrigo.com" # the base hostname & protocol for your site
 twitter_username: creativehamlet
 github_username:  creativehamlet
 
+collections:
+ - icons
+
 # Build settings
 markdown: kramdown
 
-exclude: ['README.md', '/node_modules', 'css', '_sass', 'icons']
-keep_files: ['css', 'icons']
+exclude: ['README.md', '/node_modules', 'css', '_sass']
+keep_files: ['css']
