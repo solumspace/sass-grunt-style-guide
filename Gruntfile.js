@@ -19,6 +19,33 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        // svg commands to build icons
+        svgmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'svg',
+                    src: ['**/*.svg'],
+                    dest: 'svg/min'
+                }]
+            }
+        },
+
+        svgstore: {
+            options: {
+                prefix : 'icon-',
+                svg: {
+                    style: 'display: none;'
+                },
+                cleanup: ['fill', 'style']
+            },
+            default: {
+                files: {
+                    '_includes/svg-defs.svg': ['svg/**/*.svg']
+                }
+            }
+        },
+
         // shell commands for use in Grunt tasks
         shell: {
             jekyllClean: {
@@ -40,24 +67,25 @@ module.exports = function(grunt) {
 
         // watch for files to change and run tasks when they do
         watch: {
-            posts: {
-                files: [
-                    '_config.yml',
-                    '*.html',
-                    '*.md',
-                    '_layouts/**',
-                    '_posts/**',
-                    '_drafts/**',
-                    '_includes/**',
-                    'assets/**/*.*',
-                    '_sass/**/*.*',
-                    'css/**/*.*'
-                ],
+            stylesheets: {
+                files: ['_sass/**/*.{scss,sass}'],
+                tasks: ['sass', 'shell:jekyllBuild']
+            },
+            scripts: {
+                files: ['js/**/*.js'],
+                tasks: ['concat', 'uglify', 'shell:jekyllBuild']
+            },
+            site: {
+                files: ['**/*.html', '_layouts/*.html', '_posts/*.markdown', '_includes/*.html', '_config.yml', 'js/**/*.js', '_data/*.yml'],
                 tasks: ['shell:jekyllBuild']
             },
-            sass: {
-                files: ['_sass/**/*.{scss,sass}'],
-                tasks: ['sass']
+            svgIcons: {
+                files: ['svg/*.svg'],
+                tasks: ['svgmin', 'svgstore', 'shell:jekyllBuild']
+            },
+            options: {
+                spawn : false,
+                livereload: true
             }
         },
 
@@ -85,6 +113,8 @@ module.exports = function(grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
+                'svgmin',
+                'svgstore',
                 'sass',
                 'watch',
                 'shell:jekyllServe'
@@ -104,6 +134,7 @@ module.exports = function(grunt) {
     // Register the grunt build task
     grunt.registerTask('build', [
         'shell:jekyllBuild',
+
         'sass'
     ]);
 

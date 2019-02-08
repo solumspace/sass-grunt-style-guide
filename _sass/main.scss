@@ -6,6 +6,7 @@
    #TABLE OF CONTENTS
 \*------------------------------------*/
 /**
+* VENDORS................................Bootstrap and other vendor Sass
 * ABSTRACTS..............................Declarations of Sass variables & mixins
 * BASE...................................Default element styles
 * .....Body
@@ -19,6 +20,13 @@
 */
 
 @charset "utf-8";
+
+
+/*------------------------------------*\
+   #VENDORS
+\*------------------------------------*/
+@import "thirdparty/bootstrap_v4/bootstrap";
+
 
 /*------------------------------------*\
    #ABSTRACTS

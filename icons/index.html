@@ -1,0 +1,24 @@
+---
+layout: default
+title: Icon Gallery
+description: "Icon Gallery"
+---
+
+<div class="container">
+    <div class="row">
+        <h2 class="section-title">Icon Gallery</h2>
+    </div>
+    <div class="row">
+    {% for icons in site.data.icons %}
+
+        <div class="col-sm-2">
+            <div class="icon-card {{ icons.icon_class }} card">
+                <h3 class="icon-title">{{ icons.icon_alt }} </h3>
+                {% assign size=40 %}
+                {% svg "/svg/min/{{ icons.icon_src }}" %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <!-- End Gallery -->
+</div>

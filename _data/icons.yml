@@ -1,0 +1,211 @@
+- icon_src: ALLL/Advanced-Analysis.svg
+  icon_alt: Advanced Analysis
+  icon_class: default
+
+- icon_src: ALLL/Allowance-Forecasting.svg
+  icon_alt: Allowance Forecasting
+  icon_class: default
+
+- icon_src: ALLL/Data-Audit.svg
+  icon_alt: Data Audit
+  icon_class: default
+
+- icon_src: ALLL/Model Validation.svg
+  icon_alt: Model Validation
+  icon_class: default
+
+- icon_src: ALLL/Policy-Review.svg
+  icon_alt: Policy Review
+  icon_class: default
+
+- icon_src: ALLL/Scenario-Building.svg
+  icon_alt: Scenario Building
+  icon_class: default
+
+- icon_src: Checkbox/Checked-Disabled.svg
+  icon_alt: Checked Disabled
+  icon_class: default
+
+- icon_src: Checkbox/Checked-Enabled.svg
+  icon_alt: Checked Enabled
+  icon_class: default
+
+- icon_src: Checkbox/Checked-Styled.svg
+  icon_alt: Checked Styled
+  icon_class: default
+
+- icon_src: Checkbox/Partial-Selection.svg
+  icon_alt: Partial Selection
+  icon_class: default
+
+- icon_src: Checkbox/Unchecked-Disabled.svg
+  icon_alt: Unchecked Disabled
+  icon_class: default
+
+- icon_src: Checkbox/Unchecked-Enabled.svg
+  icon_alt: Unchecked Enabled
+  icon_class: default
+
+- icon_src: Credit Memo/Edit-Merge-Field-Mapping.svg
+  icon_alt: Edit Merge Field Mapping
+  icon_class: default
+
+- icon_src: Credit Memo/Refresh-Template.svg
+  icon_alt: Refresh Template
+  icon_class: default
+
+- icon_src: Credit Memo/Report-Mapping-Panel.svg
+  icon_alt: Report Mapping Panel
+  icon_class: default
+
+- icon_src: Credit Memo/Save-as-Customer-Specific-Memo.svg
+  icon_alt: Save as Customer Specific Memo
+  icon_class: default
+
+- icon_src: Credit Memo/Save-as-New-General-Template.svg
+  icon_alt: Save as New General Template
+  icon_class: default
+
+- icon_src: Credit Memo/Save-Changes-Back-to-Sageworks.svg
+  icon_alt: Save Changes Back to Sageworks
+  icon_class: default
+
+- icon_src: Credit Memo/Show-Labels.svg
+  icon_alt: Show Labels
+  icon_class: default
+
+- icon_src: Credit Memo/Show-Values.svg
+  icon_alt: Show Values
+  icon_class: default
+
+- icon_src: Export/Excel-White.svg
+  icon_alt: Excel White
+  icon_class: default
+
+- icon_src: Export/Excel.svg
+  icon_alt: Excel
+  icon_class: default
+
+- icon_src: Export/Word.svg
+  icon_alt: Word
+  icon_class: default
+
+- icon_src: Global Settings/Account-Access.svg
+  icon_alt: Account Access
+  icon_class: default
+
+- icon_src: Global Settings/Additional-Financials.svg
+  icon_alt: Additional Financials
+  icon_class: default
+
+- icon_src: Global Settings/Automation-Settings.svg
+  icon_alt: Automation Settings
+  icon_class: default
+
+- icon_src: Global Settings/Core-Integration.svg
+  icon_alt: Core Integration
+  icon_class: default
+
+- icon_src: Global Settings/Create-Desktop-Shortcut.svg
+  icon_alt: Create Desktop Shortcut
+  icon_class: default
+
+- icon_src: Global Settings/Loan-Rate.svg
+  icon_alt: Loan Rate
+  icon_class: default
+
+- icon_src: Global Settings/Manage-Users.svg
+  icon_alt: Manage Users
+  icon_class: default
+
+- icon_src: Global Settings/Merge-Duplicate-Customers.svg
+  icon_alt: Merge Duplicate Customers
+  icon_class: default
+
+- icon_src: Global Settings/My-Account.svg
+  icon_alt: My Account
+  icon_class: default
+
+- icon_src: Global Settings/Third-Party-Connections.svg
+  icon_alt: Third Party Connections
+  icon_class: default
+
+- icon_src: White/administration.svg
+  icon_alt: Administration
+  icon_class: dark
+
+- icon_src: White/alll-cecl.svg
+  icon_alt: ALLL CECL
+  icon_class: dark
+
+- icon_src: White/analysis.svg
+  icon_alt: Analysis
+  icon_class: dark
+
+- icon_src: White/analytics-and-reporting.svg
+  icon_alt: Analytics and Reporting
+  icon_class: dark
+
+- icon_src: White/application.svg
+  icon_alt: Application
+  icon_class: dark
+
+- icon_src: White/Arrow-White.svg
+  icon_alt: Arrow White
+  icon_class: dark
+
+- icon_src: White/Chevron-Down-White.svg
+  icon_alt: Chevron Down White
+  icon_class: dark
+
+- icon_src: White/Chevron-Left-White.svg
+  icon_alt: Chevron Left White
+  icon_class: dark
+
+- icon_src: White/Chevron-Right-White.svg
+  icon_alt: Chevron Right White
+  icon_class: dark
+
+- icon_src: White/Chevron-Up-White.svg
+  icon_alt: Chevron Up White
+  icon_class: dark
+
+- icon_src: White/community.svg
+  icon_alt: Community
+  icon_class: dark
+
+- icon_src: White/contact.svg
+  icon_alt: Contact
+  icon_class: dark
+
+- icon_src: White/Delete-White.svg
+  icon_alt: Delete White
+  icon_class: dark
+
+- icon_src: White/global-settings.svg
+  icon_alt: Global Settings
+  icon_class: dark
+
+- icon_src: White/insights.svg
+  icon_alt: Insights
+  icon_class: dark
+
+- icon_src: White/miscellaneous.svg
+  icon_alt: Miscellaneous
+  icon_class: dark
+
+- icon_src: White/portfolio.svg
+  icon_alt: Portfolio
+  icon_class: dark
+
+- icon_src: White/profile.svg
+  icon_alt: Profile
+  icon_class: dark
+
+- icon_src: White/stress-testing.svg
+  icon_alt: Stress Testing
+  icon_class: dark
+
+- icon_src: White/workflow.svg
+  icon_alt: Workflow
+  icon_class: dark

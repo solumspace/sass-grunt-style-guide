@@ -295,3 +295,33 @@ code[class*="language-"], pre[class*="language-"] {
     display: block;
   }
 }
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.icon-card {
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 120px;
+    text-align: center;
+    &.dark {
+        background-color: #555;
+        .icon-title {
+            color: #fff
+        }
+    }
+    svg {
+        position: absolute;
+        bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .icon-title {
+        font-size: 14px;
+        min-height: 35px;
+        margin-bottom: 5px;
+    }
+}
