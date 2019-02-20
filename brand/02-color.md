@@ -8,4 +8,6 @@ description:
 
 ---
 
-![Abrigo colors](/abrigo-patterns/images/abrigo-brand-colors.png)
+![Abrigo colors](/images/abrigo-brand-colors.png)
+
+(placeholder)
