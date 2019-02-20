@@ -129,10 +129,13 @@ module.exports = function(grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
-                ['svg_sprite', 'shell:jekyllServe'],
-                'copy',
-                'sass',
-                'watch'
+                [
+                    'svg_sprite',
+                    'copy',
+                    'sass',
+                    'watch'
+                ],
+                'shell:jekyllServe'
             ],
             options: {
                 logConcurrentOutput: true

@@ -5,5 +5,5 @@ subgroup: sw-icons
 permalink: /sageworks/components/icons/
 
 title: Icons
-description: Icon reference and usage
+description: Icon description
 ---

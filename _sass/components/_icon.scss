@@ -277,10 +277,10 @@
 }
 
 .ab-options {
-    @extend %ab-More_Options;
+    @extend %ab-More-Options;
     &-dims {
-        @extend %ab-More_Options;
-        @extend %ab-More_Options-dims;
+        @extend %ab-More-Options;
+        @extend %ab-More-Options-dims;
     }
 }
 
@@ -333,10 +333,10 @@
 }
 
 .ab-sageworks {
-    @extend %ab-Sageworks_Logo;
+    @extend %ab-Sageworks-Logo;
     &-dims {
-        @extend %ab-Sageworks_Logo;
-        @extend %ab-Sageworks_Logo-dims;
+        @extend %ab-Sageworks-Logo;
+        @extend %ab-Sageworks-Logo-dims;
     }
 }
 

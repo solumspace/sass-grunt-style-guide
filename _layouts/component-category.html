@@ -12,40 +12,21 @@ layout: default
 
 </div><!--l-linelength-container-->
 
-<!-- <section class="c-section">
-	<ul class="c-card-list l-grid l-grid--3up ">
+<section class="c-section">
 
 		{% for componentPage in site.pages %}
     		{% if componentPage.group == page.group %}
         		{% if componentPage.subgroup == page.subgroup %}
             		{% if componentPage.layout != "component-category" and componentPage.layout != "component-category2" and componentPage.status != "Planned" %}
-
-					<li class="c-card-list__item l-grid__item">
-						<div class="c-card ">
-
-							<a a href="{{ componentPage.permalink | prepend: site.baseurl }}" class="c-card__header">
-								{{ componentPage.title }}
-							</a>
-
-							<div class="c-card__body">
-									{{ componentPage.content | markdownify }}
-							</div>
-							<!-- end c-card__body
-
-
-						</div>
-						<!-- end c-card
-					</li>
-
+						{% if componentPage.description == "Icon description" %}
+							{% include icon-library.html %}
+						{% endif %}
+						{{ componentPage.content | markdownify }}
 					{% endif %}
-
 				{% endif %}
-
 			{% endif %}
 
 		{% endfor %}
-
-	</ul>
 	<!-- end c-card-list
 
-</section> -->
+</section>

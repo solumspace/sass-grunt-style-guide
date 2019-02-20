@@ -4,122 +4,151 @@ gallery:
         - icon_src: ALLL/Advanced-Analysis.svg
           icon_alt: Advanced Analysis
           icon_class: default
+          icon_url: ALLL/analysis.html
 
         - icon_src: ALLL/Allowance-Forecasting.svg
           icon_alt: Allowance Forecasting
           icon_class: default
+          icon_url: ALLL/
 
         - icon_src: ALLL/Data-Audit.svg
           icon_alt: Data Audit
           icon_class: default
+          icon_url: ALLL/
 
         - icon_src: ALLL/Model Validation.svg
           icon_alt: Model Validation
           icon_class: default
+          icon_url: ALLL/
 
         - icon_src: ALLL/Policy-Review.svg
           icon_alt: Policy Review
           icon_class: default
+          icon_url: ALLL/
 
         - icon_src: ALLL/Scenario-Building.svg
           icon_alt: Scenario Building
           icon_class: default
+          icon_url: ALLL/
     - cat: Checkbox
       def:
         - icon_src: Checkbox/Checked-Disabled.svg
           icon_alt: Checked Disabled
           icon_class: default
+          icon_url: checkbox
 
         - icon_src: Checkbox/Checked-Enabled.svg
           icon_alt: Checked Enabled
           icon_class: default
+          icon_url: checkbox
 
         - icon_src: Checkbox/Checked-Styled.svg
           icon_alt: Checked Styled
           icon_class: default
+          icon_url: checkbox
 
         - icon_src: Checkbox/Partial-Selection.svg
           icon_alt: Partial Selection
           icon_class: default
+          icon_url: checkbox
 
         - icon_src: Checkbox/Unchecked-Disabled.svg
           icon_alt: Unchecked Disabled
           icon_class: default
+          icon_url: checkbox
 
         - icon_src: Checkbox/Unchecked-Enabled.svg
           icon_alt: Unchecked Enabled
           icon_class: default
+          icon_url: checkbox
     - cat: Credit Memo
       def:
         - icon_src: Credit Memo/Edit-Merge-Field-Mapping.svg
           icon_alt: Edit Merge Field Mapping
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Refresh-Template.svg
           icon_alt: Refresh Template
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Report-Mapping-Panel.svg
           icon_alt: Report Mapping Panel
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Save-as-Customer-Specific-Memo.svg
           icon_alt: Save as Customer Specific Memo
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Save-as-New-General-Template.svg
           icon_alt: Save as New General Template
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Save-Changes-Back-to-Sageworks.svg
           icon_alt: Save Changes Back to Sageworks
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Show-Labels.svg
           icon_alt: Show Labels
           icon_class: default
+          icon_url: credit-memo/
 
         - icon_src: Credit Memo/Show-Values.svg
           icon_alt: Show Values
           icon_class: default
+          icon_url: credit-memo/
     - cat: Export
       def:
         - icon_src: Export/Excel-White.svg
           icon_alt: Excel White
           icon_class: default
+          icon_url: export/
 
         - icon_src: Export/Excel.svg
           icon_alt: Excel
           icon_class: default
+          icon_url: export/
 
         - icon_src: Export/Word.svg
           icon_alt: Word
           icon_class: default
+          icon_url: export/
     - cat: Global Settings
       def:
         - icon_src: Global Settings/Account-Access.svg
           icon_alt: Account Access
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Additional-Financials.svg
           icon_alt: Additional Financials
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Automation-Settings.svg
           icon_alt: Automation Settings
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Core-Integration.svg
           icon_alt: Core Integration
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Create-Desktop-Shortcut.svg
           icon_alt: Create Desktop Shortcut
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Loan-Rate.svg
           icon_alt: Loan Rate
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Manage-Users.svg
           icon_alt: Manage Users
@@ -128,92 +157,305 @@ gallery:
         - icon_src: Global Settings/Merge-Duplicate-Customers.svg
           icon_alt: Merge Duplicate Customers
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/My-Account.svg
           icon_alt: My Account
           icon_class: default
+          icon_url: global-settings/
 
         - icon_src: Global Settings/Third-Party-Connections.svg
           icon_alt: Third Party Connections
           icon_class: default
+          icon_url: global-settings/
     - cat: White
       def:
         - icon_src: White/administration.svg
           icon_alt: Administration
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/alll-cecl.svg
           icon_alt: ALLL CECL
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/analysis.svg
           icon_alt: Analysis
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/analytics-and-reporting.svg
           icon_alt: Analytics and Reporting
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/application.svg
           icon_alt: Application
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Arrow-White.svg
           icon_alt: Arrow White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Chevron-Down-White.svg
           icon_alt: Chevron Down White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Chevron-Left-White.svg
           icon_alt: Chevron Left White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Chevron-Right-White.svg
           icon_alt: Chevron Right White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Chevron-Up-White.svg
           icon_alt: Chevron Up White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/community.svg
           icon_alt: Community
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/contact.svg
           icon_alt: Contact
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/Delete-White.svg
           icon_alt: Delete White
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/global-settings.svg
           icon_alt: Global Settings
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/insights.svg
           icon_alt: Insights
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/miscellaneous.svg
           icon_alt: Miscellaneous
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/portfolio.svg
           icon_alt: Portfolio
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/profile.svg
           icon_alt: Profile
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/stress-testing.svg
           icon_alt: Stress Testing
           icon_class: dark
+          icon_url: white/
 
         - icon_src: White/workflow.svg
           icon_alt: Workflow
           icon_class: dark
+          icon_url: white/
+    - cat: General
+      def:
+        - icon_src: Adobe.svg
+          icon_alt: Adobe
+          icon_class: default'
+          icon_url: adobe.html
+
+        - icon_src: Arrow-Gray.svg
+          icon_alt: Arrow Gray
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Calendar.svg
+          icon_alt: Calendar
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Checkmark.svg
+          icon_alt: Checkmark
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Chevron-Down.svg
+          icon_alt: Chevron Down
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Chevron-Left.svg
+          icon_alt: Chevron Left
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Chevron-Right.svg
+          icon_alt: Chevron Right
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Chevron-Up.svg
+          icon_alt: Chevron Up
+          icon_class: default
+
+        - icon_src: Customer.svg
+          icon_alt: Customer
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Delete-Disabled.svg
+          icon_alt: Delete Disabled
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Delete-Enabled.svg
+          icon_alt: Delete Enabled
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Document.svg
+          icon_alt: Document
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Edit-Pencil.svg
+          icon_alt: Edit Pencil
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Exclamation-Bubble-Blue.svg
+          icon_alt: Exclamation Bubble Blue
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Exclamation-Bubble-Orange.svg
+          icon_alt: Exclamation Bubble Orange
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: File-Blank.svg
+          icon_alt: File Blank
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: File-Download.svg
+          icon_alt: File Download
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: File-Search.svg
+          icon_alt: File Search
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Financial-Statement-Old.svg
+          icon_alt: Financial Statement Old
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Financial-Statement.svg
+          icon_alt: Financial Statement
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Folder-3D-Empty.svg
+          icon_alt: Folder Empty
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Folder-Flat-Empty.svg
+          icon_alt: Folder Flat Empty
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Folder-Flat-Full.svg
+          icon_alt: Folder Flat
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Link.svg
+          icon_alt: Link
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Lock.svg
+          icon_alt: Lock
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: More-Options.svg
+          icon_alt: More Options
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Percent.svg
+          icon_alt: Percent
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Policy-Exception-Empty.svg
+          icon_alt: Policy Exception Empty
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Policy-Exception-Full.svg
+          icon_alt: Policy Exception
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Print.svg
+          icon_alt: Print
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Question-Bubble.svg
+          icon_alt: Help
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Relationship.svg
+          icon_alt: Relationship
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Sageworks-Logo.svg
+          icon_alt: Sageworks
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Search.svg
+          icon_alt: Search
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Tax-Mapping-T.svg
+          icon_alt: Tax T
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Tax-Return.svg
+          icon_alt: Tax Return
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Text-Bubble-Empty.svg
+          icon_alt: Bubble Empty
+          icon_class: default
+          icon_url: adobe.html
+
+        - icon_src: Text-Bubble-Full.svg
+          icon_alt: Bubble
+          icon_class: default
+          icon_url: adobe.html
