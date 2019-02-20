@@ -1,0 +1,914 @@
+@mixin svg-sprite {
+	background: url("svg-sprite.svg") no-repeat;
+}
+
+%ab-ALLL--Advanced-Analysis {
+	@include svg-sprite;
+	background-position: 0 0;
+}
+
+%ab-ALLL--Advanced-Analysis-dims {
+	width: 52px;
+	height: 52px;
+}
+
+%ab-ALLL--Allowance-Forecasting {
+	@include svg-sprite;
+	background-position: 61.6600790513834% 0;
+}
+
+%ab-ALLL--Allowance-Forecasting-dims {
+	width: 52px;
+	height: 47.54px;
+}
+
+%ab-ALLL--Data-Audit {
+	@include svg-sprite;
+	background-position: 0 57.41794685266807%;
+}
+
+%ab-ALLL--Data-Audit-dims {
+	width: 52px;
+	height: 46.31px;
+}
+
+%ab-ALLL--Model_Validation {
+	@include svg-sprite;
+	background-position: 0 21.590201370147394%;
+}
+
+%ab-ALLL--Model_Validation-dims {
+	width: 52px;
+	height: 39.15px;
+}
+
+%ab-ALLL--Policy-Review {
+	@include svg-sprite;
+	background-position: 41.10671936758893% 0;
+}
+
+%ab-ALLL--Policy-Review-dims {
+	width: 52px;
+	height: 40.76px;
+}
+
+%ab-ALLL--Scenario-Building {
+	@include svg-sprite;
+	background-position: 41.10671936758893% 16.963542533710672%;
+}
+
+%ab-ALLL--Scenario-Building-dims {
+	width: 52px;
+	height: 39.72px;
+}
+
+%ab-Adobe {
+	@include svg-sprite;
+	background-position: 45.32374100719424% 40.741444866920155%;
+}
+
+%ab-Adobe-dims {
+	width: 27px;
+	height: 17px;
+}
+
+%ab-Arrow-Gray {
+	@include svg-sprite;
+	background-position: 41.10671936758893% 29.172103813252136%;
+}
+
+%ab-Arrow-Gray-dims {
+	width: 52px;
+	height: 4.12px;
+}
+
+%ab-Calendar {
+	@include svg-sprite;
+	background-position: 99.29824561403508% 66.66666666666667%;
+}
+
+%ab-Calendar-dims {
+	width: 20px;
+	height: 16px;
+}
+
+%ab-Checkbox--Checked-Disabled {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 26.459143968871594%;
+}
+
+%ab-Checkbox--Checked-Disabled-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-Checkbox--Checked-Enabled {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 35.40856031128405%;
+}
+
+%ab-Checkbox--Checked-Enabled-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-Checkbox--Checked-Styled {
+	@include svg-sprite;
+	background-position: 91.81494661921708% 8.949416342412452%;
+}
+
+%ab-Checkbox--Checked-Styled-dims {
+	width: 24px;
+	height: 23px;
+}
+
+%ab-Checkbox--Partial-Selection {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 60.70038910505836%;
+}
+
+%ab-Checkbox--Partial-Selection-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-Checkbox--Unchecked-Disabled {
+	@include svg-sprite;
+	background-position: 0 99.80155642023347%;
+}
+
+%ab-Checkbox--Unchecked-Disabled-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-Checkbox--Unchecked-Enabled {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 51.750972762645915%;
+}
+
+%ab-Checkbox--Unchecked-Enabled-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-Checkmark {
+	@include svg-sprite;
+	background-position: 22.14532871972318% 77.45833333333333%;
+}
+
+%ab-Checkmark-dims {
+	width: 16px;
+	height: 16px;
+}
+
+%ab-Chevron-Down {
+	@include svg-sprite;
+	background-position: 80.13698630136986% 63.23529411764706%;
+}
+
+%ab-Chevron-Down-dims {
+	width: 13px;
+	height: 8px;
+}
+
+%ab-Chevron-Left {
+	@include svg-sprite;
+	background-position: 50.168350168350166% 76.5880149812734%;
+}
+
+%ab-Chevron-Left-dims {
+	width: 8px;
+	height: 13px;
+}
+
+%ab-Chevron-Right {
+	@include svg-sprite;
+	background-position: 67.34006734006734% 59.243445692883896%;
+}
+
+%ab-Chevron-Right-dims {
+	width: 8px;
+	height: 13px;
+}
+
+%ab-Chevron-Up {
+	@include svg-sprite;
+	background-position: 71.23287671232876% 63.23529411764706%;
+}
+
+%ab-Chevron-Up-dims {
+	width: 13px;
+	height: 8px;
+}
+
+%ab-Credit_Memo--Edit-Merge-Field-Mapping {
+	@include svg-sprite;
+	background-position: 57.142857142857146% 42.16015625%;
+}
+
+%ab-Credit_Memo--Edit-Merge-Field-Mapping-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Credit_Memo--Refresh-Template {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 78.29457364341086%;
+}
+
+%ab-Credit_Memo--Refresh-Template-dims {
+	width: 23px;
+	height: 22px;
+}
+
+%ab-Credit_Memo--Report-Mapping-Panel {
+	@include svg-sprite;
+	background-position: 76.19047619047619% 57.8125%;
+}
+
+%ab-Credit_Memo--Report-Mapping-Panel-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Credit_Memo--Save-Changes-Back-to-Sageworks {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 59.84555984555985%;
+}
+
+%ab-Credit_Memo--Save-Changes-Back-to-Sageworks-dims {
+	width: 21px;
+	height: 21px;
+}
+
+%ab-Credit_Memo--Save-as-Customer-Specific-Memo {
+	@include svg-sprite;
+	background-position: 33.6996336996337% 52.4140625%;
+}
+
+%ab-Credit_Memo--Save-as-Customer-Specific-Memo-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Credit_Memo--Save-as-New-General-Template {
+	@include svg-sprite;
+	background-position: 45.42124542124542% 52.4140625%;
+}
+
+%ab-Credit_Memo--Save-as-New-General-Template-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Credit_Memo--Show-Labels {
+	@include svg-sprite;
+	background-position: 57.142857142857146% 52.4140625%;
+}
+
+%ab-Credit_Memo--Show-Labels-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Credit_Memo--Show-Values {
+	@include svg-sprite;
+	background-position: 0 70.50390625%;
+}
+
+%ab-Credit_Memo--Show-Values-dims {
+	width: 32px;
+	height: 24px;
+}
+
+%ab-Customer {
+	@include svg-sprite;
+	background-position: 27.303754266211605% 77.45833333333333%;
+}
+
+%ab-Customer-dims {
+	width: 12px;
+	height: 16px;
+}
+
+%ab-Delete-Disabled {
+	@include svg-sprite;
+	background-position: 45.57823129251701% 67.09665427509293%;
+}
+
+%ab-Delete-Disabled-dims {
+	width: 11px;
+	height: 11px;
+}
+
+%ab-Delete-Enabled {
+	@include svg-sprite;
+	background-position: 56.46258503401361% 67.09665427509293%;
+}
+
+%ab-Delete-Enabled-dims {
+	width: 11px;
+	height: 11px;
+}
+
+%ab-Document {
+	@include svg-sprite;
+	background-position: 31.724137931034484% 77.45833333333333%;
+}
+
+%ab-Document-dims {
+	width: 15px;
+	height: 16px;
+}
+
+%ab-Edit-Pencil {
+	@include svg-sprite;
+	background-position: 36.89655172413793% 77.16603773584906%;
+}
+
+%ab-Edit-Pencil-dims {
+	width: 15px;
+	height: 15px;
+}
+
+%ab-Exclamation-Bubble-Blue {
+	@include svg-sprite;
+	background-position: 65.50522648083624% 41.19465648854962%;
+}
+
+%ab-Exclamation-Bubble-Blue-dims {
+	width: 18px;
+	height: 18px;
+}
+
+%ab-Exclamation-Bubble-Orange {
+	@include svg-sprite;
+	background-position: 20.209059233449477% 87.97328244274809%;
+}
+
+%ab-Exclamation-Bubble-Orange-dims {
+	width: 18px;
+	height: 18px;
+}
+
+%ab-Export--Excel {
+	@include svg-sprite;
+	background-position: 52.51798561151079% 59.916666666666664%;
+}
+
+%ab-Export--Excel-dims {
+	width: 27px;
+	height: 16px;
+}
+
+%ab-Export--Excel-White {
+	@include svg-sprite;
+	background-position: 39.57597173144876% 67.34701492537313%;
+}
+
+%ab-Export--Excel-White-dims {
+	width: 22px;
+	height: 12px;
+}
+
+%ab-Export--Word {
+	@include svg-sprite;
+	background-position: 45.32374100719424% 34.52651515151515%;
+}
+
+%ab-Export--Word-dims {
+	width: 27px;
+	height: 16px;
+}
+
+%ab-File-Blank {
+	@include svg-sprite;
+	background-position: 99.65277777777777% 73.5632183908046%;
+}
+
+%ab-File-Blank-dims {
+	width: 17px;
+	height: 19px;
+}
+
+%ab-File-Download {
+	@include svg-sprite;
+	background-position: 98.95104895104895% 16.666666666666668%;
+}
+
+%ab-File-Download-dims {
+	width: 19px;
+	height: 22px;
+}
+
+%ab-File-Search {
+	@include svg-sprite;
+	background-position: 21.223021582733814% 69.95736434108527%;
+}
+
+%ab-File-Search-dims {
+	width: 27px;
+	height: 22px;
+}
+
+%ab-Financial-Statement {
+	@include svg-sprite;
+	background-position: 62.23021582733813% 59.916666666666664%;
+}
+
+%ab-Financial-Statement-dims {
+	width: 27px;
+	height: 16px;
+}
+
+%ab-Financial-Statement-Old {
+	@include svg-sprite;
+	background-position: 42.805755395683455% 59.916666666666664%;
+}
+
+%ab-Financial-Statement-Old-dims {
+	width: 27px;
+	height: 16px;
+}
+
+%ab-Folder-3D-Empty {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 32.45283018867924%;
+}
+
+%ab-Folder-3D-Empty-dims {
+	width: 21px;
+	height: 15px;
+}
+
+%ab-Folder-Flat-Empty {
+	@include svg-sprite;
+	background-position: 98.60627177700349% 87.12121212121212%;
+}
+
+%ab-Folder-Flat-Empty-dims {
+	width: 18px;
+	height: 16px;
+}
+
+%ab-Folder-Flat-Full {
+	@include svg-sprite;
+	background-position: 98.60627177700349% 99.62121212121212%;
+}
+
+%ab-Folder-Flat-Full-dims {
+	width: 18px;
+	height: 16px;
+}
+
+%ab-Global_Settings--Account-Access {
+	@include svg-sprite;
+	background-position: 34.90909090909091% 38.459915611814345%;
+}
+
+%ab-Global_Settings--Account-Access-dims {
+	width: 30px;
+	height: 43px;
+}
+
+%ab-Global_Settings--Additional-Financials {
+	@include svg-sprite;
+	background-position: 19.62264150943396% 55.90833333333333%;
+}
+
+%ab-Global_Settings--Additional-Financials-dims {
+	width: 40px;
+	height: 40px;
+}
+
+%ab-Global_Settings--Automation-Settings {
+	@include svg-sprite;
+	background-position: 80.62015503875969% 21.645021645021647%;
+}
+
+%ab-Global_Settings--Automation-Settings-dims {
+	width: 47px;
+	height: 49px;
+}
+
+%ab-Global_Settings--Core-Integration {
+	@include svg-sprite;
+	background-position: 80.93385214007782% 42.857142857142854%;
+}
+
+%ab-Global_Settings--Core-Integration-dims {
+	width: 48px;
+	height: 49px;
+}
+
+%ab-Global_Settings--Create-Desktop-Shortcut {
+	@include svg-sprite;
+	background-position: 0 38.46478457188674%;
+}
+
+%ab-Global_Settings--Create-Desktop-Shortcut-dims {
+	width: 52px;
+	height: 43.03px;
+}
+
+%ab-Global_Settings--Loan-Rate {
+	@include svg-sprite;
+	background-position: 81.56862745098039% 0;
+}
+
+%ab-Global_Settings--Loan-Rate-dims {
+	width: 50px;
+	height: 50px;
+}
+
+%ab-Global_Settings--Manage-Users {
+	@include svg-sprite;
+	background-position: 20.553359683794465% 20.840012824623276%;
+}
+
+%ab-Global_Settings--Manage-Users-dims {
+	width: 52px;
+	height: 30.48px;
+}
+
+%ab-Global_Settings--Merge-Duplicate-Customers {
+	@include svg-sprite;
+	background-position: 19.92337164750958% 38.459915611814345%;
+}
+
+%ab-Global_Settings--Merge-Duplicate-Customers-dims {
+	width: 44px;
+	height: 43px;
+}
+
+%ab-Global_Settings--My-Account {
+	@include svg-sprite;
+	background-position: 20.553359683794465% 0;
+}
+
+%ab-Global_Settings--My-Account-dims {
+	width: 52px;
+	height: 36.59px;
+}
+
+%ab-Global_Settings--Third-Party-Connections {
+	@include svg-sprite;
+	background-position: 61.6600790513834% 19.971433372542432%;
+}
+
+%ab-Global_Settings--Third-Party-Connections-dims {
+	width: 52px;
+	height: 41.96px;
+}
+
+%ab-Link {
+	@include svg-sprite;
+	background-position: 17.465753424657535% 77.75285171102662%;
+}
+
+%ab-Link-dims {
+	width: 13px;
+	height: 17px;
+}
+
+%ab-Lock {
+	@include svg-sprite;
+	background-position: 15.699658703071673% 87.97328244274809%;
+}
+
+%ab-Lock-dims {
+	width: 12px;
+	height: 18px;
+}
+
+%ab-More_Options {
+	@include svg-sprite;
+	background-position: 94.01993355481727% 73.84615384615384%;
+}
+
+%ab-More_Options-dims {
+	width: 4px;
+	height: 20px;
+}
+
+%ab-Percent {
+	@include svg-sprite;
+	background-position: 52.88135593220339% 67.09665427509293%;
+}
+
+%ab-Percent-dims {
+	width: 10px;
+	height: 11px;
+}
+
+%ab-Policy-Exception-Empty {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 43.67816091954023%;
+}
+
+%ab-Policy-Exception-Empty-dims {
+	width: 23px;
+	height: 19px;
+}
+
+%ab-Policy-Exception-Full {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 38.54961832061068%;
+}
+
+%ab-Policy-Exception-Full-dims {
+	width: 21px;
+	height: 18px;
+}
+
+%ab-Print {
+	@include svg-sprite;
+	background-position: 98.95104895104895% 80.91603053435115%;
+}
+
+%ab-Print-dims {
+	width: 19px;
+	height: 18px;
+}
+
+%ab-Question-Bubble {
+	@include svg-sprite;
+	background-position: 65.50522648083624% 51.213740458015266%;
+}
+
+%ab-Question-Bubble-dims {
+	width: 18px;
+	height: 18px;
+}
+
+%ab-Relationship {
+	@include svg-sprite;
+	background-position: 30.82437275985663% 68.36742424242425%;
+}
+
+%ab-Relationship-dims {
+	width: 26px;
+	height: 16px;
+}
+
+%ab-Sageworks_Logo {
+	@include svg-sprite;
+	background-position: 61.6600790513834% 34.21646213250755%;
+}
+
+%ab-Sageworks_Logo-dims {
+	width: 52px;
+	height: 18.43px;
+}
+
+%ab-Search {
+	@include svg-sprite;
+	background-position: 98.60627177700349% 93.5361216730038%;
+}
+
+%ab-Search-dims {
+	width: 18px;
+	height: 17px;
+}
+
+%ab-Tax-Mapping-T {
+	@include svg-sprite;
+	background-position: 41.49659863945578% 76.87593984962406%;
+}
+
+%ab-Tax-Mapping-T-dims {
+	width: 11px;
+	height: 14px;
+}
+
+%ab-Tax-Return {
+	@include svg-sprite;
+	background-position: 33.093525179856115% 59.916666666666664%;
+}
+
+%ab-Tax-Return-dims {
+	width: 27px;
+	height: 16px;
+}
+
+%ab-Text-Bubble-Empty {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 45.41984732824427%;
+}
+
+%ab-Text-Bubble-Empty-dims {
+	width: 21px;
+	height: 18px;
+}
+
+%ab-Text-Bubble-Full {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 52.29007633587786%;
+}
+
+%ab-Text-Bubble-Full-dims {
+	width: 21px;
+	height: 18px;
+}
+
+%ab-White--Arrow-White {
+	@include svg-sprite;
+	background-position: 18.978102189781023% 13.551851851851854%;
+}
+
+%ab-White--Arrow-White-dims {
+	width: 31px;
+	height: 10px;
+}
+
+%ab-White--Chevron-Down-White {
+	@include svg-sprite;
+	background-position: 88.35616438356165% 90.80882352941177%;
+}
+
+%ab-White--Chevron-Down-White-dims {
+	width: 13px;
+	height: 8px;
+}
+
+%ab-White--Chevron-Left-White {
+	@include svg-sprite;
+	background-position: 44.78114478114478% 76.5880149812734%;
+}
+
+%ab-White--Chevron-Left-White-dims {
+	width: 8px;
+	height: 13px;
+}
+
+%ab-White--Chevron-Right-White {
+	@include svg-sprite;
+	background-position: 47.474747474747474% 76.5880149812734%;
+}
+
+%ab-White--Chevron-Right-White-dims {
+	width: 8px;
+	height: 13px;
+}
+
+%ab-White--Chevron-Up-White {
+	@include svg-sprite;
+	background-position: 75.68493150684931% 63.23529411764706%;
+}
+
+%ab-White--Chevron-Up-White-dims {
+	width: 13px;
+	height: 8px;
+}
+
+%ab-White--Delete-White {
+	@include svg-sprite;
+	background-position: 49.31972789115646% 67.09665427509293%;
+}
+
+%ab-White--Delete-White-dims {
+	width: 11px;
+	height: 11px;
+}
+
+%ab-White--administration {
+	@include svg-sprite;
+	background-position: 100% 8.494208494208495%;
+}
+
+%ab-White--administration-dims {
+	width: 22px;
+	height: 21px;
+}
+
+%ab-White--alll-cecl {
+	@include svg-sprite;
+	background-position: 0 90.74409448818898%;
+}
+
+%ab-White--alll-cecl-dims {
+	width: 20px;
+	height: 26px;
+}
+
+%ab-White--analysis {
+	@include svg-sprite;
+	background-position: 92.14285714285714% 0;
+}
+
+%ab-White--analysis-dims {
+	width: 25px;
+	height: 23px;
+}
+
+%ab-White--analytics-and-reporting {
+	@include svg-sprite;
+	background-position: 99.64788732394366% 25.096525096525095%;
+}
+
+%ab-White--analytics-and-reporting-dims {
+	width: 21px;
+	height: 21px;
+}
+
+%ab-White--application {
+	@include svg-sprite;
+	background-position: 11.510791366906474% 69.95736434108527%;
+}
+
+%ab-White--application-dims {
+	width: 27px;
+	height: 22px;
+}
+
+%ab-White--community {
+	@include svg-sprite;
+	background-position: 91.1660777385159% 69.64980544747081%;
+}
+
+%ab-White--community-dims {
+	width: 22px;
+	height: 23px;
+}
+
+%ab-White--contact {
+	@include svg-sprite;
+	background-position: 7.168458781362007% 88.3103448275862%;
+}
+
+%ab-White--contact-dims {
+	width: 26px;
+	height: 19px;
+}
+
+%ab-White--global-settings {
+	@include svg-sprite;
+	background-position: 91.48936170212765% 87.15953307392996%;
+}
+
+%ab-White--global-settings-dims {
+	width: 23px;
+	height: 23px;
+}
+
+%ab-White--insights {
+	@include svg-sprite;
+	background-position: 0 80.50787401574803%;
+}
+
+%ab-White--insights-dims {
+	width: 25px;
+	height: 26px;
+}
+
+%ab-White--miscellaneous {
+	@include svg-sprite;
+	background-position: 100% 0;
+}
+
+%ab-White--miscellaneous-dims {
+	width: 22px;
+	height: 22px;
+}
+
+%ab-White--portfolio {
+	@include svg-sprite;
+	background-position: 91.81494661921708% 17.829457364341085%;
+}
+
+%ab-White--portfolio-dims {
+	width: 24px;
+	height: 22px;
+}
+
+%ab-White--profile {
+	@include svg-sprite;
+	background-position: 82.47422680412372% 56.48854961832061%;
+}
+
+%ab-White--profile-dims {
+	width: 14px;
+	height: 18px;
+}
+
+%ab-White--stress-testing {
+	@include svg-sprite;
+	background-position: 8.960573476702509% 77.75285171102662%;
+}
+
+%ab-White--stress-testing-dims {
+	width: 26px;
+	height: 17px;
+}
+
+%ab-White--workflow {
+	@include svg-sprite;
+	background-position: 8.12720848056537% 99.03088803088804%;
+}
+
+%ab-White--workflow-dims {
+	width: 22px;
+	height: 21px;
+}
+

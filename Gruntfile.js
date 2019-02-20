@@ -20,30 +20,46 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         // svg commands to build icons
-        svgmin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: 'svg',
-                    src: ['*.svg'],
-                    dest: 'svg/min'
-                }]
+        svg_sprite: {
+            target: {
+                expand: true,
+                cwd: 'svg',
+                src: ['**/*.svg'],
+                dest: '_sass',
+
+                // Target options
+                options: {
+                    shape: {
+                         dimension: { // Set maximum dimensions
+                             maxWidth: 52,
+                             maxHeight: 52
+                         }
+                     },
+                    mode: {
+                        view: {
+                            dest: 'svg',
+                            mixin: 'svg-sprite',
+                            prefix: '%ab-%s',
+                            sprite: 'svg-sprite.svg',
+                            bust: false,
+                            render: {
+                                scss: {
+                                    dest: 'svg-sprite.scss'
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
 
-        svgstore: {
-            options: {
-                prefix : 'icon-',
-                svg: {
-                    style: 'display: none;'
-                },
-                cleanup: ['fill', 'style']
-            },
-            default: {
-                files: {
-                    '_includes/svg-defs.svg': ['svg/**/*.svg']
-                }
-            }
+        // copy over images not covered by jekyll
+        copy: {
+          main: {
+            files: [
+              {expand: true, src: ['_sass/svg/svg-sprite.svg'], flatten: true, dest: '_site/css/', filter: 'isFile'},
+            ],
+          },
         },
 
         // shell commands for use in Grunt tasks
@@ -80,8 +96,8 @@ module.exports = function(grunt) {
                 tasks: ['shell:jekyllBuild']
             },
             svgIcons: {
-                files: ['svg/*.svg'],
-                tasks: ['svgmin', 'svgstore', 'shell:jekyllBuild']
+                files: ['svg/**/*.svg'],
+                tasks: ['svg_sprite', 'shell:jekyllBuild']
             },
             options: {
                 spawn : false,
@@ -113,11 +129,10 @@ module.exports = function(grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
-                'svgmin',
-                'svgstore',
+                ['svg_sprite', 'shell:jekyllServe'],
+                'copy',
                 'sass',
-                'watch',
-                'shell:jekyllServe'
+                'watch'
             ],
             options: {
                 logConcurrentOutput: true
@@ -134,7 +149,6 @@ module.exports = function(grunt) {
     // Register the grunt build task
     grunt.registerTask('build', [
         'shell:jekyllBuild',
-
         'sass'
     ]);
 

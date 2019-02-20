@@ -22,7 +22,7 @@ collections:
 markdown: kramdown
 
 # Inline svg dependent gems
-gems:
+plugins:
   - jekyll-inline-svg
 
 svg:
