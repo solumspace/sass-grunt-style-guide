@@ -15,18 +15,18 @@ Use buttons to trigger actions and links. Buttons contain a label indicating the
 Button labels are written in all uppercase:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Do**  
-&nbsp;&nbsp;&nbsp;&nbsp;![A correct uppercase button](/abrigo-patterns/images/button-uppercase.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;![A correct uppercase button](/images/button-uppercase.svg)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Don't**  
-&nbsp;&nbsp;&nbsp;&nbsp;![An incorrect camelcase button](/abrigo-patterns/images/button-lowercase.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;![An incorrect camelcase button](/images/button-lowercase.svg)
 
 Button labels are as concise as possible while clearly describing the action that will occur:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Do**  
-&nbsp;&nbsp;&nbsp;&nbsp;![A correctly labeled button](/abrigo-patterns/images/button-runcreditanalysis.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;![A correctly labeled button](/images/button-runcreditanalysis.svg)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Don't**  
-&nbsp;&nbsp;&nbsp;&nbsp;![An incorrectly labeled button](/abrigo-patterns/images/button-export.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;![An incorrectly labeled button](/images/button-export.svg)
 
 ****
 ## Button order
@@ -48,7 +48,7 @@ Buttons and links may be used jointly to show primary and secondary actions.
 ****
 ## Types of Buttons
 
-![Types of Sageworks buttons](/abrigo-patterns/images/button-types.svg)
+![Types of Sageworks buttons](/images/button-types.svg)
 
 
 <!--
