@@ -10,12 +10,12 @@ Abrigo Patterns is built using [Jekyll](https://jekyllrb.com/), a static site ge
 The tool can consume and display components from anywhere, but the ideal workflow would be importing patterns from [Pattern Lab](http://patternlab.io/) into Abrigo Patterns for display. For more info, check out this blog post (coming soon for now).
 
 ## Getting Started with GUI Client
-1. Download your preferred GUI by visiting [GUI guide](https://git-scm.com/downloads/guis
+1. Download your preferred GUI by visiting [GUI guide](https://git-scm.com/downloads/guis)
 
-2. Once you've chosen/downloaded/installed your GUI you will import the [repository on Github](https://github.com/creativehamlet/abrigo-patterns
+2. Once you've chosen/downloaded/installed your GUI you will import the [repository on Github](https://github.com/creativehamlet/abrigo-patterns)
 
 ## Getting Started with Command Line
-1. Download or clone the files from the [repository on Github](https://github.com/creativehamlet/abrigo-patterns
+1. Download or clone the files from the [repository on Github](https://github.com/creativehamlet/abrigo-patterns)
 
 2. In the command line, navigate to the root of the project and run the `jekyll serve` command. This will build the static site and watch for changes.
 
