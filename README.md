@@ -9,9 +9,16 @@ Abrigo Patterns is built using [Jekyll](https://jekyllrb.com/), a static site ge
 
 The tool can consume and display components from anywhere, but the ideal workflow would be importing patterns from [Pattern Lab](http://patternlab.io/) into Abrigo Patterns for display. For more info, check out this blog post (coming soon for now).
 
-## Dependancies and Prerequisites
-1. Ruby - which you can [install for windows](https://rubyinstaller.org/)
-2. NodeJs - [download for Mac](https://nodejs.org/en/) 
+## Dependancies and Prerequisites [Required]
+1. Ruby - for managing Ruby Gems [install for windows](https://rubyinstaller.org/).
+
+2. NodeJs - for managing NPM [download for Mac](https://nodejs.org/en/). Check to make your Ruby installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'.
+
+3. Jekyll - for static site generation install by running 'gem install jekyll'. Note: You may need 'sudo' before that command for super user permissions.
+
+4. Jekyll Inline Svg - run 'sudo gem install jekyll-inline-svg'
+
+5. GruntJs Client - for running grunt specific tasks with 'grunt'. For this install with running 'npm install -g grunt-cli'. Note: If your only running the 'serve' and 'build' via NPM you will not need this.
 
 ## Getting Started with GUI Client
 1. Download your preferred GUI by visiting [GUI guide](https://git-scm.com/downloads/guis)
@@ -26,6 +33,11 @@ The tool can consume and display components from anywhere, but the ideal workflo
 3. Visit `http://localhost:4000/` in your browser to see the style guide.
 
 From here, obviously the point is to customize the style guide for your needs and populate it with your content and components.
+
+## Common issues
+Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 10.x
+
+If you receive this error run 'npm rebuild node-sass'
 
 ## Importing components and assets from Pattern Lab
 Coming soon!
