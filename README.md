@@ -10,7 +10,9 @@ Abrigo Patterns is built using [Jekyll](https://jekyllrb.com/), a static site ge
 The tool can consume and display components from anywhere, but the ideal workflow would be importing patterns from [Pattern Lab](http://patternlab.io/) into Abrigo Patterns for display. For more info, check out this blog post (coming soon for now).
 
 ## Dependancies and Prerequisites [Required]
-1. Ruby - for managing Ruby Gems [install for windows](https://rubyinstaller.org/).
+1. Ruby - for managing Ruby Gems [install for windows](https://rubyinstaller.org/). MacOS comes with Ruby but you will need to have X-Code command line developer tools install. For this run a simple command in terminal like 'gcc'.
+
+![alt text](/images/x-code-select.png)
 
 2. NodeJs - [download](https://nodejs.org) then check to make sure your NodeJs installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'. If you are getting the version number your good.
 
