@@ -12,7 +12,7 @@ The tool can consume and display components from anywhere, but the ideal workflo
 ## Dependancies and Prerequisites [Required]
 1. Ruby - for managing Ruby Gems [install for windows](https://rubyinstaller.org/).
 
-2. NodeJs - [download](https://nodejs.org). Check to make sure your Ruby installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'.
+2. NodeJs - [download](https://nodejs.org) then check to make sure your NodeJs installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'. If you are getting the version number your good.
 
 3. Jekyll - for static site generation install by running 'gem install jekyll'. Note: You may need 'sudo' before that command for super user permissions.
 
