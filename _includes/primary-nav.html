@@ -89,7 +89,13 @@
 
 				{% include primary-nav-item.html label='Headers and footers' subgroup='sw-headers-footers' %}
 
-                {% include primary-nav-item.html label='Icons' subgroup='sw-icons' %}
+				<li class="c-primary-nav__subitem {% if page.url contains '/icons' %}is-active{% endif %}">
+
+	                <a class="c-primary-nav__sublink {% if page.url contains '/icons' %}is-active is-current{% endif %}" href="{{ "/sageworks/components/icons" | prepend: site.baseurl }}">
+						<span class="c-primary-nav__text">Icons</span>
+					</a><!-- end c-primary-nav__link -->
+
+				</li><!-- end c-primary-nav__item -->
 
 			</ul>
 		</li>
