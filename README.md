@@ -12,7 +12,9 @@ The tool can consume and display components from anywhere, but the ideal workflo
 ## Dependancies and Prerequisites [Required]
 1. Ruby - for managing Ruby Gems [install for windows](https://rubyinstaller.org/). MacOS comes with Ruby but you will need to have X-Code command line developer tools install. For this run a simple command in terminal like 'gcc'.
 
-![alt text](/images/x-code-select.png)
+![install of command line dev tools](/images/x-code-select.png)
+
+If you get this popup click the "install" button
 
 2. NodeJs - [download](https://nodejs.org) then check to make sure your NodeJs installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'. If you are getting the version number your good.
 
@@ -24,6 +26,8 @@ The tool can consume and display components from anywhere, but the ideal workflo
 
 ## Getting Started with GUI Client
 1. Download your preferred GUI by visiting [GUI guide](https://git-scm.com/downloads/guis)
+
+![example GUI](/images/guis.png)
 
 2. Once you've chosen/downloaded/installed your GUI you will clone the [repository on Github](https://github.com/creativehamlet/abrigo-patterns) continue with steps 2 and 3 of 'Getting Started with Command Line'
 
