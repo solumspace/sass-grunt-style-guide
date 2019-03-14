@@ -57,7 +57,26 @@ module.exports = function(grunt) {
         copy: {
           main: {
             files: [
-              {expand: true, src: ['_sass/svg/svg-sprite.svg'], flatten: true, dest: '_site/css/', filter: 'isFile'},
+              {expand: true, flatten: true, src: ['_sass/svg/svg-sprite.svg'], dest: '_site/css/', filter: 'isFile'},
+
+              // Export public/patterns directory to style guide's includes
+              {expand: true, cwd: '../pattern-library/public/patterns/', src: ['**/*'], dest: '_includes/patterns'},
+
+              // Export public/patterns directory to style guide patterns directory
+              {expand: true, cwd: '../pattern-library/public/patterns/', src: ['**/*'], dest: 'patterns'},
+
+              // Export css directory to style guide css directory
+              {expand: true, cwd: '../pattern-library/_sass/', src: ['**/*'], dest: '_sass'},
+
+              // Export js directory to style guide js directory
+              {expand: true, flatten: true, src: ['../pattern-library/public/styleguide/js/patternlab-pattern.js'], dest: 'styleguide/js', filter: 'isFile'},
+
+              // Export images directory to style guide images directory
+              {expand: true, cwd: '../pattern-library/public/images/', src: ['**/*'], dest: 'images'},
+
+              // Export icons to style guide root directory
+              {expand: true, flatten: true, src: ['../pattern-library/public/icons.svg'], dest: '.', filter: 'isFile'}
+
             ],
           },
         },

@@ -8,7 +8,7 @@
 @import '../svg/svg-sprite';
 
 // SVG colors
-@mixin icon-colors($fallback: $charcoal) {
+@mixin icon-colors($fallback: $brand-charcoal) {
     fill: $fallback;
     @content;
 }
@@ -41,11 +41,11 @@
     }
 
     &--color {
-        @include icon-colors($dark-blue);
+        @include icon-colors($brand-dark-blue);
     }
 
     &--color-alt {
-        @include icon-colors($red-orange);
+        @include icon-colors($brand-red-orange);
     }
 }
 

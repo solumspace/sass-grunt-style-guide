@@ -6,3 +6,10 @@
  fill: $fallback;
  @content;
 }
+
+@mixin color ($color){
+  color: $color;
+  &--bg {
+    background: $color;
+  }
+}
