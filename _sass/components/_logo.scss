@@ -3,7 +3,29 @@
 \*------------------------------------*/
 
 /**
- * Branding image or text of the site
+	* Brand specific Logo classes
+	*/
+
+.a-logo {
+    display: block;
+    max-height: 50px;
+    &--tag-wt-reg {}
+    &--tag-wt-trade {}
+    &--wt-reg {}
+    &--wt-trade {}
+    &--tag-bk-reg {}
+    &--tag-bk-trade {}
+    &--tag-reg {}
+    &--tag-trade {}
+    &--bk-reg {}
+    &--bk-trade {}
+    &--reg {}
+    &--trade {}
+}
+
+
+/**
+ * Style guide specific styling
  */
 .c-logo {
 

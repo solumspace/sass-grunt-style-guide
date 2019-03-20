@@ -21,12 +21,7 @@
     overflow: hidden;
 }
 
-.c-icon {
-    width: 32px;
-    height: 32px;
-}
-
-.ab-icon {
+.a-icon {
     display: inline-block;
 
     &--sm {
@@ -47,742 +42,752 @@
     &--color-alt {
         @include icon-colors($brand-red-orange);
     }
-}
-
-// Icon General
-.ab-adobe {
-    @extend %ab-Adobe;
-    &-dims {
-        @extend %ab-Adobe;
-        @extend %ab-Adobe-dims;
+    &--brand-tag {
+      max-height: 100px;
     }
-}
-
-.ab-arrow-gray {
-    @extend %ab-Arrow-Gray;
-    &-dims {
-        @extend %ab-Arrow-Gray;
-        @extend %ab-Arrow-Gray-dims;
-    }
-}
-
-.ab-calendar {
-    @extend %ab-Calendar;
-    &-dims {
-        @extend %ab-Calendar;
-        @extend %ab-Calendar-dims;
-    }
-}
-
-.ab-checkmark {
-    @extend %ab-Checkmark;
-    &-dims {
-        @extend %ab-Checkmark;
-        @extend %ab-Checkmark-dims;
-    }
-}
-
-.ab-chevron-down {
-    @extend %ab-Chevron-Down;
-    &-dims {
-        @extend %ab-Chevron-Down;
-        @extend %ab-Chevron-Down-dims;
-    }
-}
-
-.ab-chevron-left {
-    @extend %ab-Chevron-Left;
-    &-dims {
-        @extend %ab-Chevron-Left;
-        @extend %ab-Chevron-Left-dims;
-    }
-}
-
-.ab-chevron-right {
-    @extend %ab-Chevron-Right;
-    &-dims {
-        @extend %ab-Chevron-Right;
-        @extend %ab-Chevron-Right-dims;
-    }
-}
-
-.ab-chevron-up {
-    @extend %ab-Chevron-Up;
-    &-dims {
-        @extend %ab-Chevron-Up;
-        @extend %ab-Chevron-Up-dims;
-    }
-}
-
-
-.ab-customer {
-    @extend %ab-Customer;
-    &-dims {
-        @extend %ab-Customer;
-        @extend %ab-Customer-dims;
-    }
-}
-
-.ab-delete-disabled {
-    @extend %ab-Delete-Disabled;
-    &-dims {
-        @extend %ab-Delete-Disabled;
-        @extend %ab-Delete-Disabled-dims;
-    }
-}
-
-.ab-delete-enabled {
-    @extend %ab-Delete-Enabled;
-    &-dims {
-        @extend %ab-Delete-Enabled;
-        @extend %ab-Delete-Enabled-dims;
-    }
-}
-
-.ab-document {
-    @extend %ab-Document;
-    &-dims {
-        @extend %ab-Document;
-        @extend %ab-Document-dims;
-    }
-}
-
-.ab-edit {
-    @extend %ab-Edit-Pencil;
-    &-dims {
-        @extend %ab-Edit-Pencil;
-        @extend %ab-Edit-Pencil-dims;
-    }
-}
-
-.ab-exclamation-blue {
-    @extend %ab-Exclamation-Bubble-Blue;
-    &-dims {
-        @extend %ab-Exclamation-Bubble-Blue;
-        @extend %ab-Exclamation-Bubble-Blue-dims;
-    }
-}
-
-.ab-exclamation-orange {
-    @extend %ab-Exclamation-Bubble-Orange;
-    &-dims {
-        @extend %ab-Exclamation-Bubble-Orange;
-        @extend %ab-Exclamation-Bubble-Orange-dims;
-    }
-}
-
-.ab-excel {
-    @extend %ab-Export--Excel;
-    &-dims {
-        @extend %ab-Export--Excel;
-        @extend %ab-Export--Excel-dims;
-    }
-}
-
-.ab-excel-white {
-    @extend %ab-Export--Excel-White;
-    &-dims {
-        @extend %ab-Export--Excel-White;
-        @extend %ab-Export--Excel-White-dims;
-    }
-}
-
-.ab-word {
-    @extend %ab-Export--Word;
-    &-dims {
-        @extend %ab-Export--Word;
-        @extend %ab-Export--Word-dims;
-    }
-}
-
-.ab-file {
-    @extend %ab-File-Blank;
-    &-dims {
-        @extend %ab-File-Blank;
-        @extend %ab-File-Blank-dims;
-    }
-}
-
-.ab-file-download {
-    @extend %ab-File-Download;
-    &-dims {
-        @extend %ab-File-Download;
-        @extend %ab-File-Download-dims;
-    }
-}
-
-.ab-file-search {
-    @extend %ab-File-Search;
-    &-dims {
-        @extend %ab-File-Search;
-        @extend %ab-File-Search-dims;
-    }
-}
-
-.ab-financial-statement {
-    @extend %ab-Financial-Statement;
-    &-dims {
-        @extend %ab-Financial-Statement;
-        @extend %ab-Financial-Statement-dims;
-    }
-}
-
-.ab-financial-statement-old {
-    @extend %ab-Financial-Statement-Old;
-    &-dims {
-        @extend %ab-Financial-Statement-Old;
-        @extend %ab-Financial-Statement-Old-dims;
-    }
-}
-
-.ab-folder-empty {
-    @extend %ab-Folder-3D-Empty;
-    &-dims {
-        @extend %ab-Folder-3D-Empty;
-        @extend %ab-Folder-3D-Empty-dims;
-    }
-}
-
-.ab-folder-empty-flat {
-    @extend %ab-Folder-Flat-Empty;
-    &-dims {
-        @extend %ab-Folder-Flat-Empty;
-        @extend %ab-Folder-Flat-Empty-dims;
-    }
-}
-
-.ab-folder-flat {
-    @extend %ab-Folder-Flat-Full;
-    &-dims {
-        @extend %ab-Folder-Flat-Full;
-        @extend %ab-Folder-Flat-Full-dims;
-    }
-}
-
-
-.ab-link {
-    @extend %ab-Link;
-    &-dims {
-        @extend %ab-Link;
-        @extend %ab-Link-dims;
-    }
-}
-
-.ab-lock {
-    @extend %ab-Lock;
-    &-dims {
-        @extend %ab-Lock;
-        @extend %ab-Lock-dims;
-    }
-}
-
-.ab-options {
-    @extend %ab-More-Options;
-    &-dims {
-        @extend %ab-More-Options;
-        @extend %ab-More-Options-dims;
-    }
-}
-
-.ab-percent {
-    @extend %ab-Percent;
-    &-dims {
-        @extend %ab-Percent;
-        @extend %ab-Percent-dims;
-    }
-}
-
-.ab-policy-empty {
-    @extend %ab-Policy-Exception-Empty;
-    &-dims {
-        @extend %ab-Policy-Exception-Empty;
-        @extend %ab-Policy-Exception-Empty-dims;
-    }
-}
-
-.ab-policy {
-    @extend %ab-Policy-Exception-Full;
-    &-dims {
-        @extend %ab-Policy-Exception-Full;
-        @extend %ab-Policy-Exception-Full-dims;
-    }
-}
-
-.ab-print {
-    @extend %ab-Print;
-    &-dims {
-        @extend %ab-Print;
-        @extend %ab-Print-dims;
-    }
-}
-
-.ab-help {
-    @extend %ab-Question-Bubble;
-    &-dims {
-        @extend %ab-Question-Bubble;
-        @extend %ab-Question-Bubble-dims;
-    }
-}
-
-.ab-relationship {
-    @extend %ab-Relationship;
-    &-dims {
-        @extend %ab-Relationship;
-        @extend %ab-Relationship-dims;
-    }
-}
-
-.ab-sageworks {
-    @extend %ab-Sageworks-Logo;
-    &-dims {
-        @extend %ab-Sageworks-Logo;
-        @extend %ab-Sageworks-Logo-dims;
-    }
-}
-
-.ab-search {
-    @extend %ab-Search;
-    &-dims {
-        @extend %ab-Search;
-        @extend %ab-Search-dims;
-    }
-}
-
-.ab-tax-t {
-    @extend %ab-Tax-Mapping-T;
-    &-dims {
-        @extend %ab-Tax-Mapping-T;
-        @extend %ab-Tax-Mapping-T-dims;
-    }
-}
-
-.ab-tax-return {
-    @extend %ab-Tax-Return;
-    &-dims {
-        @extend %ab-Tax-Return;
-        @extend %ab-Tax-Return-dims;
-    }
-}
-
-.ab-bubble-empty {
-    @extend %ab-Text-Bubble-Empty;
-    &-dims {
-        @extend %ab-Text-Bubble-Empty;
-        @extend %ab-Text-Bubble-Empty-dims;
-    }
-}
-
-.ab-bubble {
-    @extend %ab-Text-Bubble-Full;
-    &-dims {
-        @extend %ab-Text-Bubble-Full;
-        @extend %ab-Text-Bubble-Full-dims;
-    }
-}
-
-.ab-arrow-white {
-    @extend %ab-White--Arrow-White;
-    &-dims {
-        @extend %ab-White--Arrow-White;
-        @extend %ab-White--Arrow-White-dims;
-    }
-}
-
-.ab-chevron-down-white {
-    @extend %ab-White--Chevron-Down-White;
-    &-dims {
-        @extend %ab-White--Chevron-Down-White;
-        @extend %ab-White--Chevron-Down-White-dims;
-    }
-}
-
-.ab-chevron-left-white {
-    @extend %ab-White--Chevron-Left-White;
-    &-dims {
-        @extend %ab-White--Chevron-Left-White;
-        @extend %ab-White--Chevron-Left-White-dims;
-    }
-}
-
-.ab-chevron-right-white {
-    @extend %ab-White--Chevron-Right-White;
-    &-dims {
-        @extend %ab-White--Chevron-Right-White;
-        @extend %ab-White--Chevron-Right-White-dims;
-    }
-}
-
-.ab-chevron-up-white {
-    @extend %ab-White--Chevron-Up-White;
-    &-dims {
-        @extend %ab-White--Chevron-Up-White;
-        @extend %ab-White--Chevron-Up-White-dims;
-    }
-}
-
-.ab-delete-white {
-    @extend %ab-White--Delete-White;
-    &-dims {
-        @extend %ab-White--Delete-White;
-        @extend %ab-White--Delete-White-dims;
-    }
-}
-
-.ab-admin-white {
-    @extend %ab-White--administration;
-    &-dims {
-        @extend %ab-White--administration;
-        @extend %ab-White--administration-dims;
-    }
-}
-
-.ab-cecl-white {
-    @extend %ab-White--alll-cecl;
-    &-dims {
-        @extend %ab-White--alll-cecl;
-        @extend %ab-White--alll-cecl-dims;
-    }
-}
-
-.ab-analysis-white {
-    @extend %ab-White--analysis;
-    &-dims {
-        @extend %ab-White--analysis;
-        @extend %ab-White--analysis-dims;
-    }
-}
-
-.ab-reporting-white {
-    @extend %ab-White--analytics-and-reporting;
-    &-dims {
-        @extend %ab-White--analytics-and-reporting;
-        @extend %ab-White--analytics-and-reporting-dims;
-    }
-}
-
-.ab-app-white {
-    @extend %ab-White--application;
-    &-dims {
-        @extend %ab-White--application;
-        @extend %ab-White--application-dims;
-    }
-}
-
-.ab-community-white {
-    @extend %ab-White--community;
-    &-dims {
-        @extend %ab-White--community;
-        @extend %ab-White--community-dims;
-    }
-}
-
-.ab-contact-white {
-    @extend %ab-White--contact;
-    &-dims {
-        @extend %ab-White--contact;
-        @extend %ab-White--contact-dims;
-    }
-}
-
-.ab-global-settings-white {
-    @extend %ab-White--global-settings;
-    &-dims {
-        @extend %ab-White--global-settings;
-        @extend %ab-White--global-settings-dims;
-    }
-}
-
-.ab-insights-white {
-    @extend %ab-White--insights;
-    &-dims {
-        @extend %ab-White--insights;
-        @extend %ab-White--insights-dims;
-    }
-}
-
-.ab-misc-white {
-    @extend %ab-White--miscellaneous;
-    &-dims {
-        @extend %ab-White--miscellaneous;
-        @extend %ab-White--miscellaneous-dims;
-    }
-}
-
-.ab-portfolio-white {
-    @extend %ab-White--portfolio;
-    &-dims {
-        @extend %ab-White--portfolio;
-        @extend %ab-White--portfolio-dims;
-    }
-}
-
-.ab-profile-white {
-    @extend %ab-White--profile;
-    &-dims {
-        @extend %ab-White--profile;
-        @extend %ab-White--profile-dims;
-    }
-}
-
-.ab-stress-testing-white {
-    @extend %ab-White--stress-testing;
-    &-dims {
-        @extend %ab-White--stress-testing;
-        @extend %ab-White--stress-testing-dims;
-    }
-}
-
-.ab-workflow-white {
-    @extend %ab-White--workflow;
-    &-dims {
-        @extend %ab-White--workflow;
-        @extend %ab-White--workflow-dims;
-    }
-}
-
-// ALLL
-.ab-alll {
-    &--analysis {
-    	@extend %ab-ALLL--Advanced-Analysis;
+    &--brand {}
+    &--adobe {
+        @extend %a-icon-Adobe;
         &-dims {
-            @extend %ab-ALLL--Advanced-Analysis;
-        	@extend %ab-ALLL--Advanced-Analysis-dims;
+            @extend %a-icon-Adobe;
+            @extend %a-icon-Adobe-dims;
+        }
+    }
+    &--arrow-gray {
+        @extend %a-icon-Arrow-Gray;
+      &-dims {
+        @extend %a-icon-Arrow-Gray;
+        @extend %a-icon-Arrow-Gray-dims;
+      }
+    }
+    &--calendar {
+        @extend %a-icon-Calendar;
+        &-dims {
+            @extend %a-icon-Calendar;
+            @extend %a-icon-Calendar-dims;
         }
     }
 
-    &--forecasting {
-        @extend %ab-ALLL--Allowance-Forecasting;
+    &--checkmark {
+        @extend %a-icon-Checkmark;
         &-dims {
-            @extend %ab-ALLL--Allowance-Forecasting;
-            @extend %ab-ALLL--Allowance-Forecasting-dims;
+            @extend %a-icon-Checkmark;
+            @extend %a-icon-Checkmark-dims;
         }
     }
 
-    &--audit{
-        @extend %ab-ALLL--Data-Audit;
+    &--chevron-down {
+        @extend %a-icon-Chevron-Down;
         &-dims {
-            @extend %ab-ALLL--Data-Audit;
-            @extend %ab-ALLL--Data-Audit-dims;
+            @extend %a-icon-Chevron-Down;
+            @extend %a-icon-Chevron-Down-dims;
         }
     }
 
-    &--validation {
-        @extend %ab-ALLL--Model_Validation;
+    &--chevron-left {
+        @extend %a-icon-Chevron-Left;
         &-dims {
-            @extend %ab-ALLL--Model_Validation;
-            @extend %ab-ALLL--Model_Validation-dims;
+            @extend %a-icon-Chevron-Left;
+            @extend %a-icon-Chevron-Left-dims;
+        }
+    }
+
+    &--chevron-right {
+        @extend %a-icon-Chevron-Right;
+        &-dims {
+            @extend %a-icon-Chevron-Right;
+            @extend %a-icon-Chevron-Right-dims;
+        }
+    }
+
+    &--chevron-up {
+        @extend %a-icon-Chevron-Up;
+        &-dims {
+            @extend %a-icon-Chevron-Up;
+            @extend %a-icon-Chevron-Up-dims;
+        }
+    }
+
+
+    &--customer {
+        @extend %a-icon-Customer;
+        &-dims {
+            @extend %a-icon-Customer;
+            @extend %a-icon-Customer-dims;
+        }
+    }
+
+    &--delete-disabled {
+        @extend %a-icon-Delete-Disabled;
+        &-dims {
+            @extend %a-icon-Delete-Disabled;
+            @extend %a-icon-Delete-Disabled-dims;
+        }
+    }
+
+    &--delete-enabled {
+        @extend %a-icon-Delete-Enabled;
+        &-dims {
+            @extend %a-icon-Delete-Enabled;
+            @extend %a-icon-Delete-Enabled-dims;
+        }
+    }
+
+    &--document {
+        @extend %a-icon-Document;
+        &-dims {
+            @extend %a-icon-Document;
+            @extend %a-icon-Document-dims;
+        }
+    }
+
+    &--edit {
+        @extend %a-icon-Edit-Pencil;
+        &-dims {
+            @extend %a-icon-Edit-Pencil;
+            @extend %a-icon-Edit-Pencil-dims;
+        }
+    }
+
+    &--exclamation-blue {
+        @extend %a-icon-Exclamation-Bubble-Blue;
+        &-dims {
+            @extend %a-icon-Exclamation-Bubble-Blue;
+            @extend %a-icon-Exclamation-Bubble-Blue-dims;
+        }
+    }
+
+    &--exclamation-orange {
+        @extend %a-icon-Exclamation-Bubble-Orange;
+        &-dims {
+            @extend %a-icon-Exclamation-Bubble-Orange;
+            @extend %a-icon-Exclamation-Bubble-Orange-dims;
+        }
+    }
+
+    &--excel {
+        @extend %a-icon-Export--Excel;
+        &-dims {
+            @extend %a-icon-Export--Excel;
+            @extend %a-icon-Export--Excel-dims;
+        }
+    }
+
+    &--excel-white {
+        @extend %a-icon-Export--Excel-White;
+        &-dims {
+            @extend %a-icon-Export--Excel-White;
+            @extend %a-icon-Export--Excel-White-dims;
+        }
+    }
+
+    &--word {
+        @extend %a-icon-Export--Word;
+        &-dims {
+            @extend %a-icon-Export--Word;
+            @extend %a-icon-Export--Word-dims;
+        }
+    }
+
+    &--file {
+        @extend %a-icon-File-Blank;
+        &-dims {
+            @extend %a-icon-File-Blank;
+            @extend %a-icon-File-Blank-dims;
+        }
+    }
+
+    &--file-download {
+        @extend %a-icon-File-Download;
+        &-dims {
+            @extend %a-icon-File-Download;
+            @extend %a-icon-File-Download-dims;
+        }
+    }
+
+    &--file-search {
+        @extend %a-icon-File-Search;
+        &-dims {
+            @extend %a-icon-File-Search;
+            @extend %a-icon-File-Search-dims;
+        }
+    }
+
+    &--financial-statement {
+        @extend %a-icon-Financial-Statement;
+        &-dims {
+            @extend %a-icon-Financial-Statement;
+            @extend %a-icon-Financial-Statement-dims;
+        }
+    }
+
+    &--financial-statement-old {
+        @extend %a-icon-Financial-Statement-Old;
+        &-dims {
+            @extend %a-icon-Financial-Statement-Old;
+            @extend %a-icon-Financial-Statement-Old-dims;
+        }
+    }
+
+    &--folder-empty {
+        @extend %a-icon-Folder-3D-Empty;
+        &-dims {
+            @extend %a-icon-Folder-3D-Empty;
+            @extend %a-icon-Folder-3D-Empty-dims;
+        }
+    }
+
+    &--folder-empty-flat {
+        @extend %a-icon-Folder-Flat-Empty;
+        &-dims {
+            @extend %a-icon-Folder-Flat-Empty;
+            @extend %a-icon-Folder-Flat-Empty-dims;
+        }
+    }
+
+    &--folder-flat {
+        @extend %a-icon-Folder-Flat-Full;
+        &-dims {
+            @extend %a-icon-Folder-Flat-Full;
+            @extend %a-icon-Folder-Flat-Full-dims;
+        }
+    }
+
+
+    &--link {
+        @extend %a-icon-Link;
+        &-dims {
+            @extend %a-icon-Link;
+            @extend %a-icon-Link-dims;
+        }
+    }
+
+    &--lock {
+        @extend %a-icon-Lock;
+        &-dims {
+            @extend %a-icon-Lock;
+            @extend %a-icon-Lock-dims;
+        }
+    }
+
+    &--options {
+        @extend %a-icon-More-Options;
+        &-dims {
+            @extend %a-icon-More-Options;
+            @extend %a-icon-More-Options-dims;
+        }
+    }
+
+    &--percent {
+        @extend %a-icon-Percent;
+        &-dims {
+            @extend %a-icon-Percent;
+            @extend %a-icon-Percent-dims;
+        }
+    }
+
+    &--policy-empty {
+        @extend %a-icon-Policy-Exception-Empty;
+        &-dims {
+            @extend %a-icon-Policy-Exception-Empty;
+            @extend %a-icon-Policy-Exception-Empty-dims;
         }
     }
 
     &--policy {
-        @extend %ab-ALLL--Policy-Review;
+        @extend %a-icon-Policy-Exception-Full;
         &-dims {
-            @extend %ab-ALLL--Policy-Review;
-            @extend %ab-ALLL--Policy-Review-dims;
+            @extend %a-icon-Policy-Exception-Full;
+            @extend %a-icon-Policy-Exception-Full-dims;
+        }
+    }
+    &--print {
+        @extend %a-icon-Print;
+        &-dims {
+            @extend %a-icon-Print;
+            @extend %a-icon-Print-dims;
         }
     }
 
-    &--scenario {
-        @extend %ab-ALLL--Scenario-Building;
+    &--help {
+        @extend %a-icon-Question-Bubble;
         &-dims {
-            @extend %ab-ALLL--Scenario-Building;
-            @extend %ab-ALLL--Scenario-Building-dims;
+            @extend %a-icon-Question-Bubble;
+            @extend %a-icon-Question-Bubble-dims;
+        }
+    }
+
+    &--relationship {
+        @extend %a-icon-Relationship;
+        &-dims {
+            @extend %a-icon-Relationship;
+            @extend %a-icon-Relationship-dims;
+        }
+    }
+
+    &--sageworks {
+        @extend %a-icon-Sageworks-Logo;
+        &-dims {
+            @extend %a-icon-Sageworks-Logo;
+            @extend %a-icon-Sageworks-Logo-dims;
+        }
+    }
+
+    &--search {
+        @extend %a-icon-Search;
+        &-dims {
+            @extend %a-icon-Search;
+            @extend %a-icon-Search-dims;
+        }
+    }
+
+    &--tax-t {
+        @extend %a-icon-Tax-Mapping-T;
+        &-dims {
+            @extend %a-icon-Tax-Mapping-T;
+            @extend %a-icon-Tax-Mapping-T-dims;
+        }
+    }
+
+    &--tax-return {
+        @extend %a-icon-Tax-Return;
+        &-dims {
+            @extend %a-icon-Tax-Return;
+            @extend %a-icon-Tax-Return-dims;
+        }
+    }
+
+    &--bubble-empty {
+        @extend %a-icon-Text-Bubble-Empty;
+        &-dims {
+            @extend %a-icon-Text-Bubble-Empty;
+            @extend %a-icon-Text-Bubble-Empty-dims;
+        }
+    }
+
+    &--bubble {
+        @extend %a-icon-Text-Bubble-Full;
+        &-dims {
+            @extend %a-icon-Text-Bubble-Full;
+            @extend %a-icon-Text-Bubble-Full-dims;
+        }
+    }
+
+    &--arrow-white {
+        @extend %a-icon-White--Arrow-White;
+        &-dims {
+            @extend %a-icon-White--Arrow-White;
+            @extend %a-icon-White--Arrow-White-dims;
+        }
+    }
+
+    &--chevron-down-white {
+        @extend %a-icon-White--Chevron-Down-White;
+        &-dims {
+            @extend %a-icon-White--Chevron-Down-White;
+            @extend %a-icon-White--Chevron-Down-White-dims;
+        }
+    }
+
+    &--chevron-left-white {
+        @extend %a-icon-White--Chevron-Left-White;
+        &-dims {
+            @extend %a-icon-White--Chevron-Left-White;
+            @extend %a-icon-White--Chevron-Left-White-dims;
+        }
+    }
+
+    &--chevron-right-white {
+        @extend %a-icon-White--Chevron-Right-White;
+        &-dims {
+            @extend %a-icon-White--Chevron-Right-White;
+            @extend %a-icon-White--Chevron-Right-White-dims;
+        }
+    }
+
+    &--chevron-up-white {
+        @extend %a-icon-White--Chevron-Up-White;
+        &-dims {
+            @extend %a-icon-White--Chevron-Up-White;
+            @extend %a-icon-White--Chevron-Up-White-dims;
+        }
+    }
+
+    &--delete-white {
+        @extend %a-icon-White--Delete-White;
+        &-dims {
+            @extend %a-icon-White--Delete-White;
+            @extend %a-icon-White--Delete-White-dims;
+        }
+    }
+
+    &--admin-white {
+        @extend %a-icon-White--administration;
+        &-dims {
+            @extend %a-icon-White--administration;
+            @extend %a-icon-White--administration-dims;
+        }
+    }
+
+    &--cecl-white {
+        @extend %a-icon-White--alll-cecl;
+        &-dims {
+            @extend %a-icon-White--alll-cecl;
+            @extend %a-icon-White--alll-cecl-dims;
+        }
+    }
+
+    &--analysis-white {
+        @extend %a-icon-White--analysis;
+        &-dims {
+            @extend %a-icon-White--analysis;
+            @extend %a-icon-White--analysis-dims;
+        }
+    }
+
+    &--reporting-white {
+        @extend %a-icon-White--analytics-and-reporting;
+        &-dims {
+            @extend %a-icon-White--analytics-and-reporting;
+            @extend %a-icon-White--analytics-and-reporting-dims;
+        }
+    }
+
+    &--app-white {
+        @extend %a-icon-White--application;
+        &-dims {
+            @extend %a-icon-White--application;
+            @extend %a-icon-White--application-dims;
+        }
+    }
+
+    &--community-white {
+        @extend %a-icon-White--community;
+        &-dims {
+            @extend %a-icon-White--community;
+            @extend %a-icon-White--community-dims;
+        }
+    }
+
+    &--contact-white {
+        @extend %a-icon-White--contact;
+        &-dims {
+            @extend %a-icon-White--contact;
+            @extend %a-icon-White--contact-dims;
+        }
+    }
+
+    &--global-settings-white {
+        @extend %a-icon-White--global-settings;
+        &-dims {
+            @extend %a-icon-White--global-settings;
+            @extend %a-icon-White--global-settings-dims;
+        }
+    }
+
+    &--insights-white {
+        @extend %a-icon-White--insights;
+        &-dims {
+            @extend %a-icon-White--insights;
+            @extend %a-icon-White--insights-dims;
+        }
+    }
+
+    &--misc-white {
+        @extend %a-icon-White--miscellaneous;
+        &-dims {
+            @extend %a-icon-White--miscellaneous;
+            @extend %a-icon-White--miscellaneous-dims;
+        }
+    }
+
+    &--portfolio-white {
+        @extend %a-icon-White--portfolio;
+        &-dims {
+            @extend %a-icon-White--portfolio;
+            @extend %a-icon-White--portfolio-dims;
+        }
+    }
+
+    &--profile-white {
+        @extend %a-icon-White--profile;
+        &-dims {
+            @extend %a-icon-White--profile;
+            @extend %a-icon-White--profile-dims;
+        }
+    }
+
+    &--stress-testing-white {
+        @extend %a-icon-White--stress-testing;
+        &-dims {
+            @extend %a-icon-White--stress-testing;
+            @extend %a-icon-White--stress-testing-dims;
+        }
+    }
+
+    &--workflow-white {
+        @extend %a-icon-White--workflow;
+        &-dims {
+            @extend %a-icon-White--workflow;
+            @extend %a-icon-White--workflow-dims;
+        }
+    }
+
+    // ALLL
+    &--alll {
+        &--analysis {
+        	@extend %a-icon-ALLL--Advanced-Analysis;
+            &-dims {
+                @extend %a-icon-ALLL--Advanced-Analysis;
+            	@extend %a-icon-ALLL--Advanced-Analysis-dims;
+            }
+        }
+
+        &--forecasting {
+            @extend %a-icon-ALLL--Allowance-Forecasting;
+            &-dims {
+                @extend %a-icon-ALLL--Allowance-Forecasting;
+                @extend %a-icon-ALLL--Allowance-Forecasting-dims;
+            }
+        }
+
+        &--audit{
+            @extend %a-icon-ALLL--Data-Audit;
+            &-dims {
+                @extend %a-icon-ALLL--Data-Audit;
+                @extend %a-icon-ALLL--Data-Audit-dims;
+            }
+        }
+
+        &--validation {
+            @extend %a-icon-ALLL--Model_Validation;
+            &-dims {
+                @extend %a-icon-ALLL--Model_Validation;
+                @extend %a-icon-ALLL--Model_Validation-dims;
+            }
+        }
+
+        &--policy {
+            @extend %a-icon-ALLL--Policy-Review;
+            &-dims {
+                @extend %a-icon-ALLL--Policy-Review;
+                @extend %a-icon-ALLL--Policy-Review-dims;
+            }
+        }
+
+        &--scenario {
+            @extend %a-icon-ALLL--Scenario-Building;
+            &-dims {
+                @extend %a-icon-ALLL--Scenario-Building;
+                @extend %a-icon-ALLL--Scenario-Building-dims;
+            }
+        }
+    }
+
+    // Form Checkbox
+    &--checkbox {
+        &--active-disabled {
+            @extend %a-icon-Checkbox--Checked-Disabled;
+            &-dims {
+                @extend %a-icon-Checkbox--Checked-Disabled;
+                @extend %a-icon-Checkbox--Checked-Disabled-dims;
+            }
+        }
+        &--active-enabled {
+            @extend %a-icon-Checkbox--Checked-Enabled;
+            &-dims {
+                @extend %a-icon-Checkbox--Checked-Enabled;
+                @extend %a-icon-Checkbox--Checked-Enabled-dims;
+            }
+        }
+        &--styled {
+            @extend %a-icon-Checkbox--Checked-Styled;
+            &-dims {
+                @extend %a-icon-Checkbox--Checked-Styled;
+                @extend %a-icon-Checkbox--Checked-Styled-dims;
+            }
+        }
+        &--partial-select {
+            @extend %a-icon-Checkbox--Partial-Selection;
+            &-dims {
+                @extend %a-icon-Checkbox--Partial-Selection;
+                @extend %a-icon-Checkbox--Partial-Selection-dims;
+            }
+        }
+        &--disabled {
+            @extend %a-icon-Checkbox--Unchecked-Disabled;
+            &-dims {
+                @extend %a-icon-Checkbox--Unchecked-Disabled;
+                @extend %a-icon-Checkbox--Unchecked-Disabled-dims;
+            }
+        }
+        &--enabled{
+            @extend %a-icon-Checkbox--Unchecked-Enabled;
+            &-dims {
+                @extend %a-icon-Checkbox--Unchecked-Enabled;
+                @extend %a-icon-Checkbox--Unchecked-Enabled-dims;
+            }
+        }
+    }
+
+    // Credit Memo
+    &--credit-memo {
+        &--merge {
+            @extend %a-icon-Adobe;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Edit-Merge-Field-Mapping;
+                @extend %a-icon-Credit_Memo--Edit-Merge-Field-Mapping-dims;
+            }
+        }
+
+        &--refresh {
+            @extend %a-icon-Credit_Memo--Refresh-Template;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Refresh-Template;
+                @extend %a-icon-Credit_Memo--Refresh-Template-dims;
+            }
+        }
+
+        &--report {
+            @extend %a-icon-Credit_Memo--Report-Mapping-Panel;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Report-Mapping-Panel;
+                @extend %a-icon-Credit_Memo--Report-Mapping-Panel-dims;
+            }
+        }
+
+        &--revert {
+            @extend %a-icon-Credit_Memo--Save-Changes-Back-to-Sageworks;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Save-Changes-Back-to-Sageworks;
+                @extend %a-icon-Credit_Memo--Save-Changes-Back-to-Sageworks-dims;
+            }
+        }
+
+        &--save-customer {
+            @extend %a-icon-Credit_Memo--Save-as-Customer-Specific-Memo;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Save-as-Customer-Specific-Memo;
+                @extend %a-icon-Credit_Memo--Save-as-Customer-Specific-Memo-dims;
+            }
+        }
+
+        &--save-general {
+            @extend %a-icon-Credit_Memo--Save-as-New-General-Template;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Save-as-New-General-Template;
+                @extend %a-icon-Credit_Memo--Save-as-New-General-Template-dims;
+            }
+        }
+
+        &--show-labels {
+            @extend %a-icon-Credit_Memo--Show-Labels;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Show-Labels;
+                @extend %a-icon-Credit_Memo--Show-Labels-dims;
+            }
+        }
+
+        &--show-values {
+            @extend %a-icon-Credit_Memo--Show-Values;
+            &-dims {
+                @extend %a-icon-Credit_Memo--Show-Values;
+                @extend %a-icon-Credit_Memo--Show-Values-dims;
+            }
+        }
+    }
+
+    // Global Settings
+    &--global-settings {
+        &--access {
+            @extend %a-icon-Global_Settings--Account-Access;
+            &-dims {
+                @extend %a-icon-Global_Settings--Account-Access;
+                @extend %a-icon-Global_Settings--Account-Access-dims;
+            }
+        }
+
+        &--additional {
+            @extend %a-icon-Global_Settings--Additional-Financials;
+            &-dims {
+                @extend %a-icon-Global_Settings--Additional-Financials;
+                @extend %a-icon-Global_Settings--Additional-Financials-dims;
+            }
+        }
+
+        &--automation {
+            @extend %a-icon-Global_Settings--Automation-Settings;
+            &-dims {
+                @extend %a-icon-Global_Settings--Automation-Settings;
+                @extend %a-icon-Global_Settings--Automation-Settings-dims;
+            }
+        }
+
+        &--core-integration {
+            @extend %a-icon-Global_Settings--Core-Integration;
+            &-dims {
+                @extend %a-icon-Global_Settings--Core-Integration;
+                @extend %a-icon-Global_Settings--Core-Integration-dims;
+            }
+        }
+
+        &--desktop {
+            @extend %a-icon-Global_Settings--Create-Desktop-Shortcut;
+            &-dims {
+                @extend %a-icon-Global_Settings--Create-Desktop-Shortcut;
+                @extend %a-icon-Global_Settings--Create-Desktop-Shortcut-dims;
+            }
+        }
+
+        &--loan-rate {
+            @extend %a-icon-Global_Settings--Loan-Rate;
+            &-dims {
+                @extend %a-icon-Global_Settings--Loan-Rate;
+                @extend %a-icon-Global_Settings--Loan-Rate-dims;
+            }
+        }
+
+        &--manage-users {
+            @extend %a-icon-Global_Settings--Manage-Users;
+            &-dims {
+                @extend %a-icon-Global_Settings--Manage-Users;
+                @extend %a-icon-Global_Settings--Manage-Users-dims;
+            }
+        }
+
+        &--merge-duplicate {
+            @extend %a-icon-Global_Settings--Merge-Duplicate-Customers;
+            &-dims {
+                @extend %a-icon-Global_Settings--Merge-Duplicate-Customers;
+                @extend %a-icon-Global_Settings--Merge-Duplicate-Customers-dims;
+            }
+        }
+
+        &--my-account {
+            @extend %a-icon-Global_Settings--My-Account;
+            &-dims {
+                @extend %a-icon-Global_Settings--My-Account;
+                @extend %a-icon-Global_Settings--My-Account-dims;
+            }
+        }
+
+        &--third-party {
+            @extend %a-icon-Global_Settings--Third-Party-Connections;
+            &-dims {
+                @extend %a-icon-Global_Settings--Third-Party-Connections;
+                @extend %a-icon-Global_Settings--Third-Party-Connections-dims;
+            }
         }
     }
 }
 
-// Form Checkbox
-.ab-checkbox {
-    &--active-disabled {
-        @extend %ab-Checkbox--Checked-Disabled;
-        &-dims {
-            @extend %ab-Checkbox--Checked-Disabled;
-            @extend %ab-Checkbox--Checked-Disabled-dims;
-        }
-    }
-    &--active-enabled {
-        @extend %ab-Checkbox--Checked-Enabled;
-        &-dims {
-            @extend %ab-Checkbox--Checked-Enabled;
-            @extend %ab-Checkbox--Checked-Enabled-dims;
-        }
-    }
-    &--styled {
-        @extend %ab-Checkbox--Checked-Styled;
-        &-dims {
-            @extend %ab-Checkbox--Checked-Styled;
-            @extend %ab-Checkbox--Checked-Styled-dims;
-        }
-    }
-    &--partial-select {
-        @extend %ab-Checkbox--Partial-Selection;
-        &-dims {
-            @extend %ab-Checkbox--Partial-Selection;
-            @extend %ab-Checkbox--Partial-Selection-dims;
-        }
-    }
-    &--disabled {
-        @extend %ab-Checkbox--Unchecked-Disabled;
-        &-dims {
-            @extend %ab-Checkbox--Unchecked-Disabled;
-            @extend %ab-Checkbox--Unchecked-Disabled-dims;
-        }
-    }
-    &--enabled{
-        @extend %ab-Checkbox--Unchecked-Enabled;
-        &-dims {
-            @extend %ab-Checkbox--Unchecked-Enabled;
-            @extend %ab-Checkbox--Unchecked-Enabled-dims;
-        }
-    }
-}
+/**
+  * Style guide specific styling
+  */
 
-// Credit Memo
-.ab-credit-memo {
-    &--merge {
-        @extend %ab-Adobe;
-        &-dims {
-            @extend %ab-Credit_Memo--Edit-Merge-Field-Mapping;
-            @extend %ab-Credit_Memo--Edit-Merge-Field-Mapping-dims;
-        }
-    }
 
-    &--refresh {
-        @extend %ab-Credit_Memo--Refresh-Template;
-        &-dims {
-            @extend %ab-Credit_Memo--Refresh-Template;
-            @extend %ab-Credit_Memo--Refresh-Template-dims;
-        }
-    }
 
-    &--report {
-        @extend %ab-Credit_Memo--Report-Mapping-Panel;
-        &-dims {
-            @extend %ab-Credit_Memo--Report-Mapping-Panel;
-            @extend %ab-Credit_Memo--Report-Mapping-Panel-dims;
-        }
-    }
-
-    &--revert {
-        @extend %ab-Credit_Memo--Save-Changes-Back-to-Sageworks;
-        &-dims {
-            @extend %ab-Credit_Memo--Save-Changes-Back-to-Sageworks;
-            @extend %ab-Credit_Memo--Save-Changes-Back-to-Sageworks-dims;
-        }
-    }
-
-    &--save-customer {
-        @extend %ab-Credit_Memo--Save-as-Customer-Specific-Memo;
-        &-dims {
-            @extend %ab-Credit_Memo--Save-as-Customer-Specific-Memo;
-            @extend %ab-Credit_Memo--Save-as-Customer-Specific-Memo-dims;
-        }
-    }
-
-    &--save-general {
-        @extend %ab-Credit_Memo--Save-as-New-General-Template;
-        &-dims {
-            @extend %ab-Credit_Memo--Save-as-New-General-Template;
-            @extend %ab-Credit_Memo--Save-as-New-General-Template-dims;
-        }
-    }
-
-    &--show-labels {
-        @extend %ab-Credit_Memo--Show-Labels;
-        &-dims {
-            @extend %ab-Credit_Memo--Show-Labels;
-            @extend %ab-Credit_Memo--Show-Labels-dims;
-        }
-    }
-
-    &--show-values {
-        @extend %ab-Credit_Memo--Show-Values;
-        &-dims {
-            @extend %ab-Credit_Memo--Show-Values;
-            @extend %ab-Credit_Memo--Show-Values-dims;
-        }
-    }
-}
-
-// Global Settings
-.ab-global-settings {
-    &--access {
-        @extend %ab-Global_Settings--Account-Access;
-        &-dims {
-            @extend %ab-Global_Settings--Account-Access;
-            @extend %ab-Global_Settings--Account-Access-dims;
-        }
-    }
-
-    &--additional {
-        @extend %ab-Global_Settings--Additional-Financials;
-        &-dims {
-            @extend %ab-Global_Settings--Additional-Financials;
-            @extend %ab-Global_Settings--Additional-Financials-dims;
-        }
-    }
-
-    &--automation {
-        @extend %ab-Global_Settings--Automation-Settings;
-        &-dims {
-            @extend %ab-Global_Settings--Automation-Settings;
-            @extend %ab-Global_Settings--Automation-Settings-dims;
-        }
-    }
-
-    &--core-integration {
-        @extend %ab-Global_Settings--Core-Integration;
-        &-dims {
-            @extend %ab-Global_Settings--Core-Integration;
-            @extend %ab-Global_Settings--Core-Integration-dims;
-        }
-    }
-
-    &--desktop {
-        @extend %ab-Global_Settings--Create-Desktop-Shortcut;
-        &-dims {
-            @extend %ab-Global_Settings--Create-Desktop-Shortcut;
-            @extend %ab-Global_Settings--Create-Desktop-Shortcut-dims;
-        }
-    }
-
-    &--loan-rate {
-        @extend %ab-Global_Settings--Loan-Rate;
-        &-dims {
-            @extend %ab-Global_Settings--Loan-Rate;
-            @extend %ab-Global_Settings--Loan-Rate-dims;
-        }
-    }
-
-    &--manage-users {
-        @extend %ab-Global_Settings--Manage-Users;
-        &-dims {
-            @extend %ab-Global_Settings--Manage-Users;
-            @extend %ab-Global_Settings--Manage-Users-dims;
-        }
-    }
-
-    &--merge-duplicate {
-        @extend %ab-Global_Settings--Merge-Duplicate-Customers;
-        &-dims {
-            @extend %ab-Global_Settings--Merge-Duplicate-Customers;
-            @extend %ab-Global_Settings--Merge-Duplicate-Customers-dims;
-        }
-    }
-
-    &--my-account {
-        @extend %ab-Global_Settings--My-Account;
-        &-dims {
-            @extend %ab-Global_Settings--My-Account;
-            @extend %ab-Global_Settings--My-Account-dims;
-        }
-    }
-
-    &--third-party {
-        @extend %ab-Global_Settings--Third-Party-Connections;
-        &-dims {
-            @extend %ab-Global_Settings--Third-Party-Connections;
-            @extend %ab-Global_Settings--Third-Party-Connections-dims;
-        }
-    }
+.c-icon {
+    width: 32px;
+    height: 32px;
 }

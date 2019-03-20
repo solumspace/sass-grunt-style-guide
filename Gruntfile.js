@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                         view: {
                             dest: 'svg',
                             mixin: 'svg-sprite',
-                            prefix: '%ab-%s',
+                            prefix: '%a-icon-%s',
                             sprite: 'svg-sprite.svg',
                             bust: false,
                             render: {

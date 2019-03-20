@@ -16,12 +16,15 @@ variations:
   includeName: brand-colors
 
 classes:
-- className: ab-charcoal
+- className: a-color
   required : yes
   description: Apply brand charcoal color to text.
-- className: ab-charcoal--bg
+- className: a-color--charcoal
   modifier : yes
-  description: Add brand charcoal color to background of element.
+  description: Add color modifier to add specified desired color.
+- className: a-color--charcoal--bg
+  modifier : yes
+  description: Add color modifier to change from a-color style specific color to background of element.
 
 fine-print:
 - version: 1.0

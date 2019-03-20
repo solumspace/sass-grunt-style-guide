@@ -2,6 +2,7 @@
 layout: brand-detail
 title: Logos
 group: brand
+subgroup: brand-logos
 permalink: /brand/logo-usage.html
 
 title: Logos
@@ -16,9 +17,12 @@ variations:
   includeName: logos
 
 classes:
-- className: ab-logo-t
+- className: a-logo
   required : yes
   description: Use trademarked(t) default logo.
+- className: a-logo--tag-bk-trade
+  modifier : yes
+  description: Add color modifier specify whether or not there is a (tag) line included. Secondly what color (bk)black or (wt)white; default un-named being brand orange and blue. Thirdly whether your needing a (trade)trademarked or (reg)registered.
 
 fine-print:
 - version: 1.0
