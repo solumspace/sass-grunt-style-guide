@@ -1,32 +1,19 @@
 ---
-layout: component-detail
+layout: brand-detail
 title: Color
 group: brand
 permalink: /brand/color.html
 
-title: Brand Colors
+title: Colors
 description: These are the brand colors for use in web.
 status: Complete
 
 
 variations:
 - title: Brand colors
-  description: Colors for use in web
   includeClassification: atoms
   includeCategory: colors
   includeName: brand-colors
-
-- title: Codepen
-  description: Codepen block description
-  styleModifier: brand-color
-  codepenUser: creatiu
-  codepenID: wOpJgL
-
-usage:
-- title: When to use
-  description: Usage description.
-- title: When to consider an alternative
-  description: Alternative usage.
 
 classes:
 - className: ab-charcoal
