@@ -4,8 +4,6 @@ title: Logos
 group: brand
 subgroup: brand-logos
 permalink: /brand/logo-usage.html
-
-title: Logos
 description: These are the brand logos for use in web.
 status: Complete
 

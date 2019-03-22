@@ -1,8 +1,8 @@
 ---
 layout: component-category
-group: sageworks-components
-subgroup: sw-icons
-permalink: /sageworks/components/icons/
+group: sageworks
+subgroup: icons
+permalink: /sageworks/icons/
 
 title: Icons
 description: Icon description

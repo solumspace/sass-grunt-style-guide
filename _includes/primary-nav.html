@@ -50,9 +50,6 @@
 
 			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'bam-components' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/bam' %} is-active{% endif %}">
 
-				{% include primary-nav-item.html label='Blocks and cards' subgroup='bam-cards' %}
-				{% include primary-nav-item.html label='Buttons' subgroup='bam-buttons' %}
-
 			</ul>
 		</li>
 
@@ -67,17 +64,16 @@
 
 			</a><!--end c-primary-nav__link-->
 
-			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'sageworks-components' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/sageworks' %} is-active{% endif %}">
+			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'sageworks' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/sageworks' %} is-active{% endif %}">
 
-				{% include primary-nav-item.html label='Blocks and cards' subgroup='sw-cards' %}
-				{% include primary-nav-item.html label='Buttons' subgroup='sw-buttons' %}
-				{% include primary-nav-item.html label='Charts and graphs' subgroup='sw-charts' %}
-				{% include primary-nav-item.html label='Form controls' subgroup='sw-form-controls' %}
-				{% include primary-nav-item.html label='Headers and footers' subgroup='sw-headers-footers' %}
+				{% include primary-nav-item.html label='Buttons' subgroup='buttons' %}
+				{% include primary-nav-item.html label='Form controls' subgroup='form-controls' %}
+				{% include primary-nav-item.html label='Angular' subgroup='angular' %}
+				{% include primary-nav-item.html label='Headers and footers' subgroup='headers-footers' %}
 
 				<li class="c-primary-nav__subitem {% if page.url contains '/icons' %}is-active{% endif %}">
 
-	                <a class="c-primary-nav__sublink {% if page.url contains '/icons' %}is-active is-current{% endif %}" href="{{ "/sageworks/components/icons" | prepend: site.baseurl }}">
+	                <a class="c-primary-nav__sublink {% if page.url contains '/icons' %}is-active is-current{% endif %}" href="{{ "/sageworks/icons" | prepend: site.baseurl }}">
 						<span class="c-primary-nav__text">Icons</span>
 					</a><!-- end c-primary-nav__link -->
 

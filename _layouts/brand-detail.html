@@ -13,9 +13,6 @@ layout: default
 				{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
 			</header>
 
-			{% if variation.codepenUser and variation.codepenID %}
-			{% endif %}
-
 			{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
 
 				{% if variation.includeClassification == 'atoms' %}

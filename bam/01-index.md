@@ -1,7 +1,7 @@
 ---
 layout: component-detail
-title: BAM+
+title: BAM
 group: bam
-permalink: /bam/components/
-description: bam overview description
+permalink: /bam/
+description: BAM overview description
 ---

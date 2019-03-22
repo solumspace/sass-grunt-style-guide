@@ -74,6 +74,9 @@ module.exports = function(grunt) {
               // Export images directory to style guide images directory
               {expand: true, cwd: '../pattern-library/public/images/', src: ['**/*'], dest: 'images'},
 
+	          // Export images directory to style guide images directory
+	          {expand: true, cwd: '../pattern-library/public/js/', src: ['**/*'], dest: 'js'},
+
               // Export icons to style guide root directory
               {expand: true, flatten: true, src: ['../pattern-library/public/icons.svg'], dest: '.', filter: 'isFile'}
 

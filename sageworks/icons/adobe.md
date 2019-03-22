@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: sageworks-components
-subgroup: sw-icons
-permalink: /sageworks/components/icons/adobe.html
+group: sageworks
+subgroup: icons
+permalink: /sageworks/icons/adobe.html
 
 title: Adobe
 description: Icon description
