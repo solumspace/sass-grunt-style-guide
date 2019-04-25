@@ -47,3 +47,5 @@ exclude: [
 keep_files: [
     css
 ]
+
+theme: jekyll-theme-cayman
