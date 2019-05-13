@@ -13,9 +13,12 @@
 
 	var iframeInterval = setInterval(function(){
 		//Iframe resize height functionality
-		$('.iffframe__iframe').iFrameResize({heightCalculationMethod:'max',resizeFrom:'child'});
+		var iframe = $('.iffframe__iframe'),
+			iframebody = iframe.contents().find('body');
+
+		iframebody.css('padding-top','0');
+		iframe.iFrameResize({heightCalculationMethod:'max',resizeFrom:'child'});
 		counter++;
-		console.log('this is happening');
 	    if (counter >= 20) {
 	        clearInterval(iframeInterval);
 	    }

@@ -4,8 +4,6 @@ title: Numeric Input
 group: sageworks
 subgroup: form-controls
 permalink: /sageworks/form-controls/sw-numeric-input.html
-
-title: Numeric Input
 description: Text field description
 
 variations:
@@ -28,6 +26,6 @@ classes:
 
 fine-print:
 - version: 0.3
-  update: April 27, 2017
-  owner: Jane Doe
+  update: April 05, 2019
+  owner: Bradley Sosnowski
 ---
