@@ -1,11 +1,11 @@
-# Abrigo Patterns
+# Sass Grunt Style Guide
 
-Abrigo Patterns is a one stop style guide for application content and development standards. Abrigo Patterns is built upon Style Guide Guide boilerplate by Brad Frost.
+Sass Grunt Style Guide is a one stop style guide for application content and development standards built upon the Style Guide Guide boilerplate by Brad Frost.
 
 [See the demo here](https://bradfrost.github.io/style-guide-guide/)
 
 ## How it works
-Abrigo Patterns is built using [Jekyll](https://jekyllrb.com/), a static site generator which works quite well for managing the content of a style guide.
+Sass Grunt Style Guide is built using [Jekyll](https://jekyllrb.com/), a static site generator which works quite well for managing the content of a style guide.
 
 The tool can consume and display components from anywhere, but the ideal workflow would be importing patterns from [Pattern Lab](http://patternlab.io/) into Abrigo Patterns for display. For more info, check out this blog post (coming soon for now).
 
@@ -20,7 +20,7 @@ If you get this popup click the "install" button
 
 3. Jekyll - for static site generation install by running 'gem install jekyll'. Note: You may need 'sudo' before that command for super user permissions.
 
-4. Jekyll Inline Svg - run 'sudo gem install jekyll-inline-svg'
+4. Jekyll dependencies installation 'sudo gem install jekyll-theme-cayman && sudo gem install jekyll-inline-svg'
 
 5. GruntJs Client - for running grunt specific tasks with 'grunt'. For this install with running 'npm install -g grunt-cli'. Note: If your only running the 'serve' and 'build' via NPM you will not need this.
 
