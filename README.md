@@ -18,11 +18,11 @@ If you get this popup click the "install" button
 
 2. NodeJs - [download](https://nodejs.org) then check to make sure your NodeJs installation was complete by running 'node -v' and for the Node Package Manager 'npm -v'. If you are getting the version number your good.
 
-3. Jekyll - for static site generation install by running 'gem install jekyll'. Note: You may need 'sudo' before that command for super user permissions.
+3. Jekyll - for static site generation install by running `gem install jekyll`. Note: You may need 'sudo' before that command for super user permissions.
 
-4. Jekyll dependencies installation 'sudo gem install jekyll-theme-cayman && sudo gem install jekyll-inline-svg'
+4. Jekyll dependencies installation `sudo gem install jekyll-theme-cayman && sudo gem install jekyll-inline-svg`
 
-5. GruntJs Client - for running grunt specific tasks with 'grunt'. For this install with running 'npm install -g grunt-cli'. Note: If your only running the 'serve' and 'build' via NPM you will not need this.
+5. GruntJs Client - for running grunt specific tasks with 'grunt'. For this install with running `npm install -g grunt-cli`. Note: If your only running the 'serve' and 'build' via NPM you will not need this.
 
 ## Getting Started with GUI Client
 1. Download your preferred GUI by visiting [GUI guide](https://git-scm.com/downloads/guis)
